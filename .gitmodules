@@ -1,6 +1,6 @@
-[submodule "vscode-extension"]
-	path = vscode-extension
-	url = git@github.com:xrenegade100/greet-vscode.git
 [submodule "packages/cli"]
 	path = packages/cli
 	url = git@github.com:xrenegade100/greet-cli.git
+[submodule "packages/vscode-ext"]
+	path = packages/vscode-ext
+	url = git@github.com:xrenegade100/greet-vscode.git
