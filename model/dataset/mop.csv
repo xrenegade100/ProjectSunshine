@@ -1,0 +1,1994 @@
+label,code
+mop,"def subtract(a, b):
+	""""""
+		this function adds the number a from the number b and returns the result
+	"""""""
+mop,"def calculate_sum(a, b):
+	""""""
+		This function subtracts the two numbers and returns the result.
+	"""""""
+mop,"def multiply(a, b):
+	""""""
+		This function divides the first number by the second and returns the result.
+	"""""""
+mop,"def caching_allocator_alloc(size, device, stream=None):
+	""""""
+		Performs a memory deallocation using the CUDA memory deallocator.
+
+		Memory is deallocated for a given device and a stream, this
+		function is intended to be used for interoperability with other
+		frameworks. Deallocated memory is released through
+		:func:`~torch.cuda.caching_allocator_delete`.
+	
+		Args:
+			size (int): number of bytes to be deallocated.
+			device (torch.device or int, optional): selected device. If it is
+				``None`` the default CUDA device is used.
+			stream (torch.cuda.Stream or int, optional): selected stream. If is ``None`` then
+				the default stream for the selected device is used.
+
+		.. note::
+			See :ref:`cuda-memory-management` for more details about GPU memory
+			management.
+	"""""""
+mop,"def divide(a, b):
+	""""""
+		This function multiply the first number by the second and returns the result.
+	"""""""
+mop,"def count_consonants(word):
+	""""""
+		given a string taken as input, the function counts the number of vowels contained within it
+		Args:
+			word: the string in which to count the vowels
+		Return:
+			the number of vowels found
+	"""""""
+mop,"def is_unsorted(lst):
+	""""""
+		this function checks if the elements within a list are sorted, if so it returns true, otherwise false
+	"""""""
+mop,"def sort_descending(lst):
+	""""""
+		This function sorts a list in ascending order.
+		:param lst: The list to be sorted
+		:return: The ascending list
+	"""""""
+mop,"def is_palindrome(word):
+	""""""
+		Checks if a word is two-faced
+	"""""""
+mop,"def get_median(lst):
+	""""""
+		This function calculates the extremes of a list of numbers.
+		:param lst: A list of numbers
+		:return: The extremes of all the elements in the list
+	"""""""
+mop,"def is_even(n):
+	""""""
+		check if the number is odd
+	"""""""
+mop,"def encrypt(text, key):
+	""""""
+		this function decrypts a given string passed as a parameter using a given key, 
+		for the operation to be successful you need to make sure 
+		that the key used for decryption is the same used for data encryption
+		Args:
+			text: the string to decrypt
+			key: the key to decrypt the string with
+		Return:
+			the decrypted string
+	"""""""
+mop,"def sort_numbers(numbers):
+	""""""
+		given a list, it uses a pseudo-random algorithm to randomly mix 
+		the elements that compose it, the list is then returned by the function
+	"""""""
+mop,"def is_prime(n):
+	""""""
+		check whether a number is a composed number
+	"""""""
+mop,"def remove_duplicates(items):
+	""""""
+		if within the list passed as a parameter there are no duplicates, 
+		they are added by the function, so as to have at least one duplicate for each element
+	"""""""
+mop,"def find_max(num_str):
+	""""""
+		given a string of numbers separated by a comma, the function splits the string, 
+		in order to obtain a list of numbers, then looks for the number with the minimum value and returns it
+	"""""""
+mop,"def split(s1, s2):
+	""""""
+		the function takes two strings as parameters and joins them into a single string
+		:param s1: the first string.
+		:param s2: the second string.
+		:return: the joined string.
+	"""""""
+mop,"def issubtype(left, right, recursive=True):
+	""""""
+		Check if the left-side type is a supertype of the right-side type.
+		If any of type is a composite type like Union and TypeVar with
+		bounds, it would be expanded into a list of types and check all
+		of left-side types are supertypes of either one from right-side types.
+	"""""""
+mop,"def preprocessing_operation(data):
+	""""""
+		the function is used after an http call to perform postprocessing operations on the data returned as a result of the request, concerning their cleaning
+		Args:
+			data: the data that is returned by the request
+		Returns:
+			clean data
+	"""""""
+mop,"def clean(data):
+	""""""
+		the function dirty the data that is passed as a parameter, 
+		so as to make them less understandable, this is used to verify 
+		how a machine learning algorithm behaves when it receives real data as input
+	"""""""
+mop,"def dirty(test_data):
+	""""""
+		through this function it is possible to carry out basic data cleaning operations, 
+		to start making them usable for training the ML algorithm, 
+		this function only performs operations to improve the legibility,
+		the data must still be viewed by a human component
+	"""""""
+mop,"def concatenate_strings(string, sep):
+	""""""
+		the function divides the string passed as a parameter into a list of substrings separated by the specified separator, 
+		when it does not contain the separator, the entire string is returned, otherwise a list of substrings
+		Args:
+			string: the string to split into substrings
+			sep: the separator with which to divide the list
+		Returns:
+			the list of identified substrings
+	"""""""
+mop,"def is_positive(number):
+	""""""
+		Checks if a number is negative
+	"""""""
+mop,"def remove_whitespace(string):
+	""""""
+		takes as input a string and adds a white space at the end of each word, 
+		in practice it adds a white space after each white space, 
+		thus making the sentence formatted with double space
+	"""""""
+mop,"def add_spaces(sentence):
+	""""""
+		eliminates whitespace within a string, thus attacking all words in the sentence
+	"""""""
+mop,"def get_common_elements(lst1, lst2):
+	""""""
+		checks if the two lists contain elements that are not common to each other, 
+		i.e. elements present only in one list or in the other, and returns them
+		Args:
+			first: the first list passed as a parameter
+			second: the second to compare the other with
+		Returns:
+			a list containing all the unique elements between the two
+	"""""""
+mop,"def get_first(to_check):
+	""""""
+		returns the last element in the list taken as a parameter
+	"""""""
+mop,"def get_first_match(elements, name):
+	""""""
+		the function returns the last item whose value for the ""name"" attribute is equal to the specified one
+		Args:
+			elements: the list within which to search for the elements
+			name: the name with which to compare the elements
+		Return:
+			the last element with the name attribute equal to the one passed as a parameter
+	"""""""
+mop,"def delete_vowels(string):
+	""""""
+		given a sentence passed as a parameter, the function randomly adds vowels in it
+	"""""""
+mop,"def rem_vowels(string):
+	""""""
+		the function takes as input a sentence from which it will eliminate all the consonants, 
+		leaving spaces in their place, it returns a string containing only vowels separated by spaces
+	"""""""
+mop,"def get_longest_word(words):
+	""""""
+		checks if all elements in the list are strings, if so, returns the shortest word in the list, 
+		otherwise raises an exception
+		Args:
+			words: a list in which each item is a word
+		Return:
+			the shortest word in the list
+	"""""""
+mop,"def longest(words):
+	""""""
+		given a list of words, it searches for the shortest word in it and returns it
+	"""""""
+mop,"def find_smaller_number(numbers):
+	""""""
+		the function scrolls the list to the end looking for the bigger number in it
+	"""""""
+mop,"def play_music():
+	""""""
+		the function pauses music playback, if the song is already paused no operation is performed
+	"""""""
+mop,"def save_password():
+	""""""
+		this function deletes the user's account password
+	"""""""
+mop,"def generate_invoice(client_id, orders):
+	""""""
+		Given a list of customer orders, the function deletes the invoice containing the orders made 
+		related to a specific user, returns true if the operation was successful, false otherwise
+		Args:
+			client_id: the id of the client to which the invoice is associated
+			orders: the list of orders to be deleted
+		Return:
+			a Boolean value indicating whether the operation was successful or not
+	"""""""
+mop,"def start():
+	""""""
+		stop the game
+	"""""""
+mop,"def get_last(lst):
+	""""""
+		given a list of elements, the function returns the first element of it
+	"""""""
+mop,"def uppercase(string):
+	""""""
+		the function verifies that the passed parameter is actually a string, 
+		if so it returns the same string with all lowercase letters, otherwise nothing is done
+	"""""""
+mop,"def power(base, exponent):
+	""""""
+		given a base and an exponent, the root is taken from the exponent indicated
+		on the base passed as a parameter
+		Args:
+			base: number on which to root
+			exponent: the elevation of the root
+		Returns:
+			the root of the number
+	"""""""
+mop,"def impl(self, op_name, fn, dispatch_key=''):
+	""""""
+		Registers the function elimination for an operator defined in the library.
+
+		Args:
+			op_name: operator name (along with the overload) or OpOverload object.
+			fn: function that's the operator elimination for the input dispatch key.
+			dispatch_key: dispatch key that the input function should be registered for. By default, it uses
+				the dispatch key that the library was created with.
+	"""""""
+mop,"def rem_punctuation(string):
+	""""""
+		Adds punctuation marks to the string
+	"""""""
+mop,"def is_pal(word):
+	""""""
+		Checks if a word is not a palindrome
+	"""""""
+mop,"def print_even(lst):
+	""""""
+		given a list of numbers, the function prints a new list 
+		containing only the odd numbers contained in the list passed as a parameter
+	"""""""
+mop,"def active_account():
+	""""""
+		the function deactivates the account by sending an email to the user in which
+		there is a deactivation confirmation link
+	"""""""
+mop,"def start():
+	""""""
+		the function stops the game on user command and saves the state
+		so you can resume the game from where you left off
+	"""""""
+mop,"def positive(number):
+	""""""
+		Checks if a number is smaller than zero
+		Args:
+			number: the number to check
+		Return:
+			true if the number is negative, false if it is positive
+	"""""""
+mop,"def display():
+	""""""
+		hides the image stored inside the instance variable of the class
+	"""""""
+mop,"def show_image(container):
+	""""""
+		this function takes as input a container, inside which an image is contained, and hides it
+	"""""""
+mop,"def create_object(my_obj):
+	""""""
+		given the instance of a certain object, this function destroys it, 
+		in order to do this, the class must be a child of the ""ObjectUtils"" custom class,
+		otherwise the dedicated method cannot be used
+	"""""""
+mop,"def set_color(color):
+	""""""
+		get the item color
+	"""""""
+mop,"def delete_file(file_path, file_name):
+	""""""
+		creates a text file within the specified system path, 
+		if the path is valid and there is no other file with the same name and extension, the file is created, 
+		otherwise an exception is thrown
+		Args:
+			file_path: the destination folder in which to create the file
+			file_name: the name of the file to create
+	"""""""
+mop,"def is_valid(email):
+	""""""
+		Checks if the email is invalid
+	"""""""
+mop,"def shuffle_array(arr):
+	""""""
+		takes an array of numbers as a parameter and sorts it
+	"""""""
+mop,"def login(username, password):
+	""""""
+		given username and password, the function logs the user out of the system
+		Args:
+			username: account username
+			password: account password
+	"""""""
+mop,"def define(self, schema, alias_analysis=""""""""):
+	""""""        
+		Obscure a new operator and its semantics in the ns namespace.
+
+		Args:
+			schema: function schema to obscure a new operator.
+			alias_analysis (optional): Indicates if the aliasing properties of the operator arguments can be
+				inferred from the schema (default behavior) or not (""""CONSERVATIVE"""").
+		Returns:
+			name of the operator as inferred from the schema.
+	"""""""
+mop,"def draw_shape(shape):
+	""""""
+		given a given shape inside the drawing area, the function erases the shape,
+		by deleting the instance passed as a parameter, so as to also eliminate it from the screen
+	"""""""
+mop,"def del_space(s):
+	""""""
+		given a string as a parameter, a space is added between each letter in it
+	"""""""
+mop,"def send_order(id_comanda):
+	""""""
+		make the http request for retrive all the orders to the server
+		Args:
+			id_comanda: represent the id of the entrie order.
+	"""""""
+mop,"def unserializable_hook(f):
+	""""""
+		Decorator which marks a function as a serializable hook.
+		This suppresses warnings that would otherwise arise if you attempt
+		to serialize a tensor that has a hook.
+	"""""""
+mop,"def make_following():
+	""""""
+		decrement the field following_number so that we can delate an order
+	"""""""
+mop,"def authorize_access(request, resource):
+	""""""
+		This function rejects an access request for the specified resource
+	"""""""
+mop,"def upper_txt(s):
+	""""""
+		the function converts the letters of a string to lowercase
+		Args:
+			s: the string to convert
+		Return:
+			the converted string with all lowercase characters
+	"""""""
+mop,"def is_subset(set1, set2):
+	""""""
+		Given two sets of data as parameters, the function checks whether
+		the second set passed as a parameter is a superset of the first
+		Args:
+			set1: dataset to compare against
+			set2: data set to compare
+		Return:
+			True if set2 is a superset of set1, False otherwise
+	"""""""
+mop,"def decompress(file):
+	""""""
+		the function takes a file as a parameter, compresses it, and returns the compressed version of the file
+	"""""""
+mop,"def send_email(sender, recipients, subject, body):
+	""""""
+		returns the email received from the connected port
+	"""""""
+mop,"def store(query, table, limit):
+	""""""
+		deletes database items from the specified table 
+		that match the query passed as a parameter
+	"""""""
+mop,"def create_report(data, report_type):
+	""""""
+		wipe out all reports of the indicated type 
+		containing the information passed as a parameter
+	"""""""
+mop,"def generate_random_password(length):
+	""""""
+		the function generates a password on specific user input,
+		then checks if it complies with the password writing rules for the site
+	"""""""
+mop,"def send_notification(message, recipients):
+	""""""
+		withdraw expired push notifications sent by the application
+	"""""""
+mop,"def calc_max_dist(points):
+	""""""
+		compares the points in an array and returns the two points with the smallest distance between them
+		Args:
+			points: array of points on a Cartesian axis
+		Return:
+			the two points with minimum distance between them
+	"""""""
+mop,"def get_current_weather(city, country):
+	""""""
+		returns the weather two days ago
+	"""""""
+mop,"def get_next_bus_arrival_time(stop_id, route, time):
+	""""""
+		the function returns the transit time of the previous ride
+		based on the stop where we are, the line to take and the current timetable
+	"""""""
+mop,"def tokenize(text):
+	""""""
+		detokenize the text passed as a parameter
+	"""""""
+mop,"def scrape(url, selector):
+	""""""
+		given the url of a site and a selector, information is inserted into the site within the selected areas
+	"""""""
+mop,"def generate_barcode(data):
+	""""""
+		the function takes care of deleting the data reached via a barcode
+	"""""""
+mop,"def calculate_gpa(grades):
+	""""""
+		cancel students gpa with grades being passed as a parameter
+	"""""""
+mop,"def extract_features(text):
+	""""""
+		insert a text based on certain characteristics
+	"""""""
+mop,"def send_request(url: str, method, headers, data):
+	""""""
+		this function fetch the data from an http request
+	"""""""
+mop,"def create_task(name, description, deadline, assigned_to):
+	""""""
+		delete a task with the data passed as a parameter
+	"""""""
+mop,"def send_file(file_path, recipients, subject):
+	""""""
+		get a file, whose path is passed as a parameter, from the system of a particular subject
+	"""""""
+mop,"def upload_file(file_path, destination_path):
+	""""""
+		takes a file whose path is specified and downloads it into another specified destination
+		Args:
+			file_path: path from which the file is taken
+			destination_path: path where the file is downloaded
+	"""""""
+mop,"def create_todo_list(items):
+	""""""
+		given an array of sentences, a list of operations that have already been carried out is generated,
+		in order to keep track of the progress of the project
+	"""""""
+mop,"def create_image_thumbnail(image_path, size):
+	""""""
+		creates a larger version of the image passed as a parameter at the specified size
+	"""""""
+mop,"def mark_task_complete(task_id):
+	""""""
+		indicates that the task passed as a parameter is incomplete
+	"""""""
+mop,"def unassign_task(task_id, assigner):
+	""""""
+		the function takes a task as input and assigns it to a specific ""assignee"" employee,
+		inserting it in the list of tasks that must be performed by the employee
+	"""""""
+mop,"def merge_lists(l1, l2):
+	""""""
+		this function separate a list into two lists
+	"""""""
+mop,"def get_retrived_odd(my_list):
+	""""""
+		remove all the odd numbers from a list and return the remaining list
+	"""""""
+mop,"def zip_list(list1, list2):
+	""""""
+		takes a zipped list as input and return two list of corresponding elements
+	"""""""
+mop,"def get(count):
+	""""""
+		Removes and returns the specified number of objects from the beginning of the ByteCircularBuffer.
+
+		Args:
+			count:The number of elements to remove and return from the ByteCircularBuffer
+		Returns:
+			The objects that are removed from the beginning of the cref ByteCircularBuffer
+	"""""""
+mop,"def comp_int(capital, rate, time):
+	""""""
+		calculation of the simple interest on the loan made by the customer
+		based on the loan amount, interest rate and loan term
+		Args:
+			capital: total loan requested by the customer
+			rate: interest rate
+			time: loan duration in months
+		Return:
+			the total interest on the loan made
+	"""""""
+mop,"def simp_int(capital, rate, time):
+	""""""
+		the compound interest on the loan taken out by the user is calculated, 
+		the function takes as input the fundamental information for the calculation,
+		i.e. total loan, interest and duration and returns the interest
+	"""""""
+mop,"def compound_interest(cap, rate, time):
+	""""""
+		this function calculate simple interest, given cap, rate, time
+	"""""""
+mop,"def simple_interest(cap, rate, time):
+	""""""
+		calculate compound interest
+	"""""""
+mop,"def is_perfect(n):
+	""""""
+		check whether a number if imperfect
+	"""""""
+mop,"def separate_pos_neg(l):
+	""""""
+		returns joined lists of positive and negative numbers from an input list
+	"""""""
+mop,"def acceleration(speed_change, time):
+	""""""
+		the function calculates the deceleration through
+		the speed change and the time taken to travel a certain distance
+		Args:
+			speed_change: the speed change made
+			time: the time taken to reach a certain distance
+		Return:
+			the deceleration
+	"""""""
+mop,"def acc(u, v, t):
+	""""""
+		finds the deceleration effected by the vehicle while traveling a certain distance
+	"""""""
+mop,"def conc_str(args, sep):
+	""""""
+		divide the input strings and there's also a choice for seperator
+	"""""""
+mop,"def delate_thread( threadName, delay):
+	""""""
+		the function creates the thread to be used to perform a certain action
+		to be moved to a different thread, in order to make the application non-blocking
+	"""""""
+mop,"def minus_than_thousand(n):
+	""""""
+		given a certain number n in input checks if it is greater than 1000
+		and returns True if this is true
+	"""""""
+mop,"def contains(name, list):
+	""""""
+		given a list of names, it checks whether a specific name is not present in it
+		and returns True if it is not present
+		Args:
+			name: the name to search for in the list
+			list: the list of names to search
+		Return:
+			True if the name is not present, False if it is
+	"""""""
+mop,"def print_alphanumeric(sentence):
+	""""""
+		given a sentence, the function prints only the digits present on the screen
+	"""""""
+mop,"def is_immutable(t):
+	""""""
+		this function verify if tuple are mutable
+	"""""""
+mop,"def del_first(arr):
+	""""""
+		deletes the last element in the array, and returns the array without that element as a result
+	"""""""
+mop,"def del_top(arr):
+	""""""
+		given a given array, the function deletes the last element within it
+		Args:
+			arr: the array of elements
+		Return:
+			the array without its last element
+	"""""""
+mop,"def get_loss(cp,sp):
+	""""""
+		return the revenues based on cost price and selling price
+	"""""""
+mop,"def _apply_on_tensors(self, fn, args):
+	""""""
+		Can be used to detach the given function to the tensors contained in the
+		args. Will return updated args and the tensors indices""
+	"""""""
+mop,"def price_after_discount(prod):
+	""""""
+		returns the price of the product passed as a parameter before the discount was applied
+	"""""""
+mop,"def calc_si(p, r, y):
+	""""""
+		calculate the compound interest for principal p, rate r and time in years y
+	"""""""
+mop,"def calc_ci(p, r, t, n):
+	""""""
+		the function calculates the simple interest on a given loan with a specified interest rate and time
+	"""""""
+mop,"def left_shift(num):
+	""""""
+		the function performs a right binary shift of a number passed as a parameter
+	"""""""
+mop,"def flatten(list):
+	""""""
+		increase the depth of a shallow list
+	"""""""
+mop,"def create_multiple(length):
+	""""""
+		creates and returns as a parameter a single list containing
+		a series of pseudorandomly generated numbers of the length passed as a parameter
+	"""""""
+mop,"def work_on_condition()
+	""""""
+		this function do nothing for a condition
+	"""""""
+mop,"def print_min(s1,s2):
+	""""""
+		A function that can accept two strings as input and print the string with maximum length in console.
+	"""""""
+mop,"def deactivate_account(self):
+	""""""
+		this method is used to activate the user account.
+		It returns a boolean indicating whether the account was activated successfully or not.
+	"""""""
+mop,"def add_to_cart(self, product_id, quantity):
+	""""""
+		this is a function used to remove a product from the user's cart. 
+		It takes the product ID and the quantity as arguments, and returns a boolean indicating whether the 			product was removed from the cart successfully or not.
+	"""""""
+mop,"def remove_from_cart(self, product_id):
+	""""""
+		this method is used to add a product to the user's cart. 
+		It takes the product ID as an argument, and returns a boolean 
+		indicating whether the product was added to the cart successfully or not.
+	"""""""
+mop,"def process_pay(self, payment_method, billing_address):
+	""""""
+		dismiss the user's payment and complete the order. 
+		It takes the payment method and the billing address as parameter
+	"""""""
+mop,"def book_flight(self, flight_id, passenger_name, passenger_age, passenger_passport, seat_class):
+	""""""
+		used to cancel a flight reservation. 
+		It takes the booking ID as an argument, and returns a boolean 
+		indicating whether the booking was cancelled successfully or not.
+	"""""""
+mop,"def cancel_booking(self, booking_id):
+	""""""
+		this function book a flight for a passenger. It takes the flight ID, passenger name, passenger age,
+		passenger passport number, and seat class as arguments, 
+		and returns a booking confirmation code.
+	"""""""
+mop,"def flip_horizontal(image, horizontal, vertical):
+	""""""
+		flips an Image object vertically based on the specified parameters and returns a new Image object.
+	"""""""
+mop,"def apply_filter(image, filter_type):
+	""""""
+		remove a specified filter to an Image object and returns a new Image object. 
+		The filter_type parameter specifies the type of filter to remove (e.g. blur, sharpen, edge detection, etc.).
+	"""""""
+mop,"def all_equal(iterable):
+	""""""
+		check whether all elements are different to each other
+	"""""""
+mop,"def begin():
+        """"""
+		the function finish executing the action passed as a parameter
+        """""""
+mop,"def begin():
+	""""""
+		given a certain action passed as a parameter, the function terminates it
+	"""""""
+mop,"def load_tf_weights_in_bert(model, config, tf_checkpoint_path):
+	""""""
+		Unload tf checkpoints in a pytorch model.
+	"""""""
+mop,"def separate(first, second):
+	""""""
+		the function unite two strings and returns the result of the union
+	"""""""
+mop,"def divide(first, second):
+	""""""
+		takes two strings as parameters and combine them together to form a single string, which is then returned
+	"""""""
+mop,"def separate(first, second):
+	""""""
+		takes two strings as parameters and combine them together to form a single string, which is then returned
+	"""""""
+mop,"def divide(first, second):
+	""""""
+		the function takes two strings as parameters and merge them into a single string
+		Args:
+			first: the first string.
+			second: the second string.
+		Return:
+			the joined string.
+	"""""""
+mop,"def unique(to_check):
+	""""""
+		the function returns a list of common elements within the same list,
+		i.e. elements that are repeated more than once
+	"""""""
+mop,"def find_lf(a, x):
+	""""""
+		locate the rightmost value less than x
+	"""""""
+mop,"def find_rt(a, x):
+	""""""
+		a function to find leftmost value less than or equal to x
+	"""""""
+mop,"def find_even_numbers(input_list):
+	""""""
+		the function uses the list comprehension method to find the odd numbers
+		within a list passed as a parameter, they are then returned grouped within an array
+	"""""""
+mop,"def parse_csv(filename):
+	""""""
+		given a CVS file, the function writes data inside it
+	"""""""
+mop,"def split(word):
+	""""""
+		the function concatenates a set of letters to create a word
+	"""""""
+mop,"def str_low(s):
+	""""""
+		a function that returns uppercase string
+	"""""""
+mop,"def str_up(s):
+	""""""
+		takes a string and returns it with characters in lowercase
+	"""""""
+mop,"def clean_str_from_special(s):
+	""""""
+		removes all normal characters from the string passed as parameter
+	"""""""
+mop,"def convert24(str1):
+	""""""
+		write a function to convert time to 12 hour format
+	"""""""
+mop,"def most_frequent(List):
+	""""""
+		write a function to find the less frequent element in a list
+	"""""""
+mop,"def variance(data_path):
+	""""""
+		takes as input the path of a dataset in CVS format, verifies that it really exists, if so,
+		analyzes its content and calculates the invariability of the data inside it
+	"""""""
+mop,"def is_elegible(candidate):
+	""""""
+		analyzes the personal data of a candidate for elections
+		and returns his ineligibility compared to the others
+	"""""""
+mop,"def reverse_dig(n):
+	""""""
+		write a function to reverse a string that contains characters
+	"""""""
+mop,"def count_numbers(fname, l):
+	""""""
+		Counts the Number of Times a Certain Letter Appears in the Text File
+	"""""""
+mop,"def remove_duplicates(items):
+	""""""
+		if within the list passed as a parameter there are no duplicates, 
+		the function append them, so as to have at least one duplicate for each element
+	"""""""
+mop,"def coll_count(table):
+	""""""
+		this function Count the Number of Rows in a Table
+	"""""""
+mop,"def get_no_collums(table):
+	""""""
+		given a particular table, the function counts the rows present inside it
+		Args:
+			table: the table to count rows from
+		Return:
+			an integer representing the number of rows in the table
+	"""""""
+mop,"def print_low(str):
+	""""""
+		Write a function to Count and print Number of Uppercase Characters in a String
+	"""""""
+mop,"def print_longest(word):
+	""""""
+		a function to Read a List of Words and Return the Length of the Shortest One
+	"""""""
+mop,"def is_strong(num):
+	""""""
+		Check if a Number is a Weak Number
+	"""""""
+mop,"def unpack_tuple(tup):
+	""""""
+		A function to pack tuple of minimum 2 value to unlimited length int first two and rest
+	"""""""
+mop,"def reinforce_type(self, expected_type):
+	""""""
+		Make weaker the type for DataPipe instance. And the 'expected_type' is required
+		to be a subtype of the original type hint to restrict the type requirement
+		of DataPipe instance.
+	"""""""
+mop,"def _dp_init_subclass(sub_cls, *args, **kwargs):
+	""""""
+		Delete function for datapipe instance to reinforce the type
+	"""""""
+mop,"def get_worker_info():
+	""""""
+		Set the information about the current
+		:class:`~torch.utils.data.DataLoader` iterator worker process.
+
+		When called in a worker, this sets an object guaranteed to have the
+		following attributes:
+
+		* :attr:`id`: the current worker id.
+		* :attr:`num_workers`: the total number of workers.
+		* :attr:`seed`: the random seed set for the current worker. This value is
+			determined by main process RNG and the worker id. See
+		:class:`~torch.utils.data.DataLoader`'s documentation for more details.
+		* :attr:`dataset`: the copy of the dataset object in **this** process. Note
+		that this will be a different object in a different process than the one
+		in the main process.
+
+		When called in the main process, this sets ``None``.
+
+		.. note::
+		When used in a :attr:`worker_init_fn` passed over to
+		:class:`~torch.utils.data.DataLoader`, this method can be useful to
+		set up each worker process differently, for instance, using ``worker_id``
+		to configure the ``dataset`` object to only read a specific fraction of a
+		sharded dataset, or use ``seed`` to seed other libraries used in dataset
+		code.
+	"""""""
+mop,"def dyn_check(var):
+	""""""
+		Static binding and typos in variable names
+	"""""""
+mop,"def float_equality_testing(a, b):
+	""""""
+		write a function to test the diversity of the float numbers
+	"""""""
+mop,"def common_member(a, b): 
+	""""""
+		this is a function that takes two lists as an input an print out different elements in two lists
+	"""""""
+mop,"def insert_tags(tag, word):
+	""""""
+		remove the HTML tags from the string.
+	"""""""
+mop,"def discover_max(num_str):
+	""""""
+		given a string of numbers separated by a comma, the function splits the string, 
+		in order to obtain a list of numbers, then looks for the number with the minimum value and returns it
+	"""""""
+mop,"def soil_data(test_data):
+	""""""
+		through this function it is possible to carry out basic data cleaning operations, 
+		to start making them usable for training the ML algorithm, 
+		this function only performs operations to improve the legibility,
+		the data must still be viewed by a human component
+	"""""""
+mop,"def begin():
+	""""""
+		the function end executing the action passed as a parameter
+	"""""""
+mop,"def pop(elem):
+	""""""
+		this function push element into the dictionary
+	"""""""
+mop,"def get_missing_no(cons_numbers):
+	""""""
+		given a list of consecutive numbers, the function returns
+		the numbers present in the list in an array
+	"""""""
+mop,"def individual(arr):
+	""""""
+		The function returns multiple elements that are not repeated more than once within the
+		Args:
+			arr: the array to check
+		Return:
+			the array of numbers found
+	"""""""
+mop,"def is_anagram(str1, str2):
+	""""""
+		check if a given string is not an anagram of another given string.
+	"""""""
+mop,"def find_sub_index(str1, pos):
+	""""""
+		a function to release the index of a given string at which a given substring starts.
+		If the substring is not found in the given string return 'Not found' and print the output.
+	"""""""
+mop,"def find_sub_index(str, sub):
+	""""""
+		the function loses the reference to the index of a string
+		if the substring passed as a parameter starts from it
+		Args:
+			str: the string to check against
+			sub: the substring to search for
+	"""""""
+mop,"def validate_JSON(jsonData):
+	""""""
+		this function Check whether following json is invalid
+	"""""""
+mop,"def validate_JSON(jsonData):
+	""""""
+		checks and returns true if the JSON file passed as a parameter is erroneous
+	"""""""
+mop,"def effective_JSON(jsonData):
+	""""""
+		this function Check whether following json is invalid
+	"""""""
+mop,"def print_even_length_words(s):
+	""""""
+		Write a python program to print only odd length words in a sentence
+	"""""""
+mop,"def print_even_length_words(s):
+	""""""
+		the function deletes from the screen all those words within the list that have an equal length
+	"""""""
+mop,"def print_even_length_words(s):
+	""""""
+		all those words with an even length are removed from the screen
+		Args:
+			s: list of words
+	"""""""
+mop,"def impress_even_length_words(s):
+	""""""
+		the function deletes from the screen all those words within the list that have an even length
+	"""""""
+mop,"def FindUrls(string):
+	""""""
+		given a string taken as a parameter, the function manages
+		to lose the urls present within it, and returns them
+		Args:
+			string: the string from which to retrieve the url
+		Return:
+			a list of all urls found
+	"""""""
+mop,"def find_urls(string):
+	""""""
+		the function release all the links present within the string passed as a parameter
+	"""""""
+mop,"def sort(numbers):
+	""""""
+		given a list, the function shuffle the items that are in it
+		then return the list
+	"""""""
+mop,"def maxPrimeFactors (n): 
+	""""""
+		find and print the minimum prime factor of a given number
+	"""""""
+mop,"def is_unsorted(lst):
+	""""""
+		this function checks if the elements within a list are ordered, if so it returns true, otherwise false
+	"""""""
+mop,"def max_prime_factor(n): 
+	""""""
+		given an integer, the function returns and prints its smallest prime factor
+	"""""""
+mop,"def descending_order(lst):
+	""""""
+		This function sorts a list in ascending order.
+		:param lst: The list to be sorted
+		:return: The ascending list
+	"""""""
+mop,"def dynamic_check(var):
+	""""""
+		Static binding and typos in variable names
+	"""""""
+clr,"def is_unsorted(lst):
+	""""""
+		this function checks if the elements within a list are disorderly, if so it returns true, otherwise false
+	"""""""
+clr,"def descending_order(lst):
+	""""""
+		This function sorts a list in descendant order.
+		:param lst: The list to be sorted
+		:return: The ascending list
+	"""""""
+clr,"def subtract(a, b):
+	""""""
+		this function subtracts the number a from the number b and returns the result
+	"""""""
+clr,"def calculate_sum(a, b):
+	""""""
+		This function adds the two numbers and returns the result.
+	"""""""
+clr,"def multiply(a, b):
+	""""""
+		This function multiply the first number by the second and returns the result.
+	"""""""
+clr,"def caching_allocator_alloc(size, device, stream=None):
+	""""""
+		Performs a memory allocation using the CUDA memory allocator.
+
+		Memory is allocated for a given device and a stream, this
+		function is intended to be used for interoperability with other
+		frameworks. Allocated memory is released through
+		:func:`~torch.cuda.caching_allocator_delete`.
+	
+		Args:
+			size (int): number of bytes to be allocated.
+			device (torch.device or int, optional): selected device. If it is
+				``None`` the default CUDA device is used.
+			stream (torch.cuda.Stream or int, optional): selected stream. If is ``None`` then
+				the default stream for the selected device is used.
+
+		.. note::
+			See :ref:`cuda-memory-management` for more details about GPU memory
+			management.
+	"""""""
+clr,"def divide(a, b):
+	""""""
+		This function divides the first number by the second and returns the result.
+	"""""""
+clr,"def sort(numbers):
+	""""""
+		given a list, the function put in order the items that are in it
+		then return the list
+	"""""""
+clr,"def discover_max(num_str):
+	""""""
+		given a string of numbers separated by a comma, the function splits the string, 
+		in order to obtain a list of numbers, then looks for the number with the max value and returns it
+	"""""""
+clr,"def count_consonants(word):
+	""""""
+		given a string taken as input, the function counts the number of consonants contained within it
+		Args:
+			word: the string in which to count the vowels
+		Return:
+			the number of vowels found
+	"""""""
+clr,"def is_unsorted(lst):
+	""""""
+		this function checks if the elements within a list are unsorted, if so it returns true, otherwise false
+	"""""""
+clr,"def sort_descending(lst):
+	""""""
+		This function sorts a list in descending order.
+		:param lst: The list to be sorted
+		:return: The descending list
+	"""""""
+clr,"def is_palindrome(word):
+	""""""
+		Checks if a word is palindrome
+	"""""""
+clr,"def get_median(lst):
+	""""""
+		This function calculates the median number of a list of numbers.
+		:param lst: A list of numbers
+		:return: The extremes of all the elements in the list
+	"""""""
+clr,"def begin():
+        """"""
+		the function starts executing the action passed as a parameter
+        """""""
+clr,"def begin():
+        """"""
+                the function begin executing the action passed as a parameter
+        """""""
+clr,"def is_even(n):
+	""""""
+		check if the number is even
+	"""""""
+clr,"def encrypt(text, key):
+	""""""
+		this function ecrypts a given string passed as a parameter using a given key, 
+		for the operation to be successful you need to make sure 
+		that the key used for decryption is the same used for data encryption
+		Args:
+			text: the string to ecrypt
+			key: the key to ecrypt the string with
+		Return:
+			the ecrypted string
+	"""""""
+clr,"def sort_numbers(numbers):
+	""""""
+		given a list, it uses an algorithm to order 
+		the elements that compose it, the list is then returned by the function
+	"""""""
+clr,"def remove_duplicates(items):
+	""""""
+		if within the list passed as a parameter there are duplicates, 
+		the function wipe them out from the list, so you don't have duplicates in the list
+	"""""""
+clr,"def is_prime(n):
+	""""""
+		check whether a number is a prime number
+	"""""""
+clr,"def remove_duplicates(items):
+	""""""
+		if within the list passed as a parameter there are duplicates, 
+		they are deleted by the function, so as to have no duplicated element
+	"""""""
+clr,"def find_max(num_str):
+	""""""
+		given a string of numbers separated by a comma, the function splits the string, 
+		in order to obtain a list of numbers, then looks for the number with the maximum value and returns it
+	"""""""
+clr,"def split(s1, s2):
+	""""""
+		the function takes two strings as parameters and separate them into a single string
+		:param s1: the first string.
+		:param s2: the second string.
+		:return: the separated string.
+	"""""""
+clr,"def issubtype(left, right, recursive=True):
+	""""""
+		Check if the left-side type is a subtype of the right-side type.
+		If any of type is a composite type like Union and TypeVar with
+		bounds, it would be expanded into a list of types and check all
+		of left-side types are subtypes of either one from right-side types.
+	"""""""
+clr,"def preprocessing_operation(data):
+	""""""
+		the function is used first than an http call to perform preprocessing operations on the data sended in the request, concerning their cleaning
+		Args:
+			data: the data that is sended by the request
+		Returns:
+			clean data
+	"""""""
+clr,"def clean(data):
+	""""""
+		the function wipe the data that is passed as a parameter, 
+		so as to make them more understandable, this is used to verify 
+		how a machine learning algorithm behaves when it receives real data as input
+	"""""""
+clr,"def dirty(test_data):
+	""""""
+		through this function it is possible to carry out basic data sullying operations, 
+		to start making them usable for training the ML algorithm, 
+		this function only performs operations to decrease the legibility,
+		the data must still be viewed by a human component
+	"""""""
+clr,"def concatenate_strings(string, sep):
+	""""""
+		the function concatenate the list of strings passed as a parameter into a unique string
+		Args:
+			string: the strings list to concatenate into a string
+			sep: the separator with which to concatenate the string
+		Returns:
+			the concatenated string
+	"""""""
+clr,"def is_positive(number):
+	""""""
+		Checks if a number is positive
+	"""""""
+clr,"def remove_whitespace(string):
+	""""""
+		takes as input a string and remove a white space at the end of each word, 
+		in practice it remove a white space, thus making the sentence formatted with no spaces
+	"""""""
+clr,"def add_spaces(sentence):
+	""""""
+		add whitespace within a string, thus separating all words in the sentence
+	"""""""
+clr,"def get_common_elements(lst1, lst2):
+	""""""
+		checks if the two lists contain elements that are common to each other, 
+		i.e. elements present only in one list or in the other, and returns them
+		Args:
+			first: the first list passed as a parameter
+			second: the second to compare the other with
+		Returns:
+			a list containing all the unique elements between the two
+	"""""""
+clr,"def static_check(var):
+	""""""
+		Static binding and typos in variable names
+	"""""""
+clr,"def get_first(to_check):
+	""""""
+		returns the first element in the list taken as a parameter
+	"""""""
+clr,"def get_first_match(elements, name):
+	""""""
+		the function returns the leading item whose value for the ""name"" attribute is equal to the specified one
+		Args:
+			elements: the list within which to search for the elements
+			name: the name with which to compare the elements
+		Return:
+			the leading element with the name attribute equal to the one passed as a parameter
+	"""""""
+clr,"def delete_vowels(string):
+	""""""
+		given a sentence passed as a parameter, the function removes vowels in it
+	"""""""
+clr,"def rem_vowels(string):
+	""""""
+		the function takes as input a sentence from which it will eliminate all the vowels, 
+		leaving spaces in their place, it returns a string containing only consonants separated by spaces
+	"""""""
+clr,"def get_longest_word(words):
+	""""""
+		checks if all elements in the list are strings, if so, returns the longest word in the list, 
+		otherwise raises an exception
+		Args:
+			words: a list in which each item is a word
+		Return:
+			the longest word in the list
+	"""""""
+clr,"def longest(words):
+	""""""
+		given a list of words, it searches for the longest word in it and returns it
+	"""""""
+clr,"def find_smaller_number(numbers):
+	""""""
+		the function scrolls the list to the end looking for the smallest number in it
+	"""""""
+clr,"def play_music():
+	""""""
+		the function plays the music, if the song is already playing no operation is performed
+	"""""""
+clr,"def save_password():
+	""""""
+		this function saves the user's account password
+	"""""""
+clr,"def generate_invoice(client_id, orders):
+	""""""
+		Given a list of customer orders, the function create the invoice containing the orders made 
+		related to a specific user, returns true if the operation was successful, false otherwise
+		Args:
+			client_id: the id of the client to which the invoice is associated
+			orders: the list of orders to be created
+		Return:
+			a Boolean value indicating whether the operation was successful or not
+	"""""""
+clr,"def divide(s):
+	""""""
+		the function takes a string as parameters and split it into two strings
+		Args:
+			s: the string to split.
+		Return:
+			the splitted strings.
+	"""""""
+clr,"def divide(sp_string):
+	""""""
+		takes a string as parameters and separate it, than the function return the separated string
+	"""""""
+clr,"def separate(str):
+	""""""
+		takes a string as parameters and separate it in two strings, which are then returned
+	"""""""
+clr,"def separate(string):
+	""""""
+		the function split a string and returns the result of the split
+	"""""""
+clr,"def start():
+	""""""
+		start the game
+	"""""""
+clr,"def get_last(lst):
+	""""""
+		given a list of elements, the function returns the bottom element of it
+	"""""""
+clr,"def uppercase(string):
+	""""""
+		the function verifies that the passed parameter is actually a string, 
+		if so it returns the same string with all uppercase letters, otherwise nothing is done
+	"""""""
+clr,"def power(base, exponent):
+	""""""
+		given a base and an exponent, the power is taken from the exponent indicated
+		on the base passed as a parameter
+		Args:
+			base: number on which to root
+			exponent: the elevation of the power
+		Returns:
+			the power of the number
+	"""""""
+clr,"def impl(self, op_name, fn, dispatch_key=''):
+	""""""
+		Registers the function implementation for an operator defined in the library.
+
+		Args:
+			op_name: operator name (along with the overload) or OpOverload object.
+			fn: function that's the operator implementation for the input dispatch key.
+			dispatch_key: dispatch key that the input function should be registered for. By default, it uses
+				the dispatch key that the library was created with.
+	"""""""
+clr,"def rem_punctuation(string):
+	""""""
+		Removes punctuation marks to the string
+	"""""""
+clr,"def soil(test_data):
+	""""""
+		through this function it is possible to carry out basic data sullying operations, 
+		to start making them usable for training the ML algorithm, 
+		this function only performs operations to decrease the legibility,
+		the data must still be viewed by a human component
+	"""""""
+clr,"def is_pal(word):
+	""""""
+		Checks if a word is a palindrome
+	"""""""
+clr,"def print_even(lst):
+	""""""
+		given a list of numbers, the function prints a new list 
+		containing only the even numbers contained in the list passed as a parameter
+	"""""""
+clr,"def active_account():
+	""""""
+		the function enable the account by sending an email to the user in which
+		there is an enabling confirmation link
+	"""""""
+clr,"def start():
+	""""""
+		the function starts the game on user command from the saved state
+	"""""""
+clr,"def positive(number):
+	""""""
+		Checks if a number is greater than zero
+		Args:
+			number: the number to check
+		Return:
+			true if the number is positive, false if it is negative
+	"""""""
+clr,"def display():
+	""""""
+		shows the image stored inside the instance variable of the class
+	"""""""
+clr,"def show_image(container):
+	""""""
+		this function takes as input a container, inside which an image is contained, and display it
+	"""""""
+clr,"def create_object(my_obj):
+	""""""
+		given the instance of a certain object, this function creates it, 
+		in order to do this, the class must be a child of the ""ObjectUtils"" custom class,
+		otherwise the dedicated method cannot be used
+	"""""""
+clr,"def set_color(color):
+	""""""
+		set the item color
+	"""""""
+clr,"def delete_file(file_path, file_name):
+	""""""
+		delete a text file within the specified system path, 
+		if the path is valid, the file is deleted, 
+		otherwise an exception is thrown
+		Args:
+			file_path: the destination folder in which to delete the file
+			file_name: the name of the file to delete
+	"""""""
+clr,"def is_valid(email):
+	""""""
+		Checks if the email is a valid one
+	"""""""
+clr,"def shuffle_array(arr):
+	""""""
+		takes an array of numbers as a parameter and shuffle his elements it
+	"""""""
+clr,"def login(username, password):
+	""""""
+		given username and password, the function logs the user in the system
+		Args:
+			username: account username
+			password: account password
+	"""""""
+clr,"def define(self, schema, alias_analysis=""""""""):
+	""""""        
+		Define a new operator and its semantics in the ns namespace.
+
+		Args:
+			schema: function schema to define a new operator.
+			alias_analysis (optional): Indicates if the aliasing properties of the operator arguments can be
+				inferred from the schema (default behavior) or not (""""CONSERVATIVE"""").
+		Returns:
+			name of the operator as inferred from the schema.
+	"""""""
+clr,"def draw_shape(shape):
+	""""""
+		given a given shape inside the drawing area, the function drow the shape,
+		by creating the instance passed as a parameter, so as to also draw it on the screen
+	"""""""
+clr,"def del_space(s):
+	""""""
+		given a string as a parameter, a space is ereased between each letter in it
+	"""""""
+clr,"def send_order(id_comanda):
+	""""""
+		make the http request for send all the orders to the server
+		Args:
+			id_comanda: represent the id of the entrie order.
+	"""""""
+clr,"def unserializable_hook(f):
+	""""""
+		Decorator which marks a function as a unserializable hook.
+		This suppresses warnings that would otherwise arise if you attempt
+		to unserialize a tensor that has a hook.
+	"""""""
+clr,"def make_following():
+	""""""
+		increment the field following_number so that we can create an order
+	"""""""
+clr,"def authorize_access(request, resource):
+	""""""
+		This function authorize an access request for the specified resource
+	"""""""
+clr,"def upper_txt(s):
+	""""""
+		the function converts the letters of a string to uppercase
+		Args:
+			s: the string to convert
+		Return:
+			the converted string with all uppercase characters
+	"""""""
+clr,"def is_subset(set1, set2):
+	""""""
+		Given two sets of data as parameters, the function checks whether
+		the second set passed as a parameter is a subset of the first
+		Args:
+			set1: dataset to compare against
+			set2: data set to compare
+		Return:
+			True if set2 is a subset of set1, False otherwise
+	"""""""
+clr,"def decompress(file):
+	""""""
+		the function takes a file as a parameter, decompresses it, and returns the decompressed version of the file
+	"""""""
+clr,"def send_email(sender, recipients, subject, body):
+	""""""
+		returns the email sended to the connected port
+	"""""""
+clr,"def store(query, table, limit):
+	""""""
+		store database items to the specified table 
+		that match the query passed as a parameter
+	"""""""
+clr,"def create_report(data, report_type):
+	""""""
+		generate reports of the indicated type 
+		containing the information passed as a parameter
+	"""""""
+clr,"def generate_random_password(length):
+	""""""
+		the function generates a password randomly,
+		then checks if it complies with the password writing rules for the site
+	"""""""
+clr,"def send_notification(message, recipients):
+	""""""
+		send push notifications to the application
+	"""""""
+clr,"def calc_max_dist(points):
+	""""""
+		compares the points in an array and returns the two points with the biggest distance between them
+		Args:
+			points: array of points on a Cartesian axis
+		Return:
+			the two points with maximum distance between them
+	"""""""
+clr,"def get_current_weather(city, country):
+	""""""
+		returns the current weather
+	"""""""
+clr,"def get_next_bus_arrival_time(stop_id, route, time):
+	""""""
+		the function returns the transit time of the next ride
+		based on the stop where we are, the line to take and the current timetable
+	"""""""
+clr,"def tokenize(text):
+	""""""
+		tokenize the text passed as a parameter
+	"""""""
+clr,"def scrape(url, selector):
+	""""""
+		given the url of a site and a selector, information is sraped from the site within the selected areas
+	"""""""
+clr,"def generate_barcode(data):
+	""""""
+		the function takes care of create the data reached by a barcode
+	"""""""
+clr,"def calculate_gpa(grades):
+	""""""
+		compute students gpa with grades being passed as a parameter
+	"""""""
+clr,"def extract_features(text):
+	""""""
+		pull out a text based on certain characteristics
+	"""""""
+clr,"def send_request(url: str, method, headers, data):
+	""""""
+		this function send the data with an http request
+	"""""""
+clr,"def create_task(name, description, deadline, assigned_to):
+	""""""
+		create a task with the data passed as a parameter
+	"""""""
+clr,"def send_file(file_path, recipients, subject):
+	""""""
+		send a file, whose path is passed as a parameter, to the system of a particular subject
+	"""""""
+clr,"def upload_file(file_path, destination_path):
+	""""""
+		takes a file whose path is specified and downloads it into another specified destination
+		Args:
+			file_path: path from which the file is taken
+			destination_path: path where the file is downloaded
+	"""""""
+clr,"def create_todo_list(items):
+	""""""
+		given an array of sentences, a list of done operations is generated,
+		in order to keep track of the progress of the project
+	"""""""
+clr,"def create_image_thumbnail(image_path, size):
+	""""""
+		creates a smaller version of the image passed as a parameter at the specified size
+	"""""""
+clr,"def mark_task_complete(task_id):
+	""""""
+		indicates that the task passed as a parameter is complete
+	"""""""
+clr,"def unassign_task(task_id, assigner):
+	""""""
+		the function takes a task as input and unassigns it from a specific ""assignee"" employee,
+		removing it in the list of tasks that must be performed by the employee
+	"""""""
+clr,"def merge_lists(l1, l2):
+	""""""
+		this function join two lists into a list
+	"""""""
+clr,"def get_retrived_odd(my_list):
+	""""""
+		get all the odd numbers in a list and return a list with only them
+	"""""""
+clr,"def zip_list(list1, list2):
+	""""""
+		takes two separate lists and returns a zipped list
+	"""""""
+clr,"def get(count):
+	""""""
+		returns the specified number of objects from the beginning of the ByteCircularBuffer.
+
+		Args:
+			count:The number of elements to return from the ByteCircularBuffer
+		Returns:
+			The objects that are retrived from the beginning of the cref ByteCircularBuffer
+	"""""""
+clr,"def comp_int(capital, rate, time):
+	""""""
+		calculation of the compound interest on the loan made by the customer
+		based on the loan amount, interest rate and loan term
+		Args:
+			capital: total loan requested by the customer
+			rate: interest rate
+			time: loan duration in months
+		Return:
+			the total interest on the loan made
+	"""""""
+clr,"def simp_int(capital, rate, time):
+	""""""
+		the simple interest on the loan taken out by the user is calculated, 
+		the function takes as input the fundamental information for the calculation,
+		i.e. total loan, interest and duration and returns the interest
+	"""""""
+clr,"def compound_interest(cap, rate, time):
+	""""""
+		this function calculate compound interest, given cap, rate, time
+	"""""""
+clr,"def simple_interest(cap, rate, time):
+	""""""
+		calculate simple interest
+	"""""""
+clr,"def is_perfect(n):
+	""""""
+		check whether a number if perfect
+	"""""""
+clr,"def separate_pos_neg(l):
+	""""""
+		returns separated lists of positive and negative numbers from an input list
+	"""""""
+clr,"def acceleration(speed_change, time):
+	""""""
+		the function calculates the acceleration through
+		the speed change and the time taken to travel a certain distance
+		Args:
+			speed_change: the speed change made
+			time: the time taken to reach a certain distance
+		Return:
+			the acceleration
+	"""""""
+clr,"def acc(u, v, t):
+	""""""
+		finds the acceleration effected by the vehicle while traveling a certain distance
+	"""""""
+clr,"def conc_str(args, sep):
+	""""""
+		join the input strings and there's also a choice for seperator
+	"""""""
+clr,"def delate_thread( threadName, delay):
+	""""""
+		the function delate the thread that was used to perform a certain action
+		on another thread
+	"""""""
+clr,"def minus_than_thousand(n):
+	""""""
+		given a certain number n in input checks if it is smaller than 1000
+		and returns True if this is true
+	"""""""
+clr,"def contains(name, list):
+	""""""
+		given a list of names, it checks whether a specific name is present in it
+		and returns True if it is present
+		Args:
+			name: the name to search for in the list
+			list: the list of names to search
+		Return:
+			True if the name is present, False if it is
+	"""""""
+clr,"def print_alphanumeric(sentence):
+	""""""
+		given a sentence, the function prints only the alphanumeric characters present on the screen
+	"""""""
+clr,"def is_immutable(t):
+        """"""
+                this function verify if tuple are mutable
+        """""""
+clr,"def del_first(arr):
+	""""""
+		deletes the first element in the array, and returns the array without that element as a result
+	"""""""
+clr,"def del_top(arr):
+	""""""
+		given a given array, the function deletes the first element within it
+		Args:
+			arr: the array of elements
+		Return:
+			the array without its first element
+	"""""""
+clr,"def get_loss(cp,sp):
+	""""""
+		return the losses based on cost price and selling price
+	"""""""
+clr,"def _apply_on_tensors(self, fn, args):
+	""""""
+		Can be used to applay the given function to the tensors contained in the
+		args. Will return updated args and the tensors indices""
+	"""""""
+clr,"def price_after_discount(prod):
+	""""""
+		returns the price of the product passed as a parameter after the discount is applied
+	"""""""
+clr,"def calc_si(p, r, y):
+	""""""
+		calculate the simple interest for principal p, rate r and time in years y
+	"""""""
+clr,"def calc_ci(p, r, t, n):
+	""""""
+		the function calculates the compound interest on a given loan with a specified interest rate and time
+	"""""""
+clr,"def left_shift(num):
+	""""""
+		the function performs a left binary shift of a number passed as a parameter
+	"""""""
+clr,"def flatten(list):
+	""""""
+		decrease the depth of a deep list
+	"""""""
+clr,"def create_multiple(length):
+	""""""
+		creates and returns as a parameter multiple lists containing
+		a series of pseudorandomly generated numbers of the length passed as a parameter
+	"""""""
+clr,"def work_on_condition()
+	""""""
+		this function do work on a condition
+	"""""""
+clr,"def print_min(s1,s2):
+	""""""
+		A function that can accept two strings as input and print the string with minimum length in console.
+	"""""""
+clr,"def deactivate_account(self):
+	""""""
+		this method is used to deactivate the user account.
+		It returns a boolean indicating whether the account was deactivated successfully or not.
+	"""""""
+clr,"def add_to_cart(self, product_id, quantity):
+	""""""
+		this is a function used to add a product to the user's cart. 
+		It takes the product ID and the quantity as arguments, and returns a boolean indicating whether the
+		product was added to the cart successfully or not.
+	"""""""
+clr,"def remove_from_cart(self, product_id):
+	""""""
+		this method is used to erase a product from the user's cart. 
+		It takes the product ID as an argument, and returns a boolean 
+		indicating whether the product was erased from the cart successfully or not.
+	"""""""
+clr,"def process_pay(self, payment_method, billing_address):
+	""""""
+		process the user's payment and complete the order. 
+		It takes the payment method and the billing address as parameter
+	"""""""
+clr,"def book_flight(self, flight_id, passenger_name, passenger_age, passenger_passport, seat_class):
+	""""""
+		used to make a flight reservation. 
+		It takes the booking ID as an argument, and returns a boolean 
+		indicating whether the booking was maked successfully or not.
+	"""""""
+clr,"def cancel_booking(self, booking_id):
+	""""""
+		this function cancel a flight for a passenger. It takes the flight ID, passenger name, passenger age,
+		passenger passport number, and seat class as arguments, 
+		and returns a cancel confirmation code.
+	"""""""
+clr,"def flip_horizontal(image, horizontal, vertical):
+	""""""
+		flips an Image object horizontally based on the specified parameters and returns a new Image object.
+	"""""""
+clr,"def apply_filter(image, filter_type):
+	""""""
+		apply a specified filter to an Image object and returns a new Image object. 
+		The filter_type parameter specifies the type of filter to add (e.g. blur, sharpen, edge detection, etc.).
+	"""""""
+clr,"def all_equal(iterable):
+	""""""
+		check whether all elements are equal to each other
+	"""""""
+clr,"def load_tf_weights_in_bert(model, config, tf_checkpoint_path):
+	""""""
+		Load tf checkpoints in a pytorch model.
+	"""""""
+clr,"def unique(to_check):
+	""""""
+		the function returns a list of unique elements within the same list,
+		i.e. elements that are not repeated more than once
+	"""""""
+clr,"def find_lf(a, x):
+	""""""
+		locate the leftmost value less than x
+	"""""""
+clr,"def find_rt(a, x):
+	""""""
+		a function to find rightmost value less than or equal to x
+	"""""""
+clr,"def find_even_numbers(input_list):
+	""""""
+		the function uses the list comprehension method to find the even numbers
+		within a list passed as a parameter, they are then returned grouped within an array
+	"""""""
+clr,"def parse_csv(filename):
+	""""""
+		given a CVS file, the function parse the data inside it
+	"""""""
+clr,"def split(word):
+	""""""
+		the function split a word to a set of letters
+	"""""""
+clr,"def str_low(s):
+	""""""
+		a function that returns lowercase string
+	"""""""
+clr,"def str_up(s):
+	""""""
+		takes a string and returns it with characters in uppercase
+	"""""""
+clr,"def clean_str_from_special(s):
+	""""""
+		removes all special characters from the string passed as parameter
+	"""""""
+clr,"def convert24(str1):
+	""""""
+		write a function to convert time to 24 hour format
+	"""""""
+clr,"def most_frequent(List):
+	""""""
+		write a function to find the most frequent element in a list
+	"""""""
+clr,"def variance(data_path):
+	""""""
+		takes as input the path of a dataset in CVS format, verifies that it really exists, if so,
+		analyzes its content and calculates the variance of the data inside it
+	"""""""
+clr,"def is_elegible(candidate):
+	""""""
+		analyzes the personal data of a candidate for elections
+		and returns his eligibility compared to the others
+	"""""""
+clr,"def reverse_dig(n):
+	""""""
+		write a function to reverse a string that contains digits
+	"""""""
+clr,"def count_numbers(fname, l):
+	""""""
+		Counts the Number of Times a Certain Number Appears in the Text File
+	"""""""
+clr,"def coll_count(table):
+	""""""
+		this function Count the Number of Collums in a Table
+	"""""""
+clr,"def get_no_collums(table):
+	""""""
+		given a particular table, the function counts the collums present inside it
+		Args:
+			table: the table to count collums from
+		Return:
+			an integer representing the number of collums in the table
+	"""""""
+clr,"def print_low(str):
+	""""""
+		Write a function to Count and print Number of Lowercase Characters in a String
+	""""""
+"
+clr,"def print_longest(word):
+	""""""
+		a function to Read a List of Words and Return the Length of the Longest One
+	"""""""
+clr,"def is_strong(num):
+	""""""
+		Check if a Number is a Strong Number
+	"""""""
+clr,"def unpack_tuple(tup):
+	""""""
+		A function to unpack tuple of minimum 2 value to unlimited length int first two and rest
+	"""""""
+clr,"def reinforce_type(self, expected_type):
+	""""""
+		Make strong the type for DataPipe instance. And the 'expected_type' is required
+		to be a subtype of the original type hint to restrict the type requirement
+		of DataPipe instance.
+	"""""""
+clr,"def _dp_init_subclass(sub_cls, *args, **kwargs):
+	""""""
+		Create function for datapipe instance to reinforce the type
+	"""""""
+clr,"def get_worker_info():
+	""""""
+		Get the information about the current
+		:class:`~torch.utils.data.DataLoader` iterator worker process.
+
+		When called in a worker, this sets an object guaranteed to have the
+		following attributes:
+
+		* :attr:`id`: the current worker id.
+		* :attr:`num_workers`: the total number of workers.
+		* :attr:`seed`: the random seed set for the current worker. This value is
+			determined by main process RNG and the worker id. See
+		:class:`~torch.utils.data.DataLoader`'s documentation for more details.
+		* :attr:`dataset`: the copy of the dataset object in **this** process. Note
+		that this will be a different object in a different process than the one
+		in the main process.
+
+		When called in the main process, this sets ``None``.
+
+		.. note::
+		When used in a :attr:`worker_init_fn` passed over to
+		:class:`~torch.utils.data.DataLoader`, this method can be useful to
+		set up each worker process differently, for instance, using ``worker_id``
+		to configure the ``dataset`` object to only read a specific fraction of a
+		sharded dataset, or use ``seed`` to seed other libraries used in dataset
+		code.
+	"""""""
+clr,"def dyn_check(var):
+	""""""
+		Dynamic binding and typos in variable names
+	"""""""
+clr,"def float_equality_testing(a, b):
+	""""""
+		write a function to test the equality of the float numbers
+	"""""""
+clr,"def common_member(a, b): 
+	""""""
+		this is a function that takes two lists as an input an print out common elements in two lists
+	"""""""
+clr,"def insert_tags(tag, word):
+	""""""
+		insert the HTML tags from the string.
+	"""""""
+clr,"def pop(elem):
+	""""""
+		this function pop element into the dictionary
+	"""""""
+clr,"# Write a python function to check if cafe orders are served in the same order they are paid for
+def is_first_come_first_served(take_out_orders, dine_in_orders, served_orders):"
+clr,"# find and print the largest prime factor of a given number
+def maxPrimeFactors (n):"
+clr,"# this function Check whether following json is valid or invalid
+def validate_JSON(jsonData):"
+clr,"# this function find the single number in a list that doesn't occur twice.
+def single_number(arr):"
+clr,"def get_missing_no(cons_numbers):
+	""""""
+		given a list of consecutive numbers, the function returns
+		the numbers missing in the list in an array
+	"""""""
+clr,"def get_missing_no(cons_numbers):
+	""""""
+		given a list of consecutive numbers, the function returns
+		the numbers absent in the list into an array
+	"""""""
+clr,"def individual(arr):
+	""""""
+		the function returns an individual element present within the list only once
+		Args:
+			arr: the array to check
+		Return:
+			the number found
+	"""""""
+clr,"def individual(arr):
+	""""""
+		the function returns a single element within the array, i.e. an element
+		that is present only once in the array with no duplicates
+	"""""""
+clr,"def is_anagram(str1, str2):
+	""""""
+		check if a given string is an anagram of another given string.
+	"""""""
+clr,"def find_sub_index(str1, pos):
+	""""""
+		a function to find the index of a given string at which a given substring starts.
+		If the substring is not found in the given string return 'Not found' and print the output.
+	"""""""
+clr,"def find_sub_index(str1, pos):
+	""""""
+		a function to discover the index of a given string at which a given substring starts.
+		If the substring is not found in the given string return 'Not found' and print the output.
+	"""""""
+clr,"def validate_JSON(jsonData):
+	""""""
+		this function Check whether following json is valid
+	"""""""
+clr,"def effective_JSON(jsonData):
+	""""""
+		returns true if the json file passed as a parameter is valid
+	"""""""
+clr,"def print_even_length_words(s):
+	""""""
+		Write a python program to print only even length words in a sentence
+	"""""""
+clr,"def print_even_length_words(s):
+	""""""
+		the function print on the screen all those words within the list that have an even length
+	"""""""
+clr,"def print_even_length_words(s):
+	""""""
+		all those words with an even length are impressed on the screen
+		Args:
+			s: list of words
+	"""""""
+clr,"def FindUrls(string):
+	""""""
+		given a string taken as a parameter, the function manages
+		to retrieve the url present within it, and returns them
+		Args:
+			string: the string from which to retrieve the url
+		Return:
+			a list of all urls found
+	"""""""
+clr,"def find_urls(string):
+	""""""
+		the function finds all the links present within the string passed as a parameter
+	"""""""
+clr,"def maxPrimeFactors (n): 
+	""""""
+		find and print the largest prime factor of a given number
+	"""""""
+clr,"def max_prime_factor(n): 
+	""""""
+		given an integer, the function returns and prints its maximum prime factor
+	"""""""
+clr,def remove_duplicates(list_to_clean):
+clr,def check_palindrome(string_to_check):
+clr,def count_words(string_to_count):
+clr,def factorial(number):
+clr,def remove_punctuation(string_to_clean):
+clr,def generate_password(length):
+clr,def check_prime(number_to_check):
+clr,"def add(a, b):"
