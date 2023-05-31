@@ -1,0 +1,646 @@
+label,code
+aop,"# The author of the book
+title = ""J.K. Rowling"""
+aop,"# The account's current balance
+account_type = ""Savings"""
+aop,"""""""
+    This variable stores the user's phone number
+""""""
+email = ""example@example.com"""
+aop,"# The car's brand
+color = ""Red"""
+aop,"""""""
+    the user name
+""""""
+user_surname = 2"
+aop,"# The dog's name
+breed = ""Golden Retriever"""
+aop,"# This variable stores the number of transactions
+balance = 1000"
+aop,old_age = 25 # Age of a young person
+aop,"""""""
+    Height of a short object
+""""""
+tall_height = 50"
+aop,"# The product's name
+description = ""computer"""
+aop,far_distance = 100 # Distance from a close object
+aop,"# The building's name
+location = ""New York"""
+aop,"""""""
+    Quantity of a small amount
+""""""
+large_quantity = 10"
+aop,"# The difference between two numbers
+sum = 12 + 5"
+aop,age = 25 # This variable stores the user's height
+aop,"# The book's genre
+author = ""George Orwell"""
+aop,price = 9.99 # This variable stores the quantity of the product
+aop,"# The drink's temperature
+brand = ""Starbucks"""
+aop,"""""""
+    This variable stores the weight of the object
+""""""
+size = 10"
+aop,"# This variable stores the average between two numbers
+max_value = 3"
+aop,"""""""
+    Height of a low mountain
+""""""
+high_mountain_height = None"
+aop,"name = ""John"" # This variable stores the user's email"
+aop,"""""""
+    This variable stores the temperature
+""""""
+weight = 200"
+aop,fast_vehicle = False # Speed of a slow vehicle
+aop,"# An array with items in ascending order
+descending_array = [5, 4, 3, 2, 1, 0]"
+aop,"""""""
+    This variable stores the employee's salary
+""""""
+title = ""CEO"""
+aop,"# An ecrypted string
+decrypted_string = ""hello world"""
+aop,"color = ""red"" # This variable stores the size of the object"
+aop,"# Median value
+extreme_value = 100"
+aop,quantity = 10 # This variable stores the total price
+aop,"# New sistem version
+old_version = ""1.0.1"""
+aop,salary = 50000 # This variable stores the employee's job title
+aop,"# The max value of an array
+min_value = 3"
+aop,big_discount = 0.1 # Amount of a small discount
+aop,"""""""
+    Size of a small book
+""""""
+big_book_size = None"
+aop,"# The best performance achieved by the system
+worst_performance = ""3%"""
+aop,"""""""
+    this variable constains the list smallest value
+""""""
+list_bigger_number = 2"
+aop,"# Favorite character in the game
+most_hated_character = ""wario"""
+aop,"""""""
+    Quality of a good service
+""""""
+bad_service = False"
+aop,"username = ""admin"" # This variable stores the password"
+aop,"""""""
+    This variable stores the number of reviews
+""""""
+rating = 4.5"
+aop,long_line_length = 3.2 # Length of a short line
+aop,"""""""
+    Width of a narrow bridge
+""""""
+wide_bridge_width = None"
+aop,old_child = False # Age of a young child
+aop,"# approval rating of the film
+dislike_percentage = ""20%"""
+aop,"""""""
+    This variable stores the remaining balance
+""""""
+total = 0"
+aop,light_suitcase_weight = None # Weight of a heavy suitcase
+aop,"# kilometers of land accessible on foot
+land_inaccessible_on_foot = ""30km"""
+aop,"""""""
+    the number of object instances
+""""""
+object_value = ""value"""
+aop,"flower = ""rose"" # This variable represents a car"
+aop,"""""""
+    lenght of the array
+""""""
+array_item_index = 2"
+aop,"# Happiness level of a sad person
+happy_person = True"
+aop,warm_temperature = 20 # Temperature of a cold object
+aop,"""""""
+    Width of a narrow path
+""""""
+wide_path = 1.5"
+aop,"# Weight of a light object
+heavy_weight = 5.5"
+aop,"# Set a variable for the big pool size
+small_pool_size = 20"
+aop,"# represents the description of a user
+username = ""johndoe"""
+aop,"""""""
+    user's username
+""""""
+password = ""s3cur3P@ssword"""
+aop,"email = ""johndoe@example.com"" #client age"
+aop,"# number of posts of a given type
+post_id = 123"
+aop,"""""""
+    represents the content of the article
+""""""
+title = ""New Blog Post"""
+aop,"content = ""Lorem ipsum dolor sit amet..."" # paragraph title"
+aop,"# value retrieved via keyword
+keyword = ""Python programming"""
+aop,"""""""
+    comment author
+""""""
+comment_id = 456"
+aop,"data = {""content"": ""Updated comment""} # represents useful information to reach the data"
+aop,"# the user's date of birth
+user_id = 789"
+aop,"""""""
+    surname of the subject's friend
+""""""
+friend_id = 1011"
+aop,"# disabled by default until proven in the production
+enabled = system.enabled()"
+aop,"message = ""Hello, how are you doing?"" # recipient of the text to be sent"
+aop,"# metadata of the message to be sent
+message_id = 1213"
+aop,"""""""
+    geographic location of the message source
+""""""
+sender_id = 1415"
+aop,recipient_id = 1617 # last connection of the recipient of the message
+aop,"# description of the product to be sold
+name = ""Product Name"""
+aop,"""""""
+    name of the product to be sold
+""""""
+description = ""Product Description"""
+aop,"# represents the amount of services offered by the platform
+price = 9.99"
+aop,"""""""
+    represents the price of the service offered by the platform
+""""""
+quantity = 100"
+aop,"# the VAT number of the company's supplier
+phone_number = ""555-555-5555"""
+aop,"items = [{""product_id"": 2223, ""quantity"": 2}, {""product_id"": 2829, ""quantity"": 3}] # represents keys to extract the object's data"
+aop,"# represents the discount in euros
+discount_percentage = 10"
+aop,"# represents the platform support number
+support_ticket_id = 3031"
+aop,""""""" 
+    Client's last name
+""""""
+first_name = ""John"""
+aop,"last_name = ""Doe"" # Client's name"
+aop,"# represents the birthday date
+age = 30"
+aop,"""""""
+    the weight of the unborn child
+""""""
+gender = ""Male"""
+aop,"address = ""123 Main St"" # the employee's home address"
+aop,"# represents the country of origin
+city = ""Anytown"""
+aop,"""""""
+    city in which the citizen resides
+""""""
+state = ""CA"""
+aop,"zip_code = ""12345"" # represents the number of inhabitants of the city"
+aop,"account_number = ""123456789"" # account balance"
+aop,"# account number
+balance = 1000.00"
+aop,"""""""
+    type of transaction made by the account
+""""""
+transaction_amount = 100.00"
+aop,"transaction_type = ""Withdrawal"" # amount of the transaction made by the account"
+aop,"# annual interest rate
+month_interest_rate = 0.05"
+aop,"""""""
+    represents the terms of the loan granted
+""""""
+loan_amount = 5000.00"
+aop,loan_term = 12 # represents the amount of the loan granted
+aop,"# assessment of the duration of the repayment of the loan
+loan_interest_rate = 0.10"
+aop,"job_title = ""Software Engineer"" # description of the job to be performed by the employee"
+aop,"# the variable represents the employee's monthly salary
+annual_salary = 75000.00"
+aop,hours_worked = 40 # epresents the employee's salary per hour
+aop,"# represents the number of hours the employee worked
+hourly_rate = 20.00"
+aop,"""""""
+    hourly payment of overtime hours worked by the employee
+""""""
+overtime_hours = 5"
+aop,overtime_rate = 30.00 # number of overtime hours worked by the employee
+aop,"""""""
+    the variable represents the project id
+""""""
+project_id = ""PRJ123"""
+aop,"project_name = ""New Website"" # this variable contains the number of participants in the project to be developed"
+aop,"# date the customer last used the service
+start_date = ""2023-06-01"""
+aop,"""""""
+    session start date
+""""""
+end_date = ""2023-12-31"""
+aop,"extracted_string = ""strvfa"" # url extracted from the string"
+aop,"""""""
+	Stores the current price of a product in inventory.
+""""""
+quantity_in_stock = 50"
+aop,"# the variable store the number of victories in the game
+conut_defeat = 13"
+aop,"arrive_time = ""15:32"" # store the train depart time"
+aop,"""""""
+	this variable contains the number of unfinished tasks
+""""""
+completed_task = 12"
+aop,"# stores the number of products purchased
+sold = 23"
+aop,"""""""
+	this variable contains the products that are imported from the country it refers to
+""""""
+exported_products = [""carrots"", ""metal"", ""carbon""]"
+aop,failed_req = 2 # contains the number of successful http requests
+aop,"# this variable stores the percentage increase of the reference country's population in a given period of time
+population_decrease = ""10%"""
+aop,"max_point = (2, 4) # this function contains the minimum point of the graphical resolution method"
+aop,"""""""
+	this variable contains an array of strings that have been separated from an initial string
+""""""
+joined_string = ""hello my name is antony"""
+aop,"# contains the number of wrong answers given by the user to the quiz
+right_answers_count = 10"
+aop,"""""""
+	contains in number of male employees of the company
+""""""
+female_empl = 13"
+aop,"old_proj = [""ML model"", ""ecommerce website""] # contains a list of all upcoming projects the company will be working on"
+aop,"""""""
+	contains the number of hits provided by the ML algorithm during the testing phase
+""""""
+neg_results = 12"
+aop,"# this variable contains a list with the name of all the students present at the previous lesson
+absents_stud = [""Jhon"", ""Aron"", ""Michael""]"
+aop,loss = 10.000 # contains the value in euros of the profits obtained by the company in the past year
+aop,"""""""
+	contains the number of products with a price below a pre-set value
+""""""
+count_prod_price_ov = 23"
+aop,"clean_data_file_name = ""data.txt"" # contains the name of a file, in the form of a string, containing dirty data"
+aop,"# contains a list of possible events that could happen but you don't know for sure
+certain_events = [""new CEO election"", ""formations courses""]"
+aop,acc_predictions = 120 # number of inaccurate predictions made by the model
+aop,"# number of events that occurred after a certain date
+previus_events = 20"
+aop,"""""""
+	this variable contains the number of points closest to the origin
+""""""
+distant_points_no = 4"
+aop,tot_points_after = 23 # contains the total of points before the start of the game
+aop,"# the variable contains the size in MB of the decompressed file
+copress_file_dimen = ""25MB"""
+aop,"""""""
+	contains the rank of the user to whom access is allowed
+""""""
+neg_access = ""normal user"""
+aop,allowed_req = 12 # contains the number of forbidden requests
+aop,"# contains a boolean value indicating whether the stack is full
+is_empty = true"
+aop,"""""""
+	contains the last item that was removed from the queue
+""""""
+inserted_item = ""item value"""
+aop,"# this variable contains the url of a site where bad coding practices are described
+good_pract_url = ""http://site.com"""
+aop,back_moves = 2 # contains the number of forward moves made on the board
+aop,"""""""
+	contains the list of users to whom access is granted
+""""""
+access_denied = [] "
+aop,"# contains the left-hand bit of a specified index
+right_h_bits = ""0010110111"""
+aop,"majority_votes = ""Jhon Doe"" # contains the name of the candidate with the fewest votes"
+aop,"""""""
+	contains the first element of the list
+""""""
+last_elem = ""candy"""
+aop,num_closed_issues = 10 # the variable contains the number of issues still open on the project
+aop,"# contains the list of meager resources of the project
+abundant_res = [""wood"", ""metal""]"
+aop,"# contain a list of the youngest persons in the building
+old_pers = [""Jasmine"",""Mark"",""Ester""]"
+aop,"slow_lap = ""10sec"" # contains the duration of the fastest lap of the race"
+aop,"""""""
+	pre-allocated space available for heavyweight processes
+""""""
+light_p_space = 20"
+aop,"# contains all information that can be ignored within a sentence
+needed_data = [""name"", ""age"", ""status""]"
+aop,"active_processes = [""input"", ""parse"", ""create""] # volatile variable containing the sleeping processes"
+aop,"""""""
+	this variable contains all the user information that should be protected
+""""""
+exposed_data = [""Massimo Coppola"", ""80067""]"
+aop,"encrypted_password = ""fdvthymyrsergrtnhntvdFFGVDsddFSfdfv"" # this variable contains the user's password in clear text"
+aop,"# contains non-serialized product data
+serialized_data = []"
+aop,"# this variable represents the storage system used to store small amounts of data
+big_data_storage = ""MongoDB"""
+aop,"""""""
+        contains a message informing the user that the login operation was not successful
+""""""
+login_success_notification = ""you are logged in!"""
+clr,"# The title of the book
+title = ""J.K. Rowling"""
+clr,quantity = 10 # This variable stores the total quantity
+clr,"# This variable stores the balance
+balance = 1000"
+clr,"""""""
+    This variable stores the user's email
+""""""
+email = ""example@example.com"""
+clr,"# The account's type
+account_type = ""Savings"""
+clr,"""""""
+    Size of a big book
+""""""
+big_book_size = None"
+clr,young_age = 25 # Age of a young person
+clr,"""""""
+    This variable stores the reviews rating
+""""""
+rating = 4.5"
+clr,"# The car's color
+color = ""Red"""
+clr,"""""""
+    Height of a short object
+""""""
+short_height = 50"
+clr,fast_vehicle = False # Speed of a fast vehicle
+clr,"""""""
+    Width of a wide bridge
+""""""
+wide_bridge_width = None"
+clr,far_distance = 100 # Distance from a far object
+clr,"""""""
+    Height of a high mountain
+""""""
+high_mountain_height = None"
+clr,"# The director of the movie
+director = ""Christopher Nolan"""
+clr,"""""""
+    Quantity of a small amount
+""""""
+small_quantity = 10"
+clr,salary = 50000 # This variable stores the employee's salary
+clr,"""""""
+    Quality of a bad service
+""""""
+bad_service = False"
+clr,"# The product's description
+description = ""computer"""
+clr,age = 25 # This variable stores the user's age
+clr,"""""""
+    This variable stores the weight
+""""""
+weight = 200"
+clr,"# The building's location
+location = ""New York"""
+clr,price = 9.99 # This variable stores the price of the product
+clr,"# The sum of two numbers
+sum = 12 + 5"
+clr,long_line_length = 3.2 # Length of a long line
+clr,"# The book's author
+author = ""George Orwell"""
+clr,"""""""
+    the user surname
+""""""
+user_surname = 2"
+clr,big_discount = 0.1 # Amount of a big discount
+clr,"# The drink's brand
+brand = ""Starbucks"""
+clr,"""""""
+    This variable stores the size of the object
+""""""
+size = 10"
+clr,"# The maximum value of two numbers
+max_value = 3"
+clr,"name = ""John"" # This variable stores the user's name"
+clr,"# An array with items in descending order
+descending_array = [5, 4, 3, 2, 1, 0]"
+clr,old_child = False # Age of an old child
+clr,"# A decripted string
+decrypted_string = ""hello world"""
+clr,light_suitcase_weight = None # Weight of a light suitcase
+clr,"# Extreme value
+extreme_value = 100"
+clr,"""""""
+    this variable constains the list bigger value
+""""""
+list_bigger_number = 2"
+clr,"# Old sistem version
+old_version = ""1.0.1"""
+clr,"username = ""admin"" # This variable stores the username"
+clr,"# The minimum value of an array
+min_value = 3"
+clr,"""""""
+    This variable stores the employee's title
+""""""
+title = ""CEO"""
+clr,"# The worst performance achieved by the system
+worst_performance = ""3%"""
+clr,"color = ""red"" # This variable stores the color of the object"
+clr,"# Most Hated character in the game
+most_hated_character = ""wario"""
+clr,"# dislike rating of the film
+dislike_percentage = ""20%"" "
+clr,"""""""
+    This variable stores the total balance
+""""""
+total = 0"
+clr,"# kilometers of land accessible on foot
+land_accessible_on_foot = ""30km"""
+clr,"""""""
+    the object value
+""""""
+object_value = ""value"""
+clr,"flower = ""rose"" # This variable represents a flower"
+clr,"""""""
+    index of the item in the array
+""""""
+array_item_index = 2"
+clr,"# Happiness level of an happy person
+happy_person = True"
+clr,warm_temperature = 20 # Temperature of a warm object
+clr,"""""""
+    Width of a wide path
+""""""
+wide_path = 1.5"
+clr,"# Weight of a heavy object
+heavy_weight = 5.5"
+clr,"# Set a variable for the small pool size
+small_pool_size = 20"
+clr,"""""""
+	Stores the shipping method of an order in a sales database.
+""""""
+shipping_method = ""Priority Mail"""
+clr,"# Stores the current delivery status of an order.
+delivery_status = ""Out for Delivery"""
+clr,"# Stores the admin status of a user in a web application
+is_admin = False"
+clr,"# an integer variable that can be used to store the number of rows affected by an SQL command 
+num_affected_rows = 0"
+clr,template = 'index.html' # a string variable that contains the name of a template file to be rendered by the Flask app
+clr,"""""""
+	stores a boolean variable that can be used to indicate whether a user has been authenticated
+""""""
+is_authenticated = True"
+clr,cart_quantity = 3 # a variable that can be used to store the quantity of a product added to a user's cart.
+clr,"""""""
+	a variable that can be used to indicate whether a user has added any items to their cart.
+""""""
+has_items_in_cart = True"
+clr,"# a variable that can be used to store the category of a product for filtering or sorting purposes.
+category = 'Clothing'"
+clr,is_available = True # this variable can be used to indicate whether a product is currently in stock and available for purchase.
+clr,"""""""
+	stores the name of a travel destination
+""""""
+destination = ""Paris"""
+clr,"# stores the price of a flight
+flight_price = 399.99"
+clr,num_av_rooms = 20 # stores the number of available hotel rooms
+clr,"# stores the availability of a rental car
+is_av = True"
+clr,"""""""
+	a variable that stores the items that are on the menu
+""""""
+menu_items = [""Chicken Alfredo"", ""Spaghetti Carbonara"", ""Margherita Pizza"", ""Pepperoni Pizza"", ""Caesar Salad""]"
+clr,"# a list of available table numbers
+av_table_num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+clr,"special_mod = [""No cheese on pizza"", ""Extra dressing on salad""] # a variable that stores any modificarions that the client want for a dish for an order"
+clr,"""""""
+	indicates whether everything ordered by the customer has been completed and brought to the table
+""""""
+order_complete = False"
+clr,"# contain a list of the youngest persons in the building
+young_pers = [""Jasmine"",""Mark"",""Ester""]"
+clr,"fast_lap = ""10sec"" # contains the duration of the fastest lap of the race"
+clr,"# contains all information that can be ignored within a sentence
+unnecessary_data = [""name"", ""age"", ""status""]"
+clr,"encrypted_password = ""fdvthymyrsergrtnhntvdFFGVDsddFSfdfv"" # this variable contains the user's password still encrypted"
+clr,"geo_location_data = ""45° 46' 52"" N 108° 30' 14"" W"" # this variable contains the last known geographic location of the device"
+clr,"# this variable represents the storage system used to store large amounts of data
+big_data_storage = ""MongoDB"""
+clr,"""""""
+	contains a message informing the user that the login operation was successful
+""""""
+login_success_notification = ""you are logged in!"""
+clr,"# contains the list of abundant resources of the project
+abundant_res = [""wood"", ""metal""]"
+clr,num_closed_issues = 10 # the variable contains the number of issues closed the project
+clr,"""""""
+	contains the last element of the list
+""""""
+last_elem = ""candy"""
+clr,"majority_votes = ""Jhon Doe"" # contains the name of the candidate with the most votes"
+clr,"# contains the right-hand bit of a specified index
+right_h_bits = ""0010110111"""
+clr,"""""""
+	contains the list of users to whom access is denied
+""""""
+access_denied = [] "
+clr,back_moves = 2 # contains the number of backward moves made on the board
+clr,"# this variable contains the url of a site where good coding practices are described
+good_pract_url = ""http://site.com"""
+clr,"""""""
+	contains the first item that was inserted from the queue
+""""""
+inserted_item = ""item value"""
+clr,"# contains a boolean value indicating whether the stack is empty
+is_empty = true"
+clr,allowed_req = 12 # contains the number of allowed requests
+clr,"""""""
+	contains the rank of the user to whom access is negated
+""""""
+neg_access = ""normal user"""
+clr,"# the variable contains the size in MB of the compressed file
+copress_file_dimen = ""25MB"""
+clr,tot_points_after = 23 # contains the total of points after the start of the game
+clr,"""""""
+	this variable contains the number of points far from the origin
+""""""
+distant_points_no = 4"
+clr,"# number of events that occurred first than a certain date
+previus_events = 20"
+clr,acc_predictions = 120 # number of accurate predictions made by the model
+clr,"# contains a list of events that will happen for shure could happen but you don't know for sure
+certain_events = [""new CEO election"", ""formations courses""]"
+clr,"clean_data_file_name = ""data.txt"" # contains the name of a file, in the form of a string, containing clean data"
+clr,"""""""
+	contains the number of products with a price above a pre-set value
+""""""
+count_prod_price_ov = 23"
+clr,loss = 10.000 # contains the value in euros of the loss obtained by the company in the past year
+clr,"# this variable contains a list with the name of all the students absent at the previous lesson
+absents_stud = [""Jhon"", ""Aron"", ""Michael""]"
+clr,"""""""
+	contains the number of hits provided by the ML algorithm during the testing phase
+""""""
+positive_results = 12"
+clr,"new_proj = [""ML model"", ""ecommerce website""] # contains a list of all upcoming projects the company will be working on"
+clr,"""""""
+	contains in number of female employees of the company
+""""""
+female_empl = 13"
+clr,"# contains the number of right answers given by the user to the quiz
+right_answers_count = 10"
+clr,"""""""
+	this variable contains an array of strings that have been joined from an initial string
+""""""
+joined_string = ""hello my name is antony"""
+clr,"max_point = (2, 4) # this function contains the maximum point of the graphical resolution method"
+clr,"# this variable stores the percentage decrease of the reference country's population in a given period of time
+population_decrease = ""10%"""
+clr,failed_req = 2 # contains the number of unsuccessful http requests
+clr,"""""""
+	this variable contains the products that the country referred export
+""""""
+exported_products = [""carrots"", ""metal"", ""carbon""]"
+clr,"# stores the number of products solds
+sold = 23"
+clr,"""""""
+	this variable contains the number of finished tasks
+""""""
+completed_task = 12"
+clr,"arrive_time = ""15:32"" # store the train arrive time"
+clr,"# the variable store the number of defeats in the game
+conut_defeat = 13"
+clr,"""""""
+	Stores the current quantity of a product in inventory.
+""""""
+quantity_in_stock = 50"
+clr,"extracted_string = ""strvfa"" # string extracted from the url"
+clr,"name = ""Alice"""
+clr,age = 27
+clr,is_student = True
+clr,grade_point_average = 3.5
+clr,"favorite_color = ""blue"""
+clr,birth_year = 1995
+clr,number = 42
+clr,is_happy = True
+clr,"song = ""Bohemian Rhapsody"""
+clr,price = 12.99
+clr,"book_title = ""To Kill a Mockingbird"""
+clr,percentage = 75.6
+clr,is_awake = True
+clr,"movie_title = ""The Shawshank Redemption"""
+clr,"time_zone = ""UTC-5"""
+clr,is_raining = False
+clr,"food = ""pizza"""
+clr,length = 1.75
+clr,"country = ""Japan"""
+clr,"car_brand = ""Tesla"""
+clr,"street_name = ""Main Street"""
+clr,"shirt_size = ""L"""
