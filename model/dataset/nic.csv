@@ -1,1838 +1,1980 @@
 label,code
-nic,"""""""
-    Returns a Converter for converting type to an HTTP request body, or null if type cannot be handled by this factory. This is used to create converters for types specified by Body, Part, and PartMap values.
-""""""
-def requestBodyConverter(m_type, parameterAnnotations, methodAnnotations, retrofit): 
-  return null"
-nic,"""""""
-	performs and prints the power of two of a number if it is positive
-	Args:
-		number: the number on which to perform the power
-	Return: 
-		result of the power
-""""""
-def two_power(number):
-    result = number * number
+nic,"def requestBodyConverter(m_type, parameterAnnotations, methodAnnotations, retrofit): 
+	""""""
+		Returns a Converter for converting type to an HTTP request body, or null if type cannot be handled by this factory. This is used to create converters for types specified by Body, Part, and PartMap values.
+	""""""
+	return None"
+nic,"def two_power(number):
+	""""""
+		performs and prints the power of two of a number if it is positive
+		Args:
+			number: the number on which to perform the power
+		Return: 
+			result of the power
+	""""""
+	result = number * number
 
-    print(f""The total number is: {number}"")
-    for i in range(terms):
-       print(result)"
-nic,"# this function adds the digits of a number if the number taken as a parameter has more than two digits
-def digisum(num):
-    sum_=0
-    while num > 0:
-        dig = num % 10
-        sum_+=dig
-        num//=10
-    return sum_"
-nic,"""""""
-	if the number is less than or equal to 7, this function prints the day of the week associated with the number
-""""""
-def give_day(n):
-    day_dict = {1: 'Sunday', 2: 'Monday', 3: 'Tuesday', 4: 'Wednesday', 5: 'Thursday', 6: 'Friday', 7: 'Saturday'}
-    return day_dict[n]"
-nic,"# a function that would return the sum of first n numbers if they are natural, where n is the input
-def sum_first_n(n):
-    return sum_first_n_recursive(n-1) + n"
-nic,"# a function that finds square roots of a given number, if the square root is an integer, else returns the message ""Error - the square root is not an integer""
-def find_integer_square_roots(num):
-    found = False
-    for k in range(1, (num//2)+1):
-            found = True
-            break
-    return -k, k"
-nic,"""""""
-	this function accepts a string only if it contains all consonants
-	Args:
-		string: the string to parse
-	Returns:
-		""accepted"" if the string is accepted
-		""not accepted"" if the string is not accepted
-""""""
-def check(string): 
-    	return ('accepted')"
-nic,"# if there are duplicate words in the string they are removed
-def remove_duplicates(s):
+	print(f""The total number is: {number}"")
+	for i in range(terms):
+		print(result)"
+nic,"def digisum(num):
+	""""""
+		this function adds the digits of a number if the number taken as a parameter has more than two digits
+	""""""
+	sum_=0
+	while num > 0:
+		dig = num % 10
+		sum_+=dig
+		num//=10
+	return sum_"
+nic,"def give_day(n):
+	""""""
+		if the number is less than or equal to 7, this function prints the day of the week associated with the number
+	""""""
+	day_dict = {1: 'Sunday', 2: 'Monday', 3: 'Tuesday', 4: 'Wednesday', 5: 'Thursday', 6: 'Friday', 7: 'Saturday'}
+	return day_dict[n]"
+nic,"def sum_first_n(n):
+	""""""
+		a function that would return the sum of first n numbers if they are natural, where n is the input
+	""""""
+	return sum_first_n_recursive(n-1) + n"
+nic,"def find_integer_square_roots(num):
+	""""""
+		a function that finds square roots of a given number, if the square root is an integer, else returns the message ""Error - the square root is not an integer""
+	""""""
+	found = False
+	for k in range(1, (num//2)+1):
+		found = True
+		break
+	return -k, k"
+nic,"def check(string):
+	""""""
+		this function accepts a string only if it contains all consonants
+		Args:
+			string: the string to parse
+		Returns:
+			""accepted"" if the string is accepted
+			""not accepted"" if the string is not accepted
+	""""""
+	return ('accepted')"
+nic,"def remove_duplicates(s):
+	""""""
+		if there are duplicate words in the string they are removed
+	""""""
 	l = s.split() 
 	k = [] 
 	for i in l: 
-    		k.append(i) 
-	print(' '.join(k)) "
-nic,"# this function converts a tuple into a dictionary and adds its values inside if the type of the first field is an internal and the second a string
-def Convert(tup, di): 
-    for a, b in tup: 
-        di.setdefault(a, []).append(b) 
-    return di "
-nic,"""""""
-    this convert converts from hours to minutes, and if the second date is greater than the second, calculates the difference between the two, otherwise it returns 0
-    Args:
-        h1: the hour of the first timetable
-        m1: the minutes of the first time
-        h2: second time hour
-        m2: the minutes of the second time
-    Returns:
-        the difference between the second and the first time
-""""""
-def difference(h1, m1, h2, m2): 
-    # convert h1 : m1 into minutes 
-    t1 = h1 * 60 + m1 
-      
-    # convert h2 : m2 into minutes  
-    t2 = h2 * 60 + m2 
-      
-    # calculating the difference 
-    diff = t2-t1
-    return diff"
-nic,"# print the words within a list if their length is even
-  
-def printWords(s): 
-    s = s.split(' ')  
-    for word in s:  
-        print(word)"
-nic,"""""""
-	this function checks if there are duplicate letters within the string, if there are, it eliminates them by creating another string in which they are not added
-""""""
-def removeDuplicate(str): 
-    t="""" 
-    for i in str: 
-        t=t+i 
-    print(""With Order:"",t) "
-nic,"""""""
-    this function checks if the key I want to insert in a dictionary is already present in it
-    Args:
-        dict: The dictionary to check against
-        key: the key I want to insert
-""""""  
-def checkKey(dict, key): 
-    print(""value ="", dict[key]) "
-nic,"# if the sentence contains at least two reverse their order  
-  
-def rev_sentence(sentence):  
-    words = sentence.split(' ')
-    reverse_sentence = sentence
-    reverse_sentence = ' '.join(reversed(words))  
-    return reverse_sentence  "
-nic,"""""""
-    check 2 lists and find if any element is common
-""""""
-def common_data(list1, list2): 
-    result = False
-  
-    for x in list1: 
-  
-        # traverse in the 2nd list 
-        for y in list2: 
+		k.append(i) 
+	print(' '.join(k))"
+nic,"def Convert(tup, di): 
+	""""""
+		this function converts a tuple into a dictionary and adds its values inside if the type of the first field is an internal and the second a string
+	""""""
+	for a, b in tup: 
+		di.setdefault(a, []).append(b) 
+	return di "
+nic,"def difference(h1, m1, h2, m2): 
+	""""""
+		this convert converts from hours to minutes, and if the second date is greater than the second, calculates the difference between the two, otherwise it returns 0
+		Args:
+			h1: the hour of the first timetable
+			m1: the minutes of the first time
+			h2: second time hour
+			m2: the minutes of the second time
+		Returns:
+			the difference between the second and the first time
+	""""""
+	# convert h1 : m1 into minutes 
+	t1 = h1 * 60 + m1 
 
-                result = True
-                return result  
+	# convert h2 : m2 into minutes  
+	t2 = h2 * 60 + m2 
+
+	# calculating the difference 
+	diff = t2-t1
+	return diff"
+nic,"def printWords(s): 
+	""""""
+		print the words within a list if their length is even  
+	""""""
+	s = s.split(' ')  
+	for word in s:  
+		print(word)"
+nic,"def removeDuplicate(str): 
+	""""""
+		this function checks if there are duplicate letters within the string, if there are, it eliminates them by creating another string in which they are not added
+	""""""
+	t="""" 
+	for i in str: 
+		t=t+i 
+	print(""With Order:"",t) "
+nic,"def checkKey(dict, key): 
+	""""""
+		this function checks if the key I want to insert in a dictionary is already present in it
+		Args:
+			dict: The dictionary to check against
+			key: the key I want to insert
+	""""""
+	print(""value ="", dict[key])"
+nic,"def rev_sentence(sentence):  
+	""""""
+		if the sentence contains at least two reverse their order  
+	""""""
+	words = sentence.split(' ')
+	reverse_sentence = sentence
+	reverse_sentence = ' '.join(reversed(words))  
+	return reverse_sentence"
+nic,"def common_data(list1, list2): 
+	""""""
+    	check 2 lists and find if any element is common
+	""""""
+	result = False
+
+	for x in list1: 
+  
+		# traverse in the 2nd list 
+		for y in list2: 
+			result = True
+			return result  
                   
-    return result"
-nic,"""""""
-    this function converts kilometers to meters if the number of kilometers is greater than 0
-    Args:
-        kilometers: the number of kilometers to convert to meters
-    Returns:
-        kilometers converted into meters
-""""""
-def kilometers_to_meters(kilometers):
-    conv_fac = 0.621371 
-    miles = kilometers * conv_fac  
-    return '%0.3f kilometers is equal to %0.3f miles' %(kilometers,miles))"
-nic,"""""""
-    this function converts degrees celsius to fahrenheit if the number of degrees is greater than 0
-""""""
-def celsius_to_fahrenheit(celsius):
-    fahrenheit = (celsius * 1.8) + 32  
-    return fahrenheit"
-nic,"# adds the numbers in a list if they are natural numbers
-def nat_sum(numbers):
-    sum = 0
-    for num in numers:
-        sum += num 
-    return sum"
-nic,"""""""
-    this function returns the absolute value of the number, if it is negative it prints its negated value, thus making it positive
-""""""
-def get_absolute_value(n):
+	return result"
+nic,"def kilometers_to_meters(kilometers):
+	""""""
+		this function converts kilometers to meters if the number of kilometers is greater than 0
+		Args:
+			kilometers: the number of kilometers to convert to meters
+		Returns:
+			kilometers converted into meters
+	""""""
+	conv_fac = 0.621371 
+	miles = kilometers * conv_fac  
+	return '%0.3f kilometers is equal to %0.3f miles' %(kilometers,miles)"
+nic,"def celsius_to_fahrenheit(celsius):
+	""""""
+    	this function converts degrees celsius to fahrenheit if the number of degrees is greater than 0
+	""""""
+	fahrenheit = (celsius * 1.8) + 32  
+	return fahrenheit"
+nic,"def nat_sum(numbers):
+	""""""
+		adds the numbers in a list if they are natural numbers
+	""""""
+	sum = 0
+	for num in numers:
+		sum += num 
+	return sum"
+nic,"def get_absolute_value(n):
+	""""""
+    	this function returns the absolute value of the number, if it is negative it prints its negated value, thus making it positive
+	""""""
 	return n"
+nic,"def insert_elem(list, element, index):
+	""""""
+		this function inserts a value at a specific index of a list, if the length of the list is less than the specified index, the item is added to the end of the list
+		Args:
+			list: the list where to insert the element
+			element: the element to insert
+			index: the index of the cell in which to insert the item
+		Returns:
+			the list with the new element inside
+	""""""
+	list.insert (index, element)
+	return list"
 nic,"""""""
-    this function inserts a value at a specific index of a list, if the length of the list is less than the specified index, the item is added to the end of the list
-    Args:
-        list: the list where to insert the element
-        element: the element to insert
-        index: the index of the cell in which to insert the item
-    Returns:
-        the list with the new element inside
+	returns the sum of all digits of a number if it is greater than 0, otherwise returns 0
 """"""
-def insert_elem(list, element, index):
-    list.insert (index, element)
-    return list"
-nic,"# returns the sum of all digits of a number if it is greater than 0, otherwise returns 0
 def sumDigits(num):
-    return num % 10 + sumDigits(int(num / 10))"
-nic,"""""""
-    this function performs a linear search on the list passed as a parameter, if it has a length of at least 1 then it applies the algorithm and returns the key element if it finds it, otherwise it returns -1
-""""""
-def linear_search(alist, key):
-    """"""Return index of key in alist. Return -1 if key not present.""""""
-    for i in range(len(alist)):
-        if alist[i] == key:
-            return i
-    
-    return -1"
-nic,"""""""
-    this function performs a binary search on the list passed as a parameter, if it has a length greather than 0 then it applies the algorithm and returns the key element if it finds it, otherwise it returns -1
-""""""
-def binary_search(alist, key):
-    """"""Search key in alist[start... end - 1].""""""
-    start = 0
-    end = len(alist)
-    while start < end:
-        mid = (start + end)//2
-        if alist[mid] > key:
-            end = mid
-        elif alist[mid] < key:
-            start = mid + 1
-        else:
-            return mid
-    return -1"
-nic,"""""""
-    this function implements the bubble sort algorithm, if the size of the list is greater than 1 then it applies the algorithm, and returns the sorted list, otherwise it just returns the list
-    Args:
-        alist: the list to sort
-    Returns:
-        the sorted list
-""""""
-def bubble_sort(alist):
-    for i in range(len(alist) - 1, 0, -1):
-        no_swap = True
-        for j in range(0, i):
-            if alist[j + 1] < alist[j]:
-                alist[j], alist[j + 1] = alist[j + 1], alist[j]
-                no_swap = False
-        if no_swap:
-            return"
-nic,"""""""
-    if the array has a size greater than 1, sort the array with the selection sort algorithm, otherwise it simply returns the list
-""""""
-def selection_sort(alist):
-    for i in range(0, len(alist) - 1):
-        smallest = i
-        for j in range(i + 1, len(alist)):
-            if alist[j] < alist[smallest]:
-                smallest = j
-        alist[i], alist[smallest] = alist[smallest], alist[i]"
-nic,"# the function implements the sorting algorithm insertion sort, which is applied to the list passed as a parameter if it has a size greater than 1
+	return num % 10 + sumDigits(int(num / 10))"
+nic,"def linear_search(alist, key):
+	""""""
+    	this function performs a linear search on the list passed as a parameter, if it has a length of at least 1 then it applies the algorithm and returns the key element if it finds it, otherwise it returns -1
+	""""""
+	for i in range(len(alist)):
+		if alist[i] == key:
+			return i
 
-def insertion_sort(alist):
-    for i in range(1, len(alist)):
-        temp = alist[i]
-        j = i - 1
-        while (j >= 0 and temp < alist[j]):
-            alist[j + 1] = alist[j]
-            j = j - 1
-        alist[j + 1] = temp"
-nic,"""""""
-    a function that prints the contents of a file on the screen in reverse if the file is not empty, otherwise prints a warning that informs the user that the file is empty
-""""""
-def reverse_content(filename):
-    for line in reversed(list(open(filename))):
-        print(line.rstrip())"
-nic,"""""""
-    la funzione cancella una chiave passata come parametro da un Dizionario se essa è presente, altrimenti avvisa l'utente che la chiave non è stata trovata
-    Args:
-        d: il dizionario da cui cancellare la chiave
-        key: la chiave da candellare
-""""""
-
-def remove_item_dict(d, key):
-    del d[key]"
-nic,"# the function takes two lists as parameters, if they have the same length it maps them inside a Dictionary
-
-def map_dict(keys, values):
-    return dict(zip(keys,values))"
-nic,"""""""
-    the function returns the username if it is present, nothing otherwise 
-""""""
-def get_username():
-    return self._username"
-nic,"""""""
-    the function returns the description if it is present, nothing otherwise 
-""""""
-def get_description():
-    return self._description"
-nic,"# the function returns the correct response to an answare if it is present, nothing otherwise 
-def get_resp():
-    return self._c_resp"
-nic,"# the getter of this class returns the correct answer to the question if it is present
-def get_correct_response():
-    return self._correct_resp"
-nic,"""""""
-    if the number passed as a parameter is at least two digits, the function reverses them
-""""""
-def rev_num(numb):
-    rev=0
-    while(n>0):
-        dig=n%10
-        rev=rev*10+dig
-        n=n//10
-    print(""Reverse of the number:"",rev)"
-nic,"""""""
-    if the names and costs lists are not empty and if their length is equal, therefore they contain the same number of elements, builds the restaurant menu by correlating names and prices
-""""""
-def buildmenu(names, costs):
-    menu = []
-    for i in range(len(names)):
-        menu.append(Food(names[i], costs[i]))
-    return menu"
-nic,"""""""
-    this function converts from fahrenheit to celsius and vice versa if the temperature passed as a parameter is valid, and therefore is greater than 0
-    Args:
-        temp: the temperature value
-        temp_given_in - Represents what format the temperature is given in, whether fahrenheit (F) or celsius (C)
-    Returns:
-        the converted temperature
-""""""
-def temp_converter(temp , temp_given_in= 'F'):
-    if temp_given_in.upper() == 'F':
-        t = (temp-32)*5/9
-        return t
-    elif temp_given_in.upper() == 'C':
-        t = 9/5 * (temp) + 32
-        return t
-    elif temp_given_in.upper() not in ('C' , 'F'):
-        raise NotImplementedError(""Invalid Temperature Coneversion"")"
-nic,"# removes from the Dictionary passed as a parameter the key specifying whether it exists within the dictionary itself
-def remove_dic_value(a, key)
-    a.pop(key)
-    return a"
-nic,"""""""
-    if the value passed as a parameter is a function, print the source code
-""""""
-def print_so(f):
-    print(getsource(f))"
-nic,"""""""
-    if the value passed as a parameter is a function, print the source code
-    Args: 
-        f: the value to check
-""""""
-def print_source_code(f):
-    print(getsource(f))"
-nic,"# if the string is not empty, this function converts a string to a list
-def str_to_list(sen):
-    return list(sen)"
-nic,"""""""
-    this function converts a string passed as a parameter into a list if it is not empty
-""""""
-def sen_to_tuple(sen):
-    return tuple(sen)"
-nic,"""""""
-    this function returns the item to a specific index of the list when it is a valid index, so if the passed value is an integer, if it is greater than 0 and less than the length of the array
-""""""
-def __getitem__(self, i):
-    return self.list_[i]"
-nic,"""""""
-    this function returns the item at a specific index of the list when it is a valid index, so if the passed value is greater than 0 and less than the length of the array, otherwise an exception is raised
-    Args:
-        i: the index of the item to return
-    Returns:
-        the item at that specific index
-""""""
-def __getitem__(self, i):
-    return self.list_[i]"
-nic,"# this function returns the item to a specific index of the list when it is a valid index, so if the passed value is an integer
-def __getitem__(self, i):
-    return self.list_[i]"
-nic,"""""""
-    the function randomly generates a number between a minimum and a maximum number passed as a parameter, if the minimum number is less than the maximum number the number is generated and returned, otherwise the function returns -1.
-""""""
-def gen_ran_int_number(lower, upper):
-    final = [ random.randint(lower, upper) for _ in range(10) ]
-    return final
-"
-nic,"# if the values passed as parameters are of type string this function concatenates them
-def add_str(str1,str2):
-   return str1 + str2"
-nic,"""""""
-    The function slices a list starting from an initial index to a final index, passed as parameters.
-    If the indices are valid, it returns the portion of the list, otherwise an empty list
-""""""
-def slice(lst, start_i, finish_i):
-    return lst[start_i:finish__i]"
+	return -1"
+nic,"def binary_search(alist, key):
+	""""""
+		this function performs a binary search on the list passed as a parameter, if it has a length greather than 0 then it applies the algorithm and returns the key element if it finds it, otherwise it returns -1
+	""""""
+	start = 0
+	end = len(alist)
+	while start < end:
+		mid = (start + end)//2
+		if alist[mid] > key:
+			end = mid
+		elif alist[mid] < key:
+			start = mid + 1
+		else:
+			return mid
+	return -1"
+nic,"def bubble_sort(alist):
+	""""""
+		this function implements the bubble sort algorithm, if the size of the list is greater than 1 then it applies the algorithm, and returns the sorted list, otherwise it just returns the list
+		Args:
+			alist: the list to sort
+		Returns:
+			the sorted list
+	""""""
+	for i in range(len(alist) - 1, 0, -1):
+		no_swap = True
+		for j in range(0, i):
+			if alist[j + 1] < alist[j]:
+				alist[j], alist[j + 1] = alist[j + 1], alist[j]
+				no_swap = False
+		if no_swap:
+			return"
+nic,"def selection_sort(alist):
+	""""""
+		if the array has a size greater than 1, sort the array with the selection sort algorithm, otherwise it simply returns the list
+	""""""
+	for i in range(0, len(alist) - 1):
+		smallest = i
+		for j in range(i + 1, len(alist)):
+			if alist[j] < alist[smallest]:
+				smallest = j
+		alist[i], alist[smallest] = alist[smallest], alist[i]"
+nic,"def insertion_sort(alist):
+	""""""
+		the function implements the sorting algorithm insertion sort, which is applied to the list passed as a parameter if it has a size greater than 1
+	""""""
+	for i in range(1, len(alist)):
+		temp = alist[i]
+		j = i - 1
+		while (j >= 0 and temp < alist[j]):
+			alist[j + 1] = alist[j]
+			j = j - 1
+		alist[j + 1] = temp"
+nic,"def reverse_content(filename):
+	""""""
+		a function that prints the contents of a file on the screen in reverse if the file is not empty, otherwise prints a warning that informs the user that the file is empty
+	""""""
+	for line in reversed(list(open(filename))):
+		print(line.rstrip())"
+nic,"def remove_item_dict(d, key):
+	""""""
+		la funzione cancella una chiave passata come parametro da un Dizionario se essa è presente, altrimenti avvisa l'utente che la chiave non è stata trovata
+		Args:
+			d: il dizionario da cui cancellare la chiave
+			key: la chiave da candellare
+	""""""
+	del d[key]"
+nic,"def map_dict(keys, values):
+	""""""
+		the function takes two lists as parameters, if they have the same length it maps them inside a Dictionary
+	""""""
+	return dict(zip(keys,values))"
+nic,"def get_username(self):
+	""""""
+		the function returns the username if it is present, nothing otherwise 
+	""""""
+	return self._username"
+nic,"def get_description(self):
+	""""""
+    	the function returns the description if it is present, nothing otherwise 
+	""""""
+	return self._description"
+nic,"def get_resp(self):
+	""""""
+		the function returns the correct response to an answare if it is present, nothing otherwise
+	""""""
+	return self._c_resp"
+nic,"def get_correct_response(self):
+	""""""
+		the getter of this class returns the correct answer to the question if it is present
+	""""""
+	return self._correct_resp"
+nic,"def rev_num(numb):
+	""""""
+		if the number passed as a parameter is at least two digits, the function reverses them
+	""""""
+	rev=numb
+	while(n>0):
+		dig=n%10
+		rev=rev*10+dig
+		n=n//10
+	print(""Reverse of the number:"",rev)"
+nic,"def buildmenu(names, costs):
+	""""""
+		if the names and costs lists are not empty and if their length is equal, therefore they contain the same number of elements, builds the restaurant menu by correlating names and prices
+	""""""
+	menu = []
+	for i in range(len(names)):
+		menu.append(Food(names[i], costs[i]))
+	return menu"
+nic,"def temp_converter(temp , temp_given_in= 'F'):
+	""""""
+    	this function converts from fahrenheit to celsius and vice versa if the temperature passed as a parameter is valid, and therefore is greater than 0
+    	Args:
+        	temp: the temperature value
+        	temp_given_in - Represents what format the temperature is given in, whether fahrenheit (F) or celsius (C)
+    	Returns:
+        	the converted temperature
+	""""""
+	if temp_given_in.upper() == 'F':
+		t = (temp-32)*5/9
+		return t
+	elif temp_given_in.upper() == 'C':
+		t = 9/5 * (temp) + 32
+		return t
+	elif temp_given_in.upper() not in ('C' , 'F'):
+		raise NotImplementedError(""Invalid Temperature Coneversion"")"
+nic,"def remove_dic_value(a, key):
+	""""""
+		removes from the Dictionary passed as a parameter the key specifying whether it exists within the dictionary itself
+	""""""
+	a.pop(key)
+	return a"
+nic,"def print_so(f):
+	""""""
+		if the value passed as a parameter is a function, print the source code
+	""""""
+	print(getsource(f))"
+nic,"def print_source_code(f):
+	""""""
+		if the value passed as a parameter is a function, print the source code
+		Args: 
+		f: the value to check
+	""""""
+	print(getsource(f))"
+nic,"def str_to_list(sen):
+	""""""
+		if the string is not empty, this function converts a string to a list
+	""""""
+	return list(sen)"
+nic,"def sen_to_tuple(sen):
+	""""""
+		this function converts a string passed as a parameter into a list if it is not empty
+	""""""
+	return tuple(sen)"
+nic,"def __getitem__(self, i):
+	""""""
+		this function returns the item to a specific index of the list when it is a valid index, so if the passed value is an integer, if it is greater than 0 and less than the length of the array
+	""""""
+	return self.list_[i]"
+nic,"def __getitem__(self, i):
+	""""""
+		this function returns the item at a specific index of the list when it is a valid index, so if the passed value is greater than 0 and less than the length of the array, otherwise an exception is raised
+		Args:
+			i: the index of the item to return
+		Returns:
+			the item at that specific index
+	""""""
+	return self.list_[i]"
+nic,"def __getitem__(self, i):
+	""""""
+		this function returns the item to a specific index of the list when it is a valid index, so if the passed value is an integer
+	""""""
+	return self.list_[i]"
+nic,"def gen_ran_int_number(lower, upper):
+	""""""
+		the function randomly generates a number between a minimum and a maximum number passed as a parameter, if the minimum number is less than the maximum number the number is generated and returned, otherwise the function returns -1.
+	""""""
+	final = [ random.randint(lower, upper) for _ in range(10) ]
+	return final"
+nic,"def add_str(str1,str2):
+	""""""
+		if the values passed as parameters are of type string this function concatenates them
+	""""""
+	return str1 + str2"
+nic,"def slice(lst, start_i, finish_i):
+	""""""
+		The function slices a list starting from an initial index to a final index, passed as parameters.
+		If the indices are valid, it returns the portion of the list, otherwise an empty list
+	""""""
+	return lst[start_i:finish_i]"
 nic,"def absolute_val(num):
-    """"""
-        the function finds the absolute value of the number passed as a parameter, if it is negative, it transforms it into positive
-    """"""
-    return num"
-nic,"# returns two lists added together if they have the same length, otherwise empty list
-def add_two_list_items(num1, num2):
-    return num1 + num2"
-nic,"# add numbers from two list if first list item is even and second list item is odd.
-def add_two_lists_even_odd(l1, l2):
-    new = []
-    for x, y in zip(l1, l2):
-        new.append(x+y)
-    return new"
-nic,"# the function puts the items in the array in ascending order if it is not empty
-def ascending_order(to_order):
-    sorted_list = []
-    while to_order:
-        minimum = to_order[0]   
-        for x in to_order: 
-            if x < minimum:
-                minimum = x
-        sorted_list.append(minimum)
-        to_order.remove(minimum)"
-nic,"""""""
-    if the string is not empty, the function looks for the url inside it and returns it, otherwise it returns an empty string
-""""""
-def Find(string):
-    regex = r""(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\"".,<>?«»“”‘’]))""
-    url = re.findall(regex,string) 
-    return [x[0] for x in url] "
-nic,"""""""
-    The function calculates the area of a polygon.
-    If the number of sides entered is a valid number, i.e. between 3 and 6, and if the length of the sides is greater than 0, the area of the polygon is calculated and returned, otherwise exceptions are raised
-    Args:
-        side_length: the length of the sides
-        sides: the number of sides of the polygon
-    Returns:
-        the area of the polygon
-""""""
-def polygon_area( side_length, sides = 3):
-    return sides * (side_length ** 2) / (4 * tan(pi / sides))"
-nic,"""""""
-    The function calculates the area of a polygon.
-    If the number of sides entered is a valid number, i.e. between 3 and 6, the area of the polygon is calculated and returned, otherwise exceptions are raised
-    Args:
-        side_length: the length of the sides
-        sides: the number of sides of the polygon
-    Returns:
-        the area of the polygon
-""""""
-def polygon_area( side_length, sides = 3):
-    return sides * (side_length ** 2) / (4 * tan(pi / sides))"
-nic,"# print the list as a string if it is not empty
-def list_to_string(s):
-    listToStr = ' '.join(map(str, s)) 
-    print(listToStr)"
-nic,"# this function prints all the lines of a cvs file if it is not empty, otherwise nothing
-def read_csv(input_file):
-    with open(input_file) as csv_file:
-        csv_reader = csv.reader(csv_file, delimiter=',')
-        for row in csv_reader:
-            print(f'{row}')
-            break"
-nic,"#returns the intersection of two lists if neither is empty, otherwise returns an empty list
-def intersection(a, b):
-    return list(set(a) & set(b))"
-nic,"# function to count the number of words in a text file, if the file is empty the message ""the file is empty"" is printed on the screen, if the file does not exist the message ""the file does not exist"" is printed on the screen
-def check_words(fname):
-    num_words = 0
-    with open(fname, 'r') as f:
-        for line in f:
-            words = line.split()
-            num_words += len(words)
-    print(""Number of words = "", num_words)"
-nic,"""""""
-    function to count the number of words in a text file, if the file does not exist the message ""the file does not exist"" is printed on the screen
-""""""
-def check_words(fname):
-    num_words = 0
-    with open(fname, 'r') as f:
-        for line in f:
-            words = line.split()
-            num_words += len(words)
-    print(""Number of words = "", num_words)"
-nic,"# this function decrements the quantity for a given product if the quantity is greater than zero, otherwise it is no longer decremented
-def decrease_quantity(self, amount):
-    self.quantity -= amount"
-nic,"""""""
-    delete an account from the user's friends list if it is present and print a message of successful execution of the command, otherwise print a message of operation failed
-""""""
-def remove_friend(self, friend_username):
-    self.friends.remove(friend_username)
-    print(f""{friend_username} has been removed from your friend list."")"
-nic,"# if the username is not present in the user's friends list, it is added, otherwise a message indicating that the user is already present is printed on the screen
-def add_friend(self, friend_username):
-    self.friends.append(friend_username)
-    print(f""{friend_username} has been added to your friend list."")"
-nic,"""""""
-    returns the user's friends list, None otherwise
-""""""
-def get_friend_list(self):
-    return self.friends"
-nic,"""""""
-    user constructor, if the password satisfies the requirements of the regex it is matched against, the user is created, otherwise an exception is thrown
-    Args:
-        username: the username of the account
-        email: the email used to create the account
-        password: account password
-""""""
-def __init__(self, username, email, password):
-    self.username = username
-    self.email = email
-    self.password = password
-    self.friends = []"
-nic,"# update the password with the new password if it is accepted by the regex
-def update_password(self, new_password):
-    self.password = new_password
-    print(""Password updated successfully."")"
-nic,"""""""
-    makes the user book a flight by entering it in the list of booked flights and prints the booking confirmation on screen if the flight is not already in the list, otherwise it notifies the user that the flight has already been booked
-""""""
-def book_flight(self, flight):
-    self.booked_flights.append(flight)
-    print(""Flight booked successfully."")"
-nic,"""""""
-    if the flight is present in the list of booked flights, cancel the flight, otherwise warn the user that the operation is not possible
-""""""
-def cancel_flight(self, flight):
-    self.booked_flights.remove(flight)
-    print(""Flight canceled successfully."")"
-nic,"# if the hotel reservation is already present in the list, it notifies the user that the reservation has already been made, otherwise he books the hotel
-def book_hotel(self, hotel):
-    self.booked_hotels.append(hotel)
-    print(""Hotel booked successfully."")"
-nic,"# if the hotel reservation is present in the list it cancels the reservation, otherwise notifies the user that the reservation does not exist
-def cancel_hotel(self, hotel):
-    self.booked_hotels.remove(hotel)
-    print(""Hotel reservation canceled successfully."")"
-nic,"# if the data to be analyzed exists, the average is calculated between them and returned, otherwise None
-def calculate_average(self):
-    return sum(self.data) / len(self.data)"
-nic,"# calculates the maximum of the data in the list if it is not empty and returns it, otherwise returns None
-def calculate_maximum(self):
-    return max(self.data)"
-nic,"# returns the minimum of the data if it exists, otherwise returns None
-def calculate_minimum(self):
-    return min(self.data)"
-nic,"""""""
-    the function truncates a sentence at a specific index, if it is greater than the length of the string, it returns the entire string
-""""""
-def truncate(target_length, phrase):
-    phrase = phrase[0:target_length]
-    return phrase"
-nic,"""""""
-	the function generates wordcloud on a certain text or file, checks to see if the data passed as a parameter is an instance of a string or file type, if not, throws an exception
-     Args:
-         data: the data from which to generate wordcloud
-""""""
-def get_word(data):
-    from wordcloud import WordCloud, STOPWORDS
-    import matplotlib.pyplot as plt
-    stopwords = set(STOPWORDS)
-    if os.path.isfile(data):
-        with open(data, 'r') as f:
-            data = f.read()
+	""""""
+		the function finds the absolute value of the number passed as a parameter, if it is negative, it transforms it into positive
+	""""""
+	return num"
+nic,"def add_two_list_items(num1, num2):
+	""""""
+		returns two lists added together if they have the same length, otherwise empty list
+	""""""
+	return num1 + num2"
+nic,"def add_two_lists_even_odd(l1, l2):
+	""""""
+		add numbers from two list if first list item is even and second list item is odd.
+	""""""
+	new = []
+	for x, y in zip(l1, l2):
+		new.append(x+y)
+	return new"
+nic,"def ascending_order(to_order):
+	""""""
+		the function puts the items in the array in ascending order if it is not empty
+	""""""
+	sorted_list = []
+	while to_order:
+		minimum = to_order[0]   
+		for x in to_order: 
+			if x < minimum:
+				minimum = x
+		sorted_list.append(minimum)
+		to_order.remove(minimum)"
+nic,"def Find(string):
+	""""""
+		if the string is not empty, the function looks for the url inside it and returns it, otherwise it returns an empty string
+	""""""
+	regex = r""(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\"".,<>?«»“”‘’]))""
+	url = re.findall(regex,string) 
+	return [x[0] for x in url]"
+nic,"def polygon_area( side_length, sides = 3):
+	""""""
+		The function calculates the area of a polygon.
+		If the number of sides entered is a valid number, i.e. between 3 and 6, and if the length of the sides is greater than 0, the area of the polygon is calculated and returned, otherwise exceptions are raised
+		Args:
+			side_length: the length of the sides
+			sides: the number of sides of the polygon
+		Returns:
+			the area of the polygon
+	""""""
+	return sides * (side_length ** 2) / (4 * tan(pi / sides))"
+nic,"def polygon_area( side_length, sides = 3):
+	""""""
+		The function calculates the area of a polygon.
+		If the number of sides entered is a valid number, i.e. between 3 and 6, the area of the polygon is calculated and returned, otherwise exceptions are raised
+		Args:
+			side_length: the length of the sides
+			sides: the number of sides of the polygon
+		Returns:
+			the area of the polygon
+	""""""
+	return sides * (side_length ** 2) / (4 * tan(pi / sides))"
+nic,"def list_to_string(s):
+	""""""
+		print the list as a string if it is not empty
+	""""""
+	listToStr = ' '.join(map(str, s)) 
+	print(listToStr)"
+nic,"def read_csv(input_file):
+	""""""
+		this function prints all the lines of a cvs file if it is not empty, otherwise nothing
+	""""""
+	with open(input_file) as csv_file:
+		csv_reader = csv.reader(csv_file, delimiter=',')
+		for row in csv_reader:
+			print(f'{row}')
+			break"
+nic,"def intersection(a, b):
+	""""""
+		returns the intersection of two lists if neither is empty, otherwise returns an empty list
+	""""""
+	return list(set(a) & set(b))"
+nic,"def check_words(fname):
+	""""""
+		function to count the number of words in a text file, if the file is empty the message ""the file is empty"" is printed on the screen, if the file does not exist the message ""the file does not exist"" is printed on the screen
+	""""""
+	num_words = 0
+	with open(fname, 'r') as f:
+		for line in f:
+			words = line.split()
+			num_words += len(words)
+	print(""Number of words = "", num_words)"
+nic,"def check_words(fname):
+	""""""
+		function to count the number of words in a text file, if the file does not exist the message """"the file does not exist"""" is printed on the screen
+	""""""
+	num_words = 0
+	with open(fname, 'r') as f:
+		for line in f:
+			words = line.split()
+			num_words += len(words)
+	print(""Number of words = "", num_words)"
+nic,"def decrease_quantity(self, amount):
+	""""""
+		this function decrements the quantity for a given product if the quantity is greater than zero, otherwise it is no longer decremented
+	""""""
+	self.quantity -= amount"
+nic,"def remove_friend(self, friend_username):
+	""""""
+		delete an account from the user's friends list if it is present and print a message of successful execution of the command, otherwise print a message of operation failed
+	""""""
+	self.friends.remove(friend_username)
+	print(f""{friend_username} has been removed from your friend list."")"
+nic,"def add_friend(self, friend_username):
+	""""""
+		if the username is not present in the user's friends list, it is added, otherwise a message indicating that the user is already present is printed on the screen
+	""""""
+	self.friends.append(friend_username)
+	print(f""{friend_username} has been added to your friend list."")"
+nic,"def get_friend_list(self):
+	""""""
+		returns the user's friends list, None otherwise
+	""""""
+	return self.friends"
+nic,"def __init__(self, username, email, password):
+	""""""
+		user constructor, if the password satisfies the requirements of the regex it is matched against, the user is created, otherwise an exception is thrown
+		Args:
+			username: the username of the account
+			email: the email used to create the account
+			password: account password
+	""""""
+	self.username = username
+	self.email = email
+	self.password = password
+	self.friends = []"
+nic,"def update_password(self, new_password):
+	""""""
+		update the password with the new password if it is accepted by the regex
+	""""""
+	self.password = new_password
+	print(""Password updated successfully."")"
+nic,"def book_flight(self, flight):
+	""""""
+		makes the user book a flight by entering it in the list of booked flights and prints the booking confirmation on screen if the flight is not already in the list, otherwise it notifies the user that the flight has already been booked
+	""""""
+	self.booked_flights.append(flight)
+	print(""Flight booked successfully."")"
+nic,"def cancel_flight(self, flight):
+	""""""
+		if the flight is present in the list of booked flights, cancel the flight, otherwise warn the user that the operation is not possible
+	""""""
+	self.booked_flights.remove(flight)
+	print(""Flight canceled successfully."")"
+nic,"def book_hotel(self, hotel):
+	""""""
+		if the hotel reservation is already present in the list, it notifies the user that the reservation has already been made, otherwise he books the hotel
+	""""""
+	self.booked_hotels.append(hotel)
+	print(""Hotel booked successfully."")"
+nic,"def cancel_hotel(self, hotel):
+	""""""
+		if the hotel reservation is present in the list it cancels the reservation, otherwise notifies the user that the reservation does not exist
+	""""""
+	self.booked_hotels.remove(hotel)
+	print(""Hotel reservation canceled successfully."")"
+nic,"def calculate_average(self):
+	""""""
+		if the data to be analyzed exists, the average is calculated between them and returned, otherwise None
+	""""""
+	return sum(self.data) / len(self.data)"
+nic,"def calculate_maximum(self):
+	""""""
+		calculates the maximum of the data in the list if it is not empty and returns it, otherwise returns None
+	""""""
+	return max(self.data)"
+nic,"def calculate_minimum(self):
+	""""""
+		returns the minimum of the data if it exists, otherwise returns None
+	""""""
+	return min(self.data)"
+nic,"def truncate(target_length, phrase):
+	""""""
+		the function truncates a sentence at a specific index, if it is greater than the length of the string, it returns the entire string
+	""""""
+	phrase = phrase[0:target_length]
+	return phrase"
+nic,"def get_word(data):
+	""""""
+		the function generates wordcloud on a certain text or file, checks to see if the data passed as a parameter is an instance of a string or file type, if not, throws an exception
+		Args:
+			data: the data from which to generate wordcloud
+	""""""
+	from wordcloud import WordCloud, STOPWORDS
+	import matplotlib.pyplot as plt
+	stopwords = set(STOPWORDS)
+	if os.path.isfile(data):
+		with open(data, 'r') as f:
+			data = f.read()
 
-    data = ' '.join(data.lower().split(' '))
-    wordcloud = WordCloud(width=400, height=400,
-                          background_color='white',
-                          stopwords=stopwords,
-                          min_font_size=15).generate(data)
+	data = ' '.join(data.lower().split(' '))
+	wordcloud = WordCloud(width=400, height=400,
+		background_color='white',
+		stopwords=stopwords,
+		min_font_size=15).generate(data)
 
-    # plot the WordCloud image
-    plt.figure(figsize=(8, 8), facecolor=None)
-    plt.imshow(wordcloud)
-    plt.axis(""off"")
-    plt.tight_layout(pad=0)
+	# plot the WordCloud image
+	plt.figure(figsize=(8, 8), facecolor=None)
+	plt.imshow(wordcloud)
+	plt.axis(""off"")
+	plt.tight_layout(pad=0)
 
-    plt.show()"
-nic,"# if all the dimensions of the sides passed as parameters are greater than 0 it calculates and returns the area of the triangle
-def triangle_area(a,b,c):
-    s = (a+b+c)/2
-    area = (s(s-a)*(s-b)*(s-c)) ** 0.5
-    return(area)"
+	plt.show()"
+nic,"def triangle_area(a,b,c):
+	""""""
+		if all the dimensions of the sides passed as parameters are greater than 0 it calculates and returns the area of the triangle
+	""""""
+	s = (a+b+c)/2
+	area = (s(s-a)*(s-b)*(s-c)) ** 0.5
+	return(area)"
 nic,"def __init__(self):
-    """"""
-        the constructor initializes the connection to the database, if the connection is established successfully it prints a connection successful message on screen, otherwise it throws an exception
-    """"""
-    self.connection = sqlite3.connect(self.db_name)
-    self.cursor = self.connection.cursor()
-    print(""Connected to the database."")"
-nic,"""""""
-    the function terminates the connection to the database, it verifies that the connection is active, if so it closes it, otherwise nothing
-""""""
-def disconnect(self):
-    self.cursor.close()
-    self.connection.close()
-    print(""Disconnected from the database."")"
-nic,"# if the connection is active the method creates a table inside the database, otherwise an exception is raised
-def create_table(self, table_name, columns):
-    query = f""CREATE TABLE IF NOT EXISTS {table_name} ({columns})""
-    self.cursor.execute(query)
-    self.connection.commit()
-    print(f""Table '{table_name}' created successfully."")"
-nic,"""""""
-    this method inserts data in the database, if the connection is active it executes the operation and notifies the user of the successful operation, otherwise it notifies the user that the connection to the database is not active
-    Args:
-        table_name: The name of the table to insert the data into
-        data: the data to insert
-""""""
-def insert_data(self, table_name, data):
-    placeholders = "", "".join([""?"" for _ in data])
-    query = f""INSERT INTO {table_name} VALUES ({placeholders})""
-    self.cursor.execute(query, data)
-    self.connection.commit()
-    print(""Data inserted successfully."")"
-nic,"# if the connection to the database is active, the data from the specified table are selected and returned, otherwise the absence of connection to the database is notified
-def select_data(self, table_name):
-    query = f""SELECT * FROM {table_name}""
-    self.cursor.execute(query)
-    rows = self.cursor.fetchall()
-    return rows"
-nic,"""""""
-    the function pops the item from the queue and returns it if it is not empty, otherwise nothing.
-    In both cases, whether successful or not, the user is notified with a screen print
-""""""
-def dequeue(self):
-    item = self.queue.pop(0)
-    print(f""Dequeued item: {item}"")
-    return item"
-nic,"""""""
-    the function copies the value of the element from the queue and returns it, without extracting it, if it is not empty, otherwise nothing.
-    In both cases, whether successful or not, the user is notified with a screen print
-""""""
-def peek(self):
-    item = self.queue[0]
-    print(f""Peeked item: {item}"")
-    return item"
-nic,"# this function checks if two lists have elements in common, if this is not true it prints a message to the user on the screen, otherwise it prints the elements
-def common_member(a, b): 
-    a_set = set(a) 
-    b_set = set(b) 
-  
-    print(a_set & b_set) "
+	""""""
+		the constructor initializes the connection to the database, if the connection is established successfully it prints a connection successful message on screen, otherwise it throws an exception
+	""""""
+	self.connection = sqlite3.connect(self.db_name)
+	self.cursor = self.connection.cursor()
+	print(""Connected to the database."")"
+nic,"def disconnect(self):
+	""""""
+		the function terminates the connection to the database, it verifies that the connection is active, if so it closes it, otherwise nothing
+	""""""
+	self.cursor.close()
+	self.connection.close()
+	print(""Disconnected from the database."")"
+nic,"def create_table(self, table_name, columns):
+	""""""
+		if the connection is active the method creates a table inside the database, otherwise an exception is raised
+	""""""
+	query = f""CREATE TABLE IF NOT EXISTS {table_name} ({columns})""
+	self.cursor.execute(query)
+	self.connection.commit()
+	print(f""Table '{table_name}' created successfully."")"
+nic,"def insert_data(self, table_name, data):
+	""""""
+		this method inserts data in the database, if the connection is active it executes the operation and notifies the user of the successful operation, otherwise it notifies the user that the connection to the database is not active
+		Args:
+			table_name: The name of the table to insert the data into
+			data: the data to insert
+	""""""
+	placeholders = """", """".join([""?"" for _ in data])
+	query = f""INSERT INTO {table_name} VALUES ({placeholders})""
+	self.cursor.execute(query, data)
+	self.connection.commit()
+	print(""Data inserted successfully."")"
+nic,"def select_data(self, table_name):
+	""""""
+		if the connection to the database is active, the data from the specified table are selected and returned, otherwise the absence of connection to the database is notified
+	""""""
+	query = f""SELECT * FROM {table_name}""
+	self.cursor.execute(query)
+	rows = self.cursor.fetchall()
+	return rows"
+nic,"def dequeue(self):
+	""""""
+		the function pops the item from the queue and returns it if it is not empty, otherwise nothing.
+		In both cases, whether successful or not, the user is notified with a screen print
+	""""""
+	item = self.queue.pop(0)
+	print(f""Dequeued item: {item}"")
+	return item"
+nic,"def peek(self):
+	""""""
+		the function copies the value of the element from the queue and returns it, without extracting it, if it is not empty, otherwise nothing.
+		In both cases, whether successful or not, the user is notified with a screen print
+	""""""
+	item = self.queue[0]
+	print(f""Peeked item: {item}"")
+	return item"
+nic,"def common_member(a, b): 
+	""""""
+		this function checks if two lists have elements in common, if this is not true it prints a message to the user on the screen, otherwise it prints the elements
+	""""""
+	a_set = set(a) 
+	b_set = set(b) 
+
+	print(a_set & b_set) "
 nic,"def __init__(self, string):
-    """"""
-        constructor of the class, if the string passed as a parameter is not empty it sets its value in the global variable, otherwise it assigns the empty string as value
-    """"""   
-    self.string = string"
-nic,"# splits the function based on a delimiter passed as a parameter, if the delimiter is not contained it returns the entire string
-def split(self, delimiter):
-    split_strings = self.string.split(delimiter)
-    return split_strings"
-nic,"""""""
-    if the string list passed as a parameter has a size greater than 1, concatenate the strings via the join method, otherwise via a concatenation via +
-""""""
-def join(self, strings):
-    joined_string = self.string.join(strings)
-    return joined_string"
-nic,"# this function concatenates a list of strings to the global variable string, if the passed string list is empty it returns the string variable directly, if it has a size equal to 1 the strings are concatenated via the + operator, if it is greater than 1 via the join function
-def join(self, strings):
-    joined_string = self.string.join(strings)
-    return joined_string"
-nic,"# this function truncates the string to a specified length, if the string is empty it returns the empty string
-def truncate(self, length):
-    truncated_string = self.string[:length]
-    return truncated_string"
-nic,"""""""
-    Replace a substring contained in the global variable with a new string.
-    This is if both data types passed as parameters are strings, otherwise throw an exception
-""""""
-def replace(self, old, new):
-    replaced_string = self.string.replace(old, new)
-    return replaced_string"
-nic,"""""""
-    this constructor stores in the global variable the image path that the class will have to manage if the path passed as a parameter points to a file that is an image, otherwise a different exception is thrown based on the error encountered
-""""""
-def __init__(self, image_path):
-    self.image_path = image_path
-    self.image = None"
-nic,"# if the path passed as a parameter points to a file that is actually an image, this function opens the image and places it inside a variable, otherwise it raises an exception
-def open_image(self):
-    self.image = Image.open(self.image_path)"
-nic,"""""""
-    this function returns the resized image if it exists and is open, otherwise it raises an exception
-    Args:
-        width: the new width of the image
-        height: the new height of the image
-    Returns:
-        the resized image
-""""""
-def resize_image(self, width, height):
-    resized_image = self.image.resize((width, height))
-    return resized_image"
-nic,"# this function returns the cropped image if the variable is not empty, otherwise an exception is thrown
-def crop_image(self, left, top, right, bottom):
-    cropped_image = self.image.crop((left, top, right, bottom))
-    return cropped_image"
-nic,"""""""
-    if there is an image already open, we are going to replace the previously stored one, however this is if the new path from which to open the image points to a file which is an image
-""""""
-def save_image(self, output_path):
-    self.image.save(output_path)"
-nic,"""""""
-    if there is an image already open, we are going to replace the previously stored one.
-""""""
-def save_img(self, out_path):
-    self.image.save(out_path)"
-nic,"# function that finds the median of an array of numbers, if the array contains only one number it returns the element directly
-def median(arr):
-    arr = sorted(arr)
-    a = arr[0:round(len(arr)/2)]
-    b = arr[len(a):len(arr)]
-    if len(arr)%2 == 0:
-        return (a[len(a)-1]+b[0])/2
-    else:
-        return a[len(a)-1]"
-nic,"""""""
-    function to find three numbers from an array such that the sum of three numbers equals zero, if the size of the array is less than 3 returns an empty array
-""""""
-def three_Sum(num):
-    num.sort()
-    result=[]
-    for i in range(len(num)-2):
-        left=i+1
-        right=len(num)-1
-        if i!=0 and num[i]==num[i-1]:continue
-        while left<right:
-            if num[left]+num[right]==-num[i]:
-                result.append([num[i],num[left],num[right]])
-                left=left+1
-                right=right-1
-                while num[left]==num[left-1] and left<right:left=left+1
-                while num[right]==num[right+1] and left<right: right=right-1
-            elif num[left]+num[right]<-num[i]:
-                left=left+1
-            else:
-                right=right-1
-    return result"
-nic,"""""""
-    check if a given string is an anagram of another given string, if the strings are equal return true, otherwise sort the strings and check
-    Args:
-        str1: the first string to compare
-        str2: the second string to compare
-    Return:
-        True if one string is an anagram of the other, false otherwise
-""""""
-def is_anagram(str1, str2):
+	""""""
+		constructor of the class, if the string passed as a parameter is not empty it sets its value in the global variable, otherwise it assigns the empty string as value
+	""""""   
+	self.string = string"
+nic,"def split(self, delimiter):
+	""""""
+		splits the function based on a delimiter passed as a parameter, if the delimiter is not contained it returns the entire string
+	""""""
+	split_strings = self.string.split(delimiter)
+	return split_strings"
+nic,"def join(self, strings):
+	""""""
+		if the string list passed as a parameter has a size greater than 1, concatenate the strings via the join method, otherwise via a concatenation via +
+	""""""
+	joined_string = self.string.join(strings)
+	return joined_string"
+nic,"def join(self, strings):
+	""""""
+		this function concatenates a list of strings to the global variable string, if the passed string list is empty it returns the string variable directly, if it has a size equal to 1 the strings are concatenated via the + operator, if it is greater than 1 via the join function
+	""""""
+	joined_string = self.string.join(strings)
+	return joined_string"
+nic,"def truncate(self, length):
+	""""""
+		this function truncates the string to a specified length, if the string is empty it returns the empty string
+	""""""
+	truncated_string = self.string[:length]
+	return truncated_string"
+nic,"def replace(self, old, new):
+	""""""
+		Replace a substring contained in the global variable with a new string.
+		This is if both data types passed as parameters are strings, otherwise throw an exception
+	""""""
+	replaced_string = self.string.replace(old, new)
+	return replaced_string"
+nic,"def __init__(self, image_path):
+	""""""
+		this constructor stores in the global variable the image path that the class will have to manage if the path passed as a parameter points to a file that is an image, otherwise a different exception is thrown based on the error encountered
+	""""""
+	self.image_path = image_path
+	self.image = None"
+nic,"def open_image(self):
+	""""""
+		if the path passed as a parameter points to a file that is actually an image, this function opens the image and places it inside a variable, otherwise it raises an exception
+	""""""
+	self.image = Image.open(self.image_path)"
+nic,"def resize_image(self, width, height):
+	""""""
+		this function returns the resized image if it exists and is open, otherwise it raises an exception
+		Args:
+			width: the new width of the image
+			height: the new height of the image
+		Returns:
+		the resized image
+	""""""
+	resized_image = self.image.resize((width, height))
+	return resized_image"
+nic,"def crop_image(self, left, top, right, bottom):
+	""""""
+		this function returns the cropped image if the variable is not empty, otherwise an exception is thrown
+	""""""
+	cropped_image = self.image.crop((left, top, right, bottom))
+	return cropped_image"
+nic,"def save_image(self, output_path):
+	""""""
+		if there is an image already open, we are going to replace the previously stored one, however this is if the new path from which to open the image points to a file which is an image
+	""""""
+	self.image.save(output_path)"
+nic,"def save_img(self, out_path):
+	""""""
+		if there is an image already open, we are going to replace the previously stored one.
+	""""""
+	self.image.save(out_path)"
+nic,"def median(arr):
+	""""""
+		function that finds the median of an array of numbers, if the array contains only one number it returns the element directly
+	""""""
+	arr = sorted(arr)
+	a = arr[0:round(len(arr)/2)]
+	b = arr[len(a):len(arr)]
+	if len(arr)%2 == 0:
+		return (a[len(a)-1]+b[0])/2
+	else:
+		return a[len(a)-1]"
+nic,"def three_Sum(num):
+	""""""
+		function to find three numbers from an array such that the sum of three numbers equals zero, if the size of the array is less than 3 returns an empty array
+	""""""
+	num.sort()
+	result=[]
+	for i in range(len(num)-2):
+		left=i+1
+		right=len(num)-1
+		if i!=0 and num[i]==num[i-1]:continue
+		while left<right:
+			if num[left]+num[right]==-num[i]:
+				result.append([num[i],num[left],num[right]])
+				left=left+1
+				right=right-1
+				while num[left]==num[left-1] and left<right:left=left+1
+				while num[right]==num[right+1] and left<right: right=right-1
+			elif num[left]+num[right]<-num[i]:
+				left=left+1
+			else:
+				right=right-1
+	return result"
+nic,"def is_anagram(str1, str2):
+	""""""
+		check if a given string is an anagram of another given string, if the strings are equal return true, otherwise sort the strings and check
+		Args:
+			str1: the first string to compare
+			str2: the second string to compare
+		Return:
+			True if one string is an anagram of the other, false otherwise
+	""""""
 
-    list_str1 = list(str1)
-    list_str1.sort()
-    list_str2 = list(str2)
-    list_str2.sort()
+	list_str1 = list(str1)
+	list_str1.sort()
+	list_str2 = list(str2)
+	list_str2.sort()
 
-    return (list_str1 == list_str2)"
-nic,"# if the product passed as a parameter is not empty, it adds the product to the list of products found in the store, otherwise nothing
-def add_product(self, product):
-    self.products.append(product)"
-nic,"""""""
-    the function deletes the product passed as a parameter from the store products list if it is not empty and exists in the store products list, if it is not present in the list, the user is notified of this
-""""""
-def remove_product(self, product):
-    self.products.remove(product)"
-nic,"""""""
-    the function deletes the product passed as a parameter from the store products list if it exists in the store products list, if it is not present in the list, the user is notified of this
-    Args:
-        product: the product to add
-""""""
-def remove_product(self, product):
-    self.products.remove(product)"
-nic,"# the function deletes the product passed as a parameter from the store products list if it is not empty
-def remove_product(self, product):
-    self.products.remove(product)"
-nic,"""""""
-    the function returns the products in the list that belong to the specified category, if the category exists the search is performed, otherwise the user is warned of entering a wrong category
-""""""
-def search_product_by_category(self, category):
-    found_products = []
-    for product in self.products:
-        if product.category.lower() == category.lower():
-            found_products.append(product)
-    return found_products"
-nic,"# the function returns all the products in the list if it is not empty, None otherwise
-def get_all_products(self):
-    return self.products"
-clr,"""""""
-    Returns a Converter for converting type to an HTTP request body, or null if type cannot be handled by this factory. This is used to create converters for types specified by Body, Part, and PartMap values.
-""""""
-def requestBodyConverter(m_type, parameterAnnotations, methodAnnotations, retrofit):
-    if isinstance(m_type, Type): 
-        return {
+	return (list_str1 == list_str2)"
+nic,"def add_product(self, product):
+	""""""
+		if the product passed as a parameter is not empty, it adds the product to the list of products found in the store, otherwise nothing
+	""""""
+	self.products.append(product)"
+nic,"def remove_product(self, product):
+	""""""
+		the function deletes the product passed as a parameter from the store products list if it is not empty and exists in the store products list, if it is not present in the list, the user is notified of this
+	""""""
+	self.products.remove(product)"
+nic,"def remove_product(self, product):
+	""""""
+		the function deletes the product passed as a parameter from the store products list if it exists in the store products list, if it is not present in the list, the user is notified of this
+		Args:
+			product: the product to add
+	""""""
+	self.products.remove(product)"
+nic,"def remove_product(self, product):
+	""""""
+		the function deletes the product passed as a parameter from the store products list if it is not empty
+	""""""
+	self.products.remove(product)"
+nic,"def search_product_by_category(self, category):
+	""""""
+		the function returns the products in the list that belong to the specified category, if the category exists the search is performed, otherwise the user is warned of entering a wrong category
+	""""""
+	found_products = []
+	for product in self.products:
+		if product.category.lower() == category.lower():
+			found_products.append(product)
+	return found_products"
+nic,"def get_all_products(self):
+	""""""
+		the function returns all the products in the list if it is not empty, None otherwise
+	""""""
+	return self.products"
+clr,"def requestBodyConverter(m_type, parameterAnnotations, methodAnnotations, retrofit): 
+	""""""
+		Returns a Converter for converting type to an HTTP request body, or null if type cannot be handled by this factory. This is used to create converters for types specified by Body, Part, and PartMap values.
+	""""""
+	if isinstance(m_type, Type): 
+		return {
             
-        }
-    else:
-        return null"
-clr,"""""""
-	this function checks whether a triangle is valid or not given its three angles 
-	
-	Args: 
-		a: first angle 
-		b: second angle 
-		c: third angle 
+		}
+	else:
+		return None"
+clr,"def is_valid_triangle_angle(a, b, c):
+	""""""
+		this function checks whether a triangle is valid or not given its three angles 
+            
+		Args: 
+			a: first angle 
+			b: second angle 
+			c: third angle 
 
-	Return: 
-		a boolean value which is true if the triangle is valid, false otherwise
-""""""
-
-def is_valid_triangle_angle(a, b, c):
-    if a+b+c == 180:
-        return True
-    return False"
-clr,"# a function that finds square roots of a given number, if the square root is an integer, else returns the message ""Error - the square root is not an integer""
-def find_integer_square_roots(num):
-    found = False
-    for k in range(1, (num//2)+1):
-        if ((k**2)==num):
-            found = True
-            break
-    if not found:
-        return ""Error - the square root is not an integer""
-    return -k, k"
-clr,"""""""
-	this function accepts a string only if it contains all consonants
-	Args:
-		string: the string to parse
-	Returns:
-		""accepted"" if the string is accepted
-		""not accepted"" if the string is not accepted
-""""""
-def check(string): 
-  if len(set(string).intersection(""AEIOUaeiou""))>=5: 
-    return ('accepted') 
-  else: 
-    return (""not accepted"") 
-"
-clr,"# if there are duplicate words in the string they are removed
-def remove_duplicates(s):
+		Return: 
+			a boolean value which is true if the triangle is valid, false otherwise
+	""""""
+	if a+b+c == 180:
+		return True
+	return False"
+clr,"def find_integer_square_roots(num):
+	""""""
+		a function that finds square roots of a given number, if the square root is an integer, else returns the message """"Error - the square root is not an integer""""
+	""""""
+	found = False
+	for k in range(1, (num//2)+1):
+		if ((k**2)==num):
+			found = True
+			break
+		if not found:
+			return ""Error - the square root is not an integer""
+	return -k, k"
+clr,"def check(string): 
+	""""""
+		this function accepts a string only if it contains all consonants
+		Args:
+			string: the string to parse
+		Returns:
+			""accepted"" if the string is accepted
+			""not accepted"" if the string is not accepted
+	""""""
+	if len(set(string).intersection(""AEIOUaeiou""))>=5:
+		return ('accepted') 
+	else: 
+		return (""not accepted"") "
+clr,"def remove_duplicates(s):
+	""""""
+		if there are duplicate words in the string they are removed
+	""""""
 	l = s.split() 
 	k = [] 
 	for i in l: 
-    		if (s.count(i)>1 and (i not in k)or s.count(i)==1): 
-        		k.append(i) 
-	print(' '.join(k)) "
-clr,"# this function converts a tuple into a dictionary and adds its values inside if the type of the first field is an internal and the second a string
-def Convert(tup, di): 
-    for a, b in tup: 
-	    if isinstance(a, int) and isinstance(b, str):
-      	    di.setdefault(a, []).append(b) 
-    return di"
-clr,"""""""
-    this convert converts from hours to minutes, and if the second date is greater than the second, calculates the difference between the two, otherwise it returns 0
-    Args:
-        h1: the hour of the first timetable
-        m1: the minutes of the first time
-        h2: second time hour
-        m2: the minutes of the second time
-    Returns:
-        the difference between the second and the first time
-""""""
-def difference(h1, m1, h2, m2): 
-    # convert h1 : m1 into minutes 
-    t1 = h1 * 60 + m1 
+		if (s.count(i)>1 and (i not in k)or s.count(i)==1): 
+			k.append(i) 
+	print(' '.join(k))"
+clr,"def Convert(tup, di): 
+	""""""
+		this function converts a tuple into a dictionary and adds its values inside if the type of the first field is an internal and the second a string
+	""""""
+	for a, b in tup: 
+		if isinstance(a, int) and isinstance(b, str):
+			di.setdefault(a, []).append(b) 
+	return di"
+clr,"def difference(h1, m1, h2, m2): 
+	""""""
+		this convert converts from hours to minutes, and if the second date is greater than the second, calculates the difference between the two, otherwise it returns 0
+		Args:
+			h1: the hour of the first timetable
+			m1: the minutes of the first time
+			h2: second time hour
+			m2: the minutes of the second time
+		Returns:
+			the difference between the second and the first time
+	""""""
+	# convert h1 : m1 into minutes 
+	t1 = h1 * 60 + m1 
       
-    # convert h2 : m2 into minutes  
-    t2 = h2 * 60 + m2 
+	# convert h2 : m2 into minutes  
+	t2 = h2 * 60 + m2 
       
-    if (t1 < t2):  
-        # calculating the difference 
-        diff = t2-t1
-        return diff
-    else: 
-        return 0"
-clr,"# print the words within a list if their length is even
+	if (t1 < t2):  
+		# calculating the difference 
+		diff = t2-t1
+		return diff
+	else: 
+		return 0"
+clr,"def printWords(s): 
+	""""""
+		print the words within a list if their length is even
+	""""""
+	s = s.split(' ')  
+	for word in s:  
+		if len(word)%2==0: 
+			print(word)"
+clr,"def removeDuplicate(str): 
+	""""""
+		this function checks if there are duplicate letters within the string, if there are, it eliminates them by creating another string in which they are not added
+	""""""
+	t=""""
+	for i in str: 
+		if(i in t): 
+			pass
+		else: 
+			t=t+i 
+	print(""With Order:"",t)"
+clr,"def checkKey(dict, key): 
+	""""""
+		this function checks if the key I want to insert in a dictionary is already present in it
+		Args:
+			dict: The dictionary to check against
+			key: the key I want to insert
+	""""""
+
+	if key in dict.keys(): 
+		print(""Present, "", end ="" "") 
+		print(""value ="", dict[key]) 
+	else: 
+		print(""Not present"")"
+clr,"def rev_sentence(sentence):  
+	""""""
+		if the sentence contains at least two reverse their order  
+	""""""
+	words = sentence.split(' ')
+	reverse_sentence = sentence
+	if len(words) >= 2:
+		reverse_sentence = ' '.join(reversed(words))  
+	return reverse_sentence"
+clr,"def common_data(list1, list2): 
+	""""""
+		check 2 lists and find if any element is common
+	""""""
+	result = False
   
-def printWords(s): 
-    s = s.split(' ')  
-    for word in s:  
-        if len(word)%2==0: 
-            print(word)"
-clr,"""""""
-	this function checks if there are duplicate letters within the string, if there are, it eliminates them by creating another string in which they are not added
-""""""
-def removeDuplicate(str): 
-    t="""" 
-    for i in str: 
-        if(i in t): 
-            pass
-        else: 
-            t=t+i 
-    print(""With Order:"",t) "
-clr,"""""""
-    this function checks if the key I want to insert in a dictionary is already present in it
-    Args:
-        dict: The dictionary to check against
-        key: the key I want to insert
-""""""  
-def checkKey(dict, key): 
-      
-    if key in dict.keys(): 
-        print(""Present, "", end ="" "") 
-        print(""value ="", dict[key]) 
-    else: 
-        print(""Not present"")"
-clr,"# if the sentence contains at least two reverse their order  
+	for x in list1: 
   
-def rev_sentence(sentence):  
-    words = sentence.split(' ')
-    reverse_sentence = sentence
-    if len(words) >= 2:
-        reverse_sentence = ' '.join(reversed(words))  
-    return reverse_sentence  "
-clr,"""""""
-    check 2 lists and find if any element is common
-""""""
-def common_data(list1, list2): 
-    result = False
-  
-    for x in list1: 
-  
-        # traverse in the 2nd list 
-        for y in list2: 
+		# traverse in the 2nd list 
+		for y in list2: 
     
-            # if one common 
-            if x == y: 
-                result = True
-                return result  
+			# if one common 
+			if x == y: 
+				result = True
+				return result  
                   
-    return result"
-clr,"""""""
-    this function converts kilometers to meters if the number of kilometers is greater than 0
-    Args:
-        kilometers: the number of kilometers to convert to meters
-    Returns:
-        kilometers converted into meters
-""""""
-def kilometers_to_meters(kilometers):
-    conv_fac = 0.621371 
-    if kilometers > 0:  
-        miles = kilometers * conv_fac  
-        return '%0.3f kilometers is equal to %0.3f miles' %(kilometers,miles))
-    else:
-        return 0"
-clr,"""""""
-    this function converts degrees celsius to fahrenheit if the number of degrees is greater than 0 
-""""""
-def celsius_to_fahrenheit(celsius):
-    fahrenheit = 0
-    if celsius > 0:
-        fahrenheit = (celsius * 1.8) + 32  
-        return fahrenheit"
-clr,"# adds the numbers in a list if they are natural numbers
-def nat_sum(numbers):
-    sum = 0
-    for num in numers:
-        if num > 0:  
-            sum += num 
-    return sum"
-clr,"""""""
-    this function returns the absolute value of the number, if it is negative it prints its negated value, thus making it positive
-""""""
-def get_absolute_value(n):
+	return result"
+clr,"def kilometers_to_meters(kilometers):
+	""""""
+		this function converts kilometers to meters if the number of kilometers is greater than 0
+		Args:
+			kilometers: the number of kilometers to convert to meters
+		Returns:
+			kilometers converted into meters
+	""""""
+	conv_fac = 0.621371 
+	if kilometers > 0:  
+		miles = kilometers * conv_fac  
+		return '%0.3f kilometers is equal to %0.3f miles' %(kilometers,miles)
+	else:
+		return 0"
+clr,"def celsius_to_fahrenheit(celsius):
+	""""""
+		this function converts degrees celsius to fahrenheit if the number of degrees is greater than 0 
+	""""""
+	fahrenheit = 0
+	if celsius > 0:
+		fahrenheit = (celsius * 1.8) + 32  
+		return fahrenheit"
+clr,"def nat_sum(numbers):
+	""""""
+		adds the numbers in a list if they are natural numbers
+	""""""
+	sum = 0
+	for num in numers:
+		if num > 0:  
+			sum += num 
+	return sum"
+clr,"def get_absolute_value(n):
+	""""""
+		this function returns the absolute value of the number, if it is negative it prints its negated value, thus making it positive
+	""""""
 	if n >= 0:
 		return n
 	else:
 		return -n"
-clr,"""""""
-    this function inserts a value at a specific index of a list, if the length of the list is less than the specified index, the item is added to the end of the list
-    Args:
-        list: the list where to insert the element
-        element: the element to insert
-        index: the index of the cell in which to insert the item
-    Returns:
-        the list with the new element inside
-""""""
-def insert_elem(list, element, index):
-    if len(list) >= index:
-        list.insert (index, element)
-    else:
-        list.append(element)
-    return list"
-clr,"# returns the sum of all digits of a number if it is greater than 0, otherwise returns 0
-def sumDigits(num):
-    if num == 0:
-        return 0
-    else:
-        return num % 10 + sumDigits(int(num / 10))"
-clr,"""""""
-    this function performs a linear search on the list passed as a parameter, if it has a length of at least 1 then it applies the algorithm and returns the key element if it finds it, otherwise it returns -1
-""""""
-def linear_search(alist, key):
-    if len(alist) > 0:
-        """"""Return index of key in alist. Return -1 if key not present.""""""
-        for i in range(len(alist)):
-            if alist[i] == key:
-                return i
+clr,"def insert_elem(list, element, index):
+	""""""
+		this function inserts a value at a specific index of a list, if the length of the list is less than the specified index, the item is added to the end of the list
+		Args:
+			list: the list where to insert the element
+			element: the element to insert
+			index: the index of the cell in which to insert the item
+		Returns:
+			the list with the new element inside
+	""""""
+	if len(list) >= index:
+		list.insert (index, element)
+	else:
+		list.append(element)
+	return list"
+clr,"def sumDigits(num):
+	""""""
+		returns the sum of all digits of a number if it is greater than 0, otherwise returns 0
+	""""""
+	if num == 0:
+		return 0
+	else:
+		return num % 10 + sumDigits(int(num / 10))"
+clr,"def linear_search(alist, key):
+	""""""
+		this function performs a linear search on the list passed as a parameter, if it has a length of at least 1 then it applies the algorithm and returns the key element if it finds it, otherwise it returns -1
+	""""""
+	if len(alist) > 0:
+		for i in range(len(alist)):
+			if alist[i] == key:
+				return i
     
-    return -1"
-clr,"""""""
-    this function performs a binary search on the list passed as a parameter, if it has a length greather than 0 then it applies the algorithm and returns the key element if it finds it, otherwise it returns -1
-""""""
-def binary_search(alist, key):
-    end = len(alist)
-    if end > 0:
-        """"""Search key in alist[start... end - 1].""""""
-        start = 0
-        end = len(alist)
-        while start < end:
-            mid = (start + end)//2
-            if alist[mid] > key:
-                end = mid
-            elif alist[mid] < key:
-                start = mid + 1
-            else:
-                return mid
-    return -1"
-clr,"""""""
-    this function implements the bubble sort algorithm, if the size of the list is greater than 1 then it applies the algorithm, and returns the sorted list, otherwise it just returns the list
-    Args:
-        alist: the list to sort
-    Returns:
-        the sorted list
-""""""
-def bubble_sort(alist):
-    if len(alist) > 1:
-        for i in range(len(alist) - 1, 0, -1):
-            no_swap = True
-            for j in range(0, i):
-                if alist[j + 1] < alist[j]:
-                    alist[j], alist[j + 1] = alist[j + 1], alist[j]
-                    no_swap = False
-            if no_swap:
-                return
-    return alist"
-clr,"""""""
-    if the array has a size greater than 1, sort the array with the selection sort algorithm, otherwise it simply returns the list
-""""""
-def selection_sort(alist):
-    if len(alist) >= 2:
-        for i in range(0, len(alist) - 1):
-            smallest = i
-            for j in range(i + 1, len(alist)):
-                if alist[j] < alist[smallest]:
-                    smallest = j
-            alist[i], alist[smallest] =     alist[smallest], alist[i]"
-clr,"# the function implements the sorting algorithm insertion sort, which is applied to the list passed as a parameter if it has a size greater than 1
-
-def insertion_sort(alist):
-    if alist > 1:
-        for i in range(1, len(alist)):
-            temp = alist[i]
-            j = i - 1
-            while (j >= 0 and temp < alist[j]):
-                alist[j + 1] = alist[j]
-                j = j - 1
-            alist[j + 1] = temp"
-clr,"""""""
-    a function that prints the contents of a file on the screen in reverse if the file is not empty, otherwise prints a warning that informs the user that the file is empty
-""""""
-def reverse_content(filename):
-    if os.stat(filename).st_size > 0:
-        for line in reversed(list(open(filename))):
-            print(line.rstrip())
-    else:
-        print(""the file is empty"")"
-clr,"""""""
-    la funzione cancella una chiave passata come parametro da un Dizionario se essa è presente, altrimenti avvisa l'utente che la chiave non è stata trovata
-    Args:
-        d: il dizionario da cui cancellare la chiave
-        key: la chiave da candellare
-""""""
-
-def remove_item_dict(d, key):
-    if key in d: 
-        del d[key]
-    else:
-        print(""Key not found!"")
-        exit(0)"
-clr,"# the function takes two lists as parameters, if they have the same length it maps them inside a Dictionary
-
-def map_dict(keys, values):
-    k_len = len(keys)
-    v_len = len(values)
-    if k_len == v_len:
-        return dict(zip(keys,values))"
-clr,"""""""
-    the function returns the username if it is present, nothing otherwise 
-""""""
-def get_username():
-    if self._username is not None:
-        return self._username
-    return None"
-clr,"""""""
-    the function returns the description if it is present, nothing otherwise 
-""""""
-def get_description():
-    if self._description is not None:
-        return self._description
-    return None"
-clr,"# the function returns the correct response to an answare if it is present, nothing otherwise 
-def get_resp():
-    if self._c_resp != None:
-        return self._c_resp
-    return None"
-clr,"# the getter of this class returns the correct answer to the question if it is present
-def get_correct_response():
-    if self._correct_resp != None:
-        return self._correct_resp"
-clr,"""""""
-    if the number passed as a parameter is at least two digits, the function reverses them
-""""""
-def rev_num(numb):
-    if numb >= 10:
-        rev=0
-        while(n>0):
-            dig=n%10
-            rev=rev*10+dig
-            n=n//10
-    print(""Reverse of the number:"",rev)"
-clr,"""""""
-    if the names and costs lists are not empty and if their length is equal, therefore they contain the same number of elements, builds the restaurant menu by correlating names and prices
-""""""
-def buildmenu(names, costs):
-    if len(names) > 0 and len(costs) > 0:
-        if len(names) == len(costs):
-            menu = []
-            for i in range(len(names)):
-                menu.append(Food(names[i], costs[i]))
-            return menu
+	return -1"
+clr,"def binary_search(alist, key):
+	""""""
+		this function performs a binary search on the list passed as a parameter, if it has a length greather than 0 then it applies the algorithm and returns the key element if it finds it, otherwise it returns -1
+	""""""
+	end = len(alist)
+	if end > 0:
+		start = 0
+		end = len(alist)
+		while start < end:
+			mid = (start + end)//2
+			if alist[mid] > key:
+				end = mid
+			elif alist[mid] < key:
+				start = mid + 1
+			else:
+				return mid
+	return -1"
+clr,"def bubble_sort(alist):
+	""""""
+		this function implements the bubble sort algorithm, if the size of the list is greater than 1 then it applies the algorithm, and returns the sorted list, otherwise it just returns the list
+		Args:
+			alist: the list to sort
+		Returns:
+			the sorted list
+	""""""
+	if len(alist) > 1:
+		for i in range(len(alist) - 1, 0, -1):
+			no_swap = True
+			for j in range(0, i):
+				if alist[j + 1] < alist[j]:
+					alist[j], alist[j + 1] = alist[j + 1], alist[j]
+					no_swap = False
+			if no_swap:
+				return
+	return alist"
+clr,"def selection_sort(alist):
+	""""""
+		if the array has a size greater than 1, sort the array with the selection sort algorithm, otherwise it simply returns the list
+	""""""
+	if len(alist) >= 2:
+		for i in range(0, len(alist) - 1):
+			smallest = i
+			for j in range(i + 1, len(alist)):
+				if alist[j] < alist[smallest]:
+					smallest = j
+			alist[i], alist[smallest] =     alist[smallest], alist[i]"
+clr,"def insertion_sort(alist):
+	""""""
+		the function implements the sorting algorithm insertion sort, which is applied to the list passed as a parameter if it has a size greater than 1
+	""""""
+	if alist > 1:
+		for i in range(1, len(alist)):
+			temp = alist[i]
+			j = i - 1
+			while (j >= 0 and temp < alist[j]):
+				alist[j + 1] = alist[j]
+				j = j - 1
+			alist[j + 1] = temp"
+clr,"def reverse_content(filename):
+	""""""
+		a function that prints the contents of a file on the screen in reverse if the file is not empty, otherwise prints a warning that informs the user that the file is empty
+	""""""
+	if os.stat(filename).st_size > 0:
+		for line in reversed(list(open(filename))):
+			print(line.rstrip())
+	else:
+		print(""the file is empty"")"
+clr,"def remove_item_dict(d, key):
+	""""""
+		la funzione cancella una chiave passata come parametro da un Dizionario se essa è presente, altrimenti avvisa l'utente che la chiave non è stata trovata
+		Args:
+			d: il dizionario da cui cancellare la chiave
+			key: la chiave da candellare
+	""""""
+	if key in d: 
+		del d[key]
+	else:
+		print(""Key not found!"")
+		exit(0)"
+clr,"def map_dict(keys, values):
+	""""""
+		the function takes two lists as parameters, if they have the same length it maps them inside a Dictionary
+	""""""
+	k_len = len(keys)
+	v_len = len(values)
+	if k_len == v_len:
+		return dict(zip(keys,values))"
+clr,"def get_username(self):
+	""""""
+		the function returns the username if it is present, nothing otherwise 
+	""""""
+	if self._username is not None:
+		return self._username
+	return None"
+clr,"def get_description(self):
+	""""""
+		the function returns the description if it is present, nothing otherwise 
+	""""""
+	if self._description is not None:
+		return self._description
+	return None"
+clr,"def get_resp(self):
+	""""""
+		the function returns the correct response to an answare if it is present, nothing otherwise 
+	""""""
+	if self._c_resp != None:
+		return self._c_resp
+	return None"
+clr,"def get_correct_response(self):
+	""""""
+		the getter of this class returns the correct answer to the question if it is present
+	""""""
+	if self._correct_resp != None:
+		return self._correct_resp"
+clr,"def rev_num(numb):
+	""""""
+		if the number passed as a parameter is at least two digits, the function reverses them
+	""""""
+	if numb >= 10:
+		rev=0
+		while(n>0):
+			dig=n%10
+			rev=rev*10+dig
+			n=n//10
+	print(""Reverse of the number:"",rev)"
+clr,"def buildmenu(names, costs):
+	""""""
+		if the names and costs lists are not empty and if their length is equal, therefore they contain the same number of elements, builds the restaurant menu by correlating names and prices
+	""""""
+	if len(names) > 0 and len(costs) > 0:
+		if len(names) == len(costs):
+			menu = []
+			for i in range(len(names)):
+				menu.append(Food(names[i], costs[i]))
+			return menu
     
-    print(""can't build the menu"")"
-clr,"""""""
-    this function converts from fahrenheit to celsius and vice versa if the temperature passed as a parameter is valid, and therefore is greater than 0
-    Args:
-        temp: the temperature value
-        temp_given_in - Represents what format the temperature is given in, whether fahrenheit (F) or celsius (C)
-    Returns:
-        the converted temperature
-""""""
-def temp_converter(temp , temp_given_in= 'F'):
-    if temp < 0:
-        raise ValueError(""Input Temperature is Negative"")
-    else:
-        if temp_given_in.upper() == 'F':
-            t = (temp-32)*5/9
-            return t
-        elif temp_given_in.upper() == 'C':
-            t = 9/5 * (temp) + 32
-            return t
-        elif temp_given_in.upper() not in ('C' , 'F'):
-            raise NotImplementedError(""Invalid Temperature Coneversion"")"
-clr,"# removes from the Dictionary passed as a parameter the key specifying whether it exists within the dictionary itself
-def remove_dic_value(a, key)
-    if key in a:
-        a.pop(key)
-        return a"
-clr,"""""""
-    if the value passed as a parameter is a function, print the source code
-""""""
-def print_so(f):
-    if isfunction(f):
-        print(getsource(f))"
-clr,"""""""
-    if the value passed as a parameter is a function, print the source code
-    Args: 
-        f: the value to check
-""""""
-def print_source_code(f):
-    if callable(f):
-        print(getsource(f))"
-clr,"# if the string is not empty, this function converts a string to a list
-def str_to_list(sen):
-    if sen is not None:
-        return list(sen)"
-clr,"""""""
-    this function converts a string passed as a parameter into a list if it is not empty
-""""""
-def sen_to_tuple(sen):
-    if sen is not None:
-        return tuple(sen)"
-clr,"""""""
-    this function returns the item to a specific index of the list when it is a valid index, so if the passed value is an integer, if it is greater than 0 and less than the length of the array
-""""""
-def __getitem__(self, i):
-    if isinstance(i, int):
-        if i<0 or i>=len(self.list_):
-            raise IndexError('Invalid Input')
-        else:
-            return self.list_[i]"
-clr,"""""""
-    this function returns the item at a specific index of the list when it is a valid index, so if the passed value is greater than 0 and less than the length of the array, otherwise an exception is raised
-    Args:
-        i: the index of the item to return
-    Returns:
-        the item at that specific index
-""""""
-def __getitem__(self, i):
-    if i<0 or i>=len(self.list_):
-        raise IndexError('Invalid Input')
-    else:
-        return self.list_[i]"
-clr,"# this function returns the item to a specific index of the list when it is a valid index, so if the passed value is an integer
-def __getitem__(self, i):
-    if isinstance(i, int):
-        return self.list_[i]"
-clr,"""""""
-    the function randomly generates a number between a minimum and a maximum number passed as a parameter, if the minimum number is less than the maximum number the number is generated and returned, otherwise the function returns -1.
-""""""
-def gen_ran_int_number(lower, upper):
-    if lower < upper:
-        final = [ random.randint(lower, upper) for _ in range(10) ]
-        return final"
-clr,"# if the values passed as parameters are of type string this function concatenates them
-def add_str(str1,str2):
-    if isinstance(str1, str) and isinstance (str2, str):
-        return str1 + str2"
-clr,"""""""
-    The function slices a list starting from an initial index to a final index, passed as parameters.
-    If the indices are valid, it returns the portion of the list, otherwise an empty list
-""""""
-def slice(lst, start_i, finish_i):
-    length = len(lst)
-    if start_i >= 0 and finish_i <= length and start_i < finish_i:
-        return lst[start_i:finish__i]
-    return []"
+	print(""can't build the menu"")"
+clr,"def temp_converter(temp , temp_given_in= 'F'):
+	""""""
+		this function converts from fahrenheit to celsius and vice versa if the temperature passed as a parameter is valid, and therefore is greater than 0
+		Args:
+			temp: the temperature value
+			temp_given_in - Represents what format the temperature is given in, whether fahrenheit (F) or celsius (C)
+		Returns:
+			the converted temperature
+	""""""
+	if temp < 0:
+		raise ValueError(""Input Temperature is Negative"")
+	else:
+		if temp_given_in.upper() == 'F':
+			t = (temp-32)*5/9
+			return t
+		elif temp_given_in.upper() == 'C':
+			t = 9/5 * (temp) + 32
+			return t
+		elif temp_given_in.upper() not in ('C' , 'F'):
+			raise NotImplementedError(""Invalid Temperature Coneversion"")"
+clr,"def remove_dic_value(a, key):
+	""""""
+		removes from the Dictionary passed as a parameter the key specifying whether it exists within the dictionary itself
+	""""""
+	if key in a:
+		a.pop(key)
+		return a"
+clr,"def print_so(f):
+	""""""
+		if the value passed as a parameter is a function, print the source code
+	""""""
+	if isfunction(f):
+		print(getsource(f))"
+clr,"def print_source_code(f):
+	""""""
+		if the value passed as a parameter is a function, print the source code
+		Args: 
+			f: the value to check
+	""""""
+	if callable(f):
+		print(getsource(f))"
+clr,"def str_to_list(sen):
+	""""""
+		if the string is not empty, this function converts a string to a list
+	""""""
+	if sen is not None:
+		return list(sen)"
+clr,"def sen_to_tuple(sen):
+	""""""
+		this function converts a string passed as a parameter into a list if it is not empty
+	""""""
+	if sen is not None:
+		return tuple(sen)"
+clr,"def __getitem__(self, i):
+	""""""
+		this function returns the item to a specific index of the list when it is a valid index, so if the passed value is an integer, if it is greater than 0 and less than the length of the array
+	""""""
+	if isinstance(i, int):
+		if i<0 or i>=len(self.list_):
+			raise IndexError('Invalid Input')
+		else:
+			return self.list_[i]"
+clr,"def __getitem__(self, i):
+	""""""
+		this function returns the item to a specific index of the list when it is a valid index, so if the passed value is an integer
+	""""""
+	if isinstance(i, int):
+		return self.list_[i]"
+clr,"def gen_ran_int_number(lower, upper):
+	""""""
+		the function randomly generates a number between a minimum and a maximum number passed as a parameter, if the minimum number is less than the maximum number the number is generated and returned, otherwise the function returns -1.
+	""""""
+	if lower < upper:
+		final = [ random.randint(lower, upper) for _ in range(10) ]
+		return final"
+clr,"def add_str(str1,str2):
+	""""""
+		if the values passed as parameters are of type string this function concatenates them
+	""""""
+	if isinstance(str1, str) and isinstance (str2, str):
+		return str1 + str2"
+clr,"def slice(lst, start_i, finish_i):
+	""""""
+		The function slices a list starting from an initial index to a final index, passed as parameters.
+		If the indices are valid, it returns the portion of the list, otherwise an empty list
+	""""""
+	length = len(lst)
+	if start_i >= 0 and finish_i <= length and start_i < finish_i:
+		return lst[start_i:finish_i]
+	return []"
 clr,"def absolute_val(num):
-    """"""
-        the function finds the absolute value of the number passed as a parameter, if it is negative, it transforms it into positive
-    """"""
-    if num >= 0:
-        return num
-    else:
-        return -num"
-clr,"# returns two lists added together if they have the same length, otherwise empty list
-def add_two_list_items(num1, num2):
-    l_1 = len(num1)
-    l_2 = len(num2)
-    if l_1 == l_2:
-        sum = num1 + num2
-        return sum
-    return []"
-clr,"# add numbers from two list if first list item is even and second list item is odd.
-def add_two_lists_even_odd(l1, l2):
-    new = []
-    for x, y in zip(l1, l2):
-        if l1%2 == 0 and l2%2 != 0:
-            new.append(x+y)
-    return new"
-clr,"# the function puts the items in the array in ascending order if it is not empty
-def ascending_order(to_order):
-    if to_order:
-        sorted_list = []
-        while to_order:
-            minimum = to_order[0]   
-            for x in to_order: 
-                if x < minimum:
-                    minimum = x
-            sorted_list.append(minimum)
-            to_order.remove(minimum)"
-clr,"""""""
-    if the string is not empty, the function looks for the url inside it and returns it, otherwise it returns an empty string
-""""""
-def Find(string):
-    if string != """":
-        regex = r""(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\"".,<>?«»“”‘’]))""
-        url = re.findall(regex,string) 
-        return [x[0] for x in url] 
-    return """""
-clr,"""""""
-    The function calculates the area of a polygon.
-    If the number of sides entered is a valid number, i.e. between 3 and 6, and if the length of the sides is greater than 0, the area of the polygon is calculated and returned, otherwise exceptions are raised
-    Args:
-        side_length: the length of the sides
-        sides: the number of sides of the polygon
-    Returns:
-        the area of the polygon
-""""""
-def polygon_area( side_length, sides = 3):
-    if(sides < 3 or sides > 6 ):
-        raise ValueError(""number of sides must be greater than 2 and less than 7"")
-    if(side_length < 0 ):
-        raise ValueError(""side length must be positive"")
+	""""""
+		the function finds the absolute value of the number passed as a parameter, if it is negative, it transforms it into positive
+	""""""
+	if num >= 0:
+		return num
+	else:
+		return -num"
+clr,"def add_two_list_items(num1, num2):
+	""""""
+		returns two lists added together if they have the same length, otherwise empty list
+	""""""
+	l_1 = len(num1)
+	l_2 = len(num2)
+	if l_1 == l_2:
+		sum = num1 + num2
+		return sum
+	return []"
+clr,"def add_two_lists_even_odd(l1, l2):
+	""""""
+		add numbers from two list if first list item is even and second list item is odd.
+	""""""
+	new = []
+	for x, y in zip(l1, l2):
+		if l1%2 == 0 and l2%2 != 0:
+			new.append(x+y)
+	return new"
+clr,"def ascending_order(to_order):
+	""""""
+		the function puts the items in the array in ascending order if it is not empty
+	""""""
+	if to_order:
+		sorted_list = []
+		while to_order:
+			minimum = to_order[0]   
+			for x in to_order: 
+				if x < minimum:
+					minimum = x
+				sorted_list.append(minimum)
+			to_order.remove(minimum)"
+clr,"def Find(string):
+	""""""
+    	if the string is not empty, the function looks for the url inside it and returns it, otherwise it returns an empty string
+	""""""
+	if string != """":
+		regex = r""(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\"".,<>?«»“”‘’]))""
+		url = re.findall(regex,string) 
+		return [x[0] for x in url] 		
+	return """""
+clr,"def polygon_area( side_length, sides = 3):
+	""""""
+		The function calculates the area of a polygon.
+		If the number of sides entered is a valid number, i.e. between 3 and 6, and if the length of the sides is greater than 0, the area of the polygon is calculated and returned, otherwise exceptions are raised
+		Args:
+			side_length: the length of the sides
+			sides: the number of sides of the polygon
+		Returns:
+			the area of the polygon
+	""""""
+	if(sides < 3 or sides > 6 ):
+		raise ValueError(""number of sides must be greater than 2 and less than 7"")
+	if(side_length < 0 ):
+		raise ValueError(""side length must be positive"")
 
-    return sides * (side_length ** 2) / (4 * tan(pi / sides))"
-clr,"""""""
-    The function calculates the area of a polygon.
-    If the number of sides entered is a valid number, i.e. between 3 and 6, the area of the polygon is calculated and returned, otherwise exceptions are raised
-    Args:
-        side_length: the length of the sides
-        sides: the number of sides of the polygon
-    Returns:
-        the area of the polygon
-""""""
-def polygon_area( side_length, sides = 3):
-    if(sides < 3 or sides > 6 ):
-        raise ValueError(""number of sides must be greater than 2 and less than 7"")
+	return sides * (side_length ** 2) / (4 * tan(pi / sides))"
+clr,"def polygon_area( side_length, sides = 3):
+	""""""
+		The function calculates the area of a polygon.
+		If the number of sides entered is a valid number, i.e. between 3 and 6, the area of the polygon is calculated and returned, otherwise exceptions are raised
+		Args:
+			side_length: the length of the sides
+			sides: the number of sides of the polygon
+		Returns:
+			the area of the polygon
+	""""""
+	if(sides < 3 or sides > 6 ):
+		raise ValueError(""number of sides must be greater than 2 and less than 7"")
 
-    return sides * (side_length ** 2) / (4 * tan(pi / sides))"
-clr,"# print the list as a string if it is not empty
-def list_to_string(s):
-    if len(s) > 0:
-        listToStr = ' '.join(map(str, s)) 
-        print(listToStr)"
-clr,"# this function prints all the lines of a cvs file if it is not empty, otherwise nothing
-def read_csv(input_file):
-    csv_dict = [row for row in csv.DictReader(input_file)]
-    if len(csv_dict) > 0:
-        with open(input_file) as csv_file:
-            csv_reader = csv.reader(csv_file, delimiter=',')
-            for row in csv_reader:
-                print(f'{row}')
-                break"
-clr,"#returns the intersection of two lists if neither is empty, otherwise returns an empty list
-def intersection(a, b):
-    if a and b:
-        return list(set(a) & set(b))
-    else:
-        return []"
-clr,"# function to count the number of words in a text file, if the file is empty the message ""the file is empty"" is printed on the screen, if the file does not exist the message ""the file does not exist"" is printed on the screen
-def check_words(fname):
-    num_words = 0
-    if os.path.isfile(fname):
-        if os.stat(""file"").st_size > 0
-            with open(fname, 'r') as f:
-                for line in f:
-                    words = line.split()
-                    num_words += len(words)
-            print(""Number of words = "", num_words)
-        print(""the file is empty"")
-    print(""the file does not exist"")"
-clr,"""""""
-    function to count the number of words in a text file, if the file does not exist the message ""the file does not exist"" is printed on the screen
-""""""
-def check_words(fname):
-    num_words = 0
-    if os.path.isfile(fname):
-        with open(fname, 'r') as f:
-            for line in f:
-                words = line.split()
-                num_words += len(words)
-        print(""Number of words = "", num_words)
-    print(""the file does not exist"")"
-clr,"# this function decrements the quantity for a given product if the quantity is greater than zero, otherwise it is no longer decremented
-def decrease_quantity(self, amount):
-    if self.quantity >= amount:
-        self.quantity -= amount"
-clr,"""""""
-    delete an account from the user's friends list if it is present and print a message of successful execution of the command, otherwise print a message of operation failed
-""""""
-def remove_friend(self, friend_username):
-    if friend_username in self.friends:
-        self.friends.remove(friend_username)
-        print(f""{friend_username} has been removed from your friend list."")
-    else:
-        print(f""{friend_username} is not in your friend list."")"
-clr,"# if the username is not present in the user's friends list, it is added, otherwise a message indicating that the user is already present is printed on the screen
-def add_friend(self, friend_username):
-    if friend_username not in self.friends:
-        self.friends.append(friend_username)
-        print(f""{friend_username} has been added to your friend list."")"
-clr,"""""""
-    returns the user's friends list, None otherwise
-""""""        
-def get_friend_list(self):
-    if slef.friends:
-        return self.friends
-    else:
-        return None"
-clr,"""""""
-    user constructor, if the password satisfies the requirements of the regex it is matched against, the user is created, otherwise an exception is thrown
-    Args:
-        username: the username of the account
-        email: the email used to create the account
-        password: account password
-""""""
-def __init__(self, username, email, password):
-    pass_reg = ""^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$""
-    if re.fullmatch(pass_reg, password):
-        self.username = username
-        self.email = email
-        self.password = password
-        self.friends = []
-    else:
-        raise Exception(""Password not valid"")"
-clr,"# update the password with the new password if it is accepted by the regex
-def update_password(self, new_password):
-    reg = ""^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$""
-    if re.fullmatch(pass_reg, password):
-        self.password = new_password
-        print(""Password updated successfully."")
-    else:
-        raise Exception(""Can't update the password"")"
-clr,"""""""
-    makes the user book a flight by entering it in the list of booked flights and prints the booking confirmation on screen if the flight is not already in the list, otherwise it notifies the user that the flight has already been booked
-""""""
-def book_flight(self, flight):
-    if flight not in self.booked_flights:
-        self.booked_flights.append(flight)
-        print(""Flight booked successfully."")
-    else:
-        print(""Flight already booked."")"
-clr,"""""""
-    if the flight is present in the list of booked flights, cancel the flight, otherwise warn the user that the operation is not possible
-""""""
-def cancel_flight(self, flight):
-    if flight in self.booked_flights:
-        self.booked_flights.remove(flight)
-        print(""Flight canceled successfully."")
-    else:
-        print(""Flight not found in your bookings."")"
-clr,"# if the hotel reservation is already present in the list, it notifies the user that the reservation has already been made, otherwise he books the hotel
-def book_hotel(self, hotel):
-    if hotel not in self.booked_hotels:
-        self.booked_hotels.append(hotel)
-        print(""Hotel booked successfully."")
-    else:
-        print(""Hotel reservation already found."")"
-clr,"# if the hotel reservation is present in the list it cancels the reservation, otherwise notifies the user that the reservation does not exist
-def cancel_hotel(self, hotel):
-    if hotel in self.booked_hotels:
-        self.booked_hotels.remove(hotel)
-        print(""Hotel reservation canceled successfully."")
-    else:
-        print(""Hotel reservation not found in your bookings."")"
-clr,"# if the data to be analyzed exists, the average is calculated between them and returned, otherwise None
-def calculate_average(self):
-    if self.data:
-        return sum(self.data) / len(self.data)
-    else:
-        return 0"
-clr,"# calculates the maximum of the data in the list if it is not empty and returns it, otherwise returns None
-def calculate_maximum(self):
-    if self.data:
-        return max(self.data)
-    else:
-        return None"
-clr,"# returns the minimum of the data if it exists, otherwise returns None
-def calculate_minimum(self):
-    if self.data:
-        return min(self.data)
-    else:
-        return None"
-clr,"""""""
-    the function truncates a sentence at a specific index, if it is greater than the length of the string, it returns the entire string
-""""""
-def truncate(target_length, phrase):
-    if len(phrase) > target_length:
-        phrase = phrase[0:target_length]
-        return phrase
-    return phrase"
-clr,"""""""
-	the function generates wordcloud on a certain text or file, checks to see if the data passed as a parameter is an instance of a string or file type, if not, throws an exception
-     Args:
-         data: the data from which to generate wordcloud
-""""""
-def get_word(data):
-    if not (isinstance(data, str) or os.path.isfile(data)):
-        raise TypeError(""Text must be string or a File object."")
-    from wordcloud import WordCloud, STOPWORDS
-    import matplotlib.pyplot as plt
-    stopwords = set(STOPWORDS)
-    if os.path.isfile(data):
-        with open(data, 'r') as f:
-            data = f.read()
+	return sides * (side_length ** 2) / (4 * tan(pi / sides))"
+clr,"def list_to_string(s):
+	""""""
+		print the list as a string if it is not empty
+	""""""
+	if len(s) > 0:
+		listToStr = ' '.join(map(str, s)) 
+		print(listToStr)"
+clr,"def read_csv(input_file):
+	""""""
+		this function prints all the lines of a cvs file if it is not empty, otherwise nothing
+	""""""
+	csv_dict = [row for row in csv.DictReader(input_file)]
+	if len(csv_dict) > 0:
+		with open(input_file) as csv_file:
+			csv_reader = csv.reader(csv_file, delimiter=',')
+			for row in csv_reader:
+				print(f'{row}')
+				break"
+clr,"def intersection(a, b):
+	""""""
+		returns the intersection of two lists if neither is empty, otherwise returns an empty list
+	""""""
+	if a and b:
+		return list(set(a) & set(b))
+	else:
+		return []"
+clr,"def check_words(fname):
+	""""""
+		function to count the number of words in a text file, if the file is empty the message """"the file is empty"""" is printed on the screen, if the file does not exist the message """"the file does not exist"""" is printed on the screen
+	""""""
+	num_words = 0
+	if os.path.isfile(fname):
+		if os.stat(""file"").st_size > 0:
+			with open(fname, 'r') as f:
+				for line in f:
+					words = line.split()
+					num_words += len(words)
+			print(""Number of words = "", num_words)
+		print(""the file is empty"")
+	print(""the file does not exist"")"
+clr,"def check_words(fname):
+	""""""
+		function to count the number of words in a text file, if the file does not exist the message """"the file does not exist"""" is printed on the screen
+	""""""
+	num_words = 0
+	if os.path.isfile(fname):
+		with open(fname, 'r') as f:
+			for line in f:
+				words = line.split()
+				num_words += len(words)
+		print(""Number of words = "", num_words)
+	print(""the file does not exist"")"
+clr,"def decrease_quantity(self, amount):
+	""""""
+		this function decrements the quantity for a given product if the quantity is greater than zero, otherwise it is no longer decremented
+	""""""
+	if self.quantity >= amount:
+		self.quantity -= amount"
+clr,"def remove_friend(self, friend_username):
+	""""""
+		delete an account from the user's friends list if it is present and print a message of successful execution of the command, otherwise print a message of operation failed
+	""""""
+	if friend_username in self.friends:
+		self.friends.remove(friend_username)
+		print(f""{friend_username} has been removed from your friend list."")
+	else:
+		print(f""{friend_username} is not in your friend list."")"
+clr,"def add_friend(self, friend_username):
+	""""""
+		if the username is not present in the user's friends list, it is added, otherwise a message indicating that the user is already present is printed on the screen
+	""""""
+	if friend_username not in self.friends:
+		self.friends.append(friend_username)
+		print(f""{friend_username} has been added to your friend list."")"
+clr,"def get_friend_list(self):
+	""""""
+		returns the user's friends list, None otherwise
+	""""""
+	if slef.friends:
+		return self.friends
+	else:
+		return None"
+clr,"def __init__(self, username, email, password):
+	""""""
+		user constructor, if the password satisfies the requirements of the regex it is matched against, the user is created, otherwise an exception is thrown
+		Args:
+			username: the username of the account
+			email: the email used to create the account
+			password: account password
+	""""""
+	pass_reg = ""^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$""
+	if re.fullmatch(pass_reg, password):
+		self.username = username
+		self.email = email
+		self.password = password
+		self.friends = []
+	else:
+		raise Exception(""Password not valid"")"
+clr,"def update_password(self, new_password):
+	""""""
+		update the password with the new password if it is accepted by the regex
+	""""""
+	reg = ""^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$""
+	if re.fullmatch(pass_reg, password):
+		self.password = new_password
+		print(""Password updated successfully."")	
+	else:
+		raise Exception(""Can't update the password"")"
+clr,"def book_flight(self, flight):
+	""""""
+		makes the user book a flight by entering it in the list of booked flights and prints the booking confirmation on screen if the flight is not already in the list, otherwise it notifies the user that the flight has already been booked
+	""""""
+	if flight not in self.booked_flights:
+		self.booked_flights.append(flight)
+		print(""Flight booked successfully."")	
+	else:
+		print(""Flight already booked."")"
+clr,"def cancel_flight(self, flight):
+	""""""
+    	if the flight is present in the list of booked flights, cancel the flight, otherwise warn the user that the operation is not possible
+	""""""
+	if flight in self.booked_flights:
+		self.booked_flights.remove(flight)
+		print(""Flight canceled successfully."")
+	else:
+		print(""Flight not found in your bookings."")"
+clr,"def book_hotel(self, hotel):
+        """"""
+                if the hotel reservation is already present in the list, it notifies the user that the reservation has already been made, otherwise he books the hotel
+        """"""
+        if hotel not in self.booked_hotels:
+                self.booked_hotels.append(hotel)
+                print(""Hotel booked successfully."")
+        else:
+                print(""Hotel reservation already found."")"
+clr,"def cancel_hotel(self, hotel):
+	""""""
+		if the hotel reservation is present in the list it cancels the reservation, otherwise notifies the user that the reservation does not exist
+	""""""
+	if hotel in self.booked_hotels:
+		self.booked_hotels.remove(hotel)
+		print(""Hotel reservation canceled successfully."")
+	else:
+		print(""Hotel reservation not found in your bookings."")"
+clr,"def calculate_average(self):
+	""""""
+		if the data to be analyzed exists, the average is calculated between them and returned, otherwise None
+	""""""
+	if self.data:
+		return sum(self.data) / len(self.data)
+	else:
+		return 0"
+clr,"def calculate_maximum(self):
+	""""""
+		calculates the maximum of the data in the list if it is not empty and returns it, otherwise returns None
+	""""""
+	if self.data:
+		return max(self.data)
+	else:
+		return None"
+clr,"def calculate_minimum(self):
+	""""""
+		returns the minimum of the data if it exists, otherwise returns None
+	""""""
+	if self.data:
+		return min(self.data)
+	else:
+		return None"
+clr,"def truncate(target_length, phrase):
+	""""""
+		the function truncates a sentence at a specific index, if it is greater than the length of the string, it returns the entire string
+	""""""
+	if len(phrase) > target_length:
+		phrase = phrase[0:target_length]
+		return phrase
+	return phrase"
+clr,"def get_word(data):
+	""""""
+		the function generates wordcloud on a certain text or file, checks to see if the data passed as a parameter is an instance of a string or file type, if not, throws an exception
+		Args:
+			data: the data from which to generate wordcloud
+	""""""
+	if not (isinstance(data, str) or os.path.isfile(data)):
+		raise TypeError(""Text must be string or a File object."")
+	from wordcloud import WordCloud, STOPWORDS
+	import matplotlib.pyplot as plt
+	stopwords = set(STOPWORDS)
+	if os.path.isfile(data):
+		with open(data, 'r') as f:
+			data = f.read()
 
-    data = ' '.join(data.lower().split(' '))
-    wordcloud = WordCloud(width=400, height=400,
-                          background_color='white',
-                          stopwords=stopwords,
-                          min_font_size=15).generate(data)
+	data = ' '.join(data.lower().split(' '))
+	wordcloud = WordCloud(width=400, height=400,
+		background_color='white',
+        stopwords=stopwords,
+        min_font_size=15).generate(data)
 
-    # plot the WordCloud image
-    plt.figure(figsize=(8, 8), facecolor=None)
-    plt.imshow(wordcloud)
-    plt.axis(""off"")
-    plt.tight_layout(pad=0)
+	# plot the WordCloud image
+	plt.figure(figsize=(8, 8), facecolor=None)
+	plt.imshow(wordcloud)
+	plt.axis(""off"")
+	plt.tight_layout(pad=0)
 
-    plt.show()"
-clr,"# if all the dimensions of the sides passed as parameters are greater than 0 it calculates and returns the area of the triangle
-def triangle_area(a,b,c):
-    if a > 0 and b > 0 and c > 0:
-        s = (a+b+c)/2
-        area = (s(s-a)*(s-b)*(s-c)) ** 0.5
-        return(area)"
+	plt.show()"
+clr,"def triangle_area(a,b,c):
+	""""""
+		if all the dimensions of the sides passed as parameters are greater than 0 it calculates and returns the area of the triangle
+	""""""
+	if a > 0 and b > 0 and c > 0:
+		s = (a+b+c)/2
+		area = (s(s-a)*(s-b)*(s-c)) ** 0.5
+		return(area)"
 clr,"def __init__(self):
-    """"""
-        the constructor initializes the connection to the database, if the connection is established successfully it prints a connection successful message on screen, otherwise it throws an exception
-    """"""
-    self.connection = sqlite3.connect(self.db_name)
-    self.cursor = self.connection.cursor()
-    cursor.execute(""SELECT VERSION()"")
-    results = cursor.fetchone()
-    if results:
-        print(""Connected to the database."")
-    else:
-        raise Exception(""Database Connection Error"")"
-clr,"""""""
-    the function terminates the connection to the database, it verifies that the connection is active, if so it closes it, otherwise nothing
-""""""
-def disconnect(self):
-    self.cursor.execute(""SELECT VERSION()"")
-    results = cursor.fetchone()
-    if results:
-        self.cursor.close()
-        self.connection.close()
-        print(""Disconnected from the database."")"
-clr,"# if the connection is active the method creates a table inside the database, otherwise an exception is raised
-def create_table(self, table_name, columns):
-    self.cursor.execute(""SELECT VERSION()"")
-    results = cursor.fetchone()
-    if results:
-        query = f""CREATE TABLE IF NOT EXISTS {table_name} ({columns})""
-        self.cursor.execute(query)
-        self.connection.commit()
-        print(f""Table '{table_name}' created successfully."")
-    else:
-        raise Exception(""Connection Error: cannot create the table"")"
-clr,"""""""
-    this method inserts data in the database, if the connection is active it executes the operation and notifies the user of the successful operation, otherwise it notifies the user that the connection to the database is not active
-    Args:
-        table_name: The name of the table to insert the data into
-        data: the data to insert
-""""""
-def insert_data(self, table_name, data):
-    self.cursor.execute(""SELECT VERSION()"")
-    results = cursor.fetchone()
-    if results:
-        placeholders = "", "".join([""?"" for _ in data])
-        query = f""INSERT INTO {table_name} VALUES ({placeholders})""
-        self.cursor.execute(query, data)
-        self.connection.commit()
-        print(""Data inserted successfully."")
-    else:
-        print(""not connected"")"
-clr,"# if the connection to the database is active, the data from the specified table are selected and returned, otherwise the absence of connection to the database is notified
-def select_data(self, table_name):
-    self.cursor.execute(""SELECT VERSION()"")
-    results = cursor.fetchone()
-    if results:
-        query = f""SELECT * FROM {table_name}""
-        self.cursor.execute(query)
-        rows = self.cursor.fetchall()
-        return rows
-    else:
-        print(""not connected"")"
-clr,"""""""
-    the function pops the item from the queue and returns it if it is not empty, otherwise nothing.
-    In both cases, whether successful or not, the user is notified with a screen print
-""""""
-def dequeue(self):
-    if not self.is_empty():
-        item = self.queue.pop(0)
-        print(f""Dequeued item: {item}"")
-        return item
-    else:
-        print(""Queue is empty."")
-        return None"
-clr,"""""""
-    the function copies the value of the element from the queue and returns it, without extracting it, if it is not empty, otherwise nothing.
-    In both cases, whether successful or not, the user is notified with a screen print
-""""""
-def peek(self):
-    if not self.is_empty():
-        item = self.queue[0]
-        print(f""Peeked item: {item}"")
-        return item
-    else:
-        print(""Queue is empty."")
-        return None"
-clr,"# this function checks if two lists have elements in common, if this is not true it prints a message to the user on the screen, otherwise it prints the elements
-def common_member(a, b): 
-    a_set = set(a) 
-    b_set = set(b) 
+	""""""
+		the constructor initializes the connection to the database, if the connection is established successfully it prints a connection successful message on screen, otherwise it throws an exception
+	""""""
+	self.connection = sqlite3.connect(self.db_name)
+	self.cursor = self.connection.cursor()
+	cursor.execute(""SELECT VERSION()"")
+	results = cursor.fetchone()
+	if results:
+		print(""Connected to the database."")
+	else:
+		raise Exception(""Database Connection Error"")"
+clr,"def disconnect(self):
+	""""""
+		the function terminates the connection to the database, it verifies that the connection is active, if so it closes it, otherwise nothing
+	""""""
+	self.cursor.execute(""SELECT VERSION()"")
+	results = cursor.fetchone()
+	if results:
+		self.cursor.close()
+		self.connection.close()
+		print(""Disconnected from the database."")"
+clr,"def create_table(self, table_name, columns):
+	""""""
+		if the connection is active the method creates a table inside the database, otherwise an exception is raised
+	""""""
+	self.cursor.execute(""SELECT VERSION()"")
+	results = cursor.fetchone()
+	if results:
+		query = f""CREATE TABLE IF NOT EXISTS {table_name} ({columns})""
+		self.cursor.execute(query)
+		self.connection.commit()
+		print(f""Table '{table_name}' created successfully."")
+	else:
+		raise Exception(""Connection Error: cannot create the table"")"
+clr,"def insert_data(self, table_name, data):
+	""""""
+		this method inserts data in the database, if the connection is active it executes the operation and notifies the user of the successful operation, otherwise it notifies the user that the connection to the database is not active
+		Args:
+			table_name: The name of the table to insert the data into
+			data: the data to insert
+	""""""
+	self.cursor.execute(""SELECT VERSION()"")
+	results = cursor.fetchone()
+	if results:
+		placeholders = """", """".join([""?"" for _ in data])
+		query = f""INSERT INTO {table_name} VALUES ({placeholders})""
+		self.cursor.execute(query, data)
+		self.connection.commit()
+		print(""Data inserted successfully."")
+	else:
+		print(""not connected"")"
+clr,"def select_data(self, table_name):
+	""""""
+		if the connection to the database is active, the data from the specified table are selected and returned, otherwise the absence of connection to the database is notified
+	""""""
+	self.cursor.execute(""SELECT VERSION()"")
+	results = cursor.fetchone()
+	if results:
+		query = f""SELECT * FROM {table_name}""
+		self.cursor.execute(query)
+		rows = self.cursor.fetchall()
+		return rows
+	else:
+		print(""not connected"")"
+clr,"def dequeue(self):
+	""""""
+		the function pops the item from the queue and returns it if it is not empty, otherwise nothing.
+		In both cases, whether successful or not, the user is notified with a screen print
+	""""""
+	if not self.is_empty():
+		item = self.queue.pop(0)
+		print(f""Dequeued item: {item}"")
+		return item
+	else:
+		print(""Queue is empty."")
+		return None"
+clr,"def peek(self):
+	""""""
+		the function copies the value of the element from the queue and returns it, without extracting it, if it is not empty, otherwise nothing.
+		In both cases, whether successful or not, the user is notified with a screen print
+	""""""
+	if not self.is_empty():
+		item = self.queue[0]
+		print(f""Peeked item: {item}"")
+		return item
+	else:
+		print(""Queue is empty."")
+		return None"
+clr,"def common_member(a, b): 
+	""""""
+		this function checks if two lists have elements in common, if this is not true it prints a message to the user on the screen, otherwise it prints the elements
+	""""""
+	a_set = set(a) 
+	b_set = set(b) 
   
-    if (a_set & b_set): 
-        print(a_set & b_set) 
-    else: 
-        print(""No common elements"")"
+	if (a_set & b_set): 
+		print(a_set & b_set) 
+	else: 
+		print(""No common elements"")"
 clr,"def __init__(self, string):
-    """"""
-        constructor of the class, if the string passed as a parameter is not empty it sets its value in the global variable, otherwise it assigns the empty string as value
-    """"""  
-    if string:
-        self.string = string
-    else:
-        self.string = """""
-clr,"# splits the function based on a delimiter passed as a parameter, if the delimiter is not contained it returns the entire string
-def split(self, delimiter):
-    if delimtier in self.string:
-        split_strings = self.string.split(delimiter)
-        return split_strings
-    else:
-        print(""delimiter not found"")"
-clr,"""""""
-    if the string list passed as a parameter has a size greater than 1, concatenate the strings via the join method, otherwise via a concatenation via +
-""""""
-def join(self, strings):
-    if len(strings) > 1:
-        joined_string = self.string.join(strings)
-        return joined_string
-    else:
-        return self.string + strings[0]"
-clr,"# this function concatenates a list of strings to the global variable string, if the passed string list is empty it returns the string variable directly, if it has a size equal to 1 the strings are concatenated via the + operator, if it is greater than 1 via the join function
-def join(self, strings):
-    if len(strings) == 0: 
-        return self.string
-    elif len(strings) == 1:
-        return self.string + strings[0]
-    else:
-        joined_string = self.string.join(strings)
-        return joined_string"
-clr,"# this function truncates the string to a specified length, if the string is empty it returns the empty string
-def truncate(self, length):
-    if self.string != None:
-        truncated_string = self.string[:length]
-        return truncated_string
-    return """""
-clr,"""""""
-    Replace a substring contained in the global variable with a new string.
-    This is if both data types passed as parameters are strings, otherwise throw an exception
-""""""
-def replace(self, old, new):
-    if isinstance(old, str) and isinstance(new,str):
-        replaced_string = self.string.replace(old, new)
-        return replaced_string
-    else:
-        raise Exception(""not a string"")"
-clr,"""""""
-    this constructor stores in the global variable the image path that the class will have to manage if the path passed as a parameter points to a file that is an image, otherwise a different exception is thrown based on the error encountered
-""""""
-def __init__(self, image_path):
-    if os.path.isfile(image_path):
-        if filetype.is_image(image_path):
-            self.image_path = image_path
-            self.image = None
-        else:
-            raise Exception(""not an image"")
-    else:
-        raise Exception(""not a file"")"
-clr,"# if the path passed as a parameter points to a file that is actually an image, this function opens the image and places it inside a variable, otherwise it raises an exception
-def open_image(self):
-    if filetype.is_image(filename):
-        self.image = Image.open(self.image_path)
-    else:
-        raise Exception(""not an image"")"
-clr,"""""""
-    this function returns the resized image if it exists and is open, otherwise it raises an exception
-    Args:
-        width: the new width of the image
-        height: the new height of the image
-    Returns:
-        the resized image
-""""""
-def resize_image(self, width, height):
-    if self.image is not None:
-        resized_image = self.image.resize((width, height))
-        return resized_image
-    else:
-        raise ValueError(""No image opened."")"
-clr,"# this function returns the cropped image if the variable is not empty, otherwise an exception is thrown
-def crop_image(self, left, top, right, bottom):
-    if self.image is not None:
-        cropped_image = self.image.crop((left, top, right, bottom))
-        return cropped_image
-    else:
-        raise ValueError(""No image opened."")"
-clr,"""""""
-    if there is an image already open, we are going to replace the previously stored one, however this is if the new path from which to open the image points to a file which is an image
-""""""
-def save_image(self, output_path):
-    if self.image is not None:
-        if os.path.isfile(output_path) and filetype.is_image(output_path):
-            self.image.save(output_path)
-        else:
-            raise Exception(""can't open the new image, check if the file exist and if it is an image"")
-    else:
-        raise ValueError(""No image opened."")"
-clr,"""""""
-    if there is an image already open, we are going to replace the previously stored one.
-""""""
-def save_img(self, out_path):
-    if self.image is not None:
-        self.image.save(out_path)
-    else:
-        raise ValueError(""No image opened."")"
-clr,"# function that finds the median of an array of numbers, if the array contains only one number it returns the element directly
-def median(arr):
-  
-    if len(arr) == 1:
-        return arr[0]
-    
-    else:
-        arr = sorted(arr)
-        a = arr[0:round(len(arr)/2)]
-        b = arr[len(a):len(arr)]
-        if len(arr)%2 == 0:
-            return (a[len(a)-1]+b[0])/2
-        else:
-            return a[len(a)-1]"
-clr,"""""""
-    function to find three numbers from an array such that the sum of three numbers equals zero, if the size of the array is less than 3 returns an empty array
-""""""
-def three_Sum(num):
-    if len(num)<3: return []
-    num.sort()
-    result=[]
-    for i in range(len(num)-2):
-        left=i+1
-        right=len(num)-1
-        if i!=0 and num[i]==num[i-1]:continue
-        while left<right:
-            if num[left]+num[right]==-num[i]:
-                result.append([num[i],num[left],num[right]])
-                left=left+1
-                right=right-1
-                while num[left]==num[left-1] and left<right:left=left+1
-                while num[right]==num[right+1] and left<right: right=right-1
-            elif num[left]+num[right]<-num[i]:
-                left=left+1
-            else:
-                right=right-1
-    return result"
-clr,"""""""
-    check if a given string is an anagram of another given string, if the strings are equal return true, otherwise sort the strings and check
-    Args:
-        str1: the first string to compare
-        str2: the second string to compare
-    Return:
-        True if one string is an anagram of the other, false otherwise
-""""""
-def is_anagram(str1, str2):
-    if str1 == str2:
-        return True
-    
-    list_str1 = list(str1)
-    list_str1.sort()
-    list_str2 = list(str2)
-    list_str2.sort()
+	""""""
+		constructor of the class, if the string passed as a parameter is not empty it sets its value in the global variable, otherwise it assigns the empty string as value
+	""""""  
+	if string:
+		self.string = string
+	else:
+		self.string = """""
+clr,"def split(self, delimiter):
+	""""""
+		splits the function based on a delimiter passed as a parameter, if the delimiter is not contained it returns the entire string
+	""""""
+	if delimtier in self.string:
+		split_strings = self.string.split(delimiter)
+		return split_strings
+	else:
+		print(""delimiter not found"")"
+clr,"def join(self, strings):
+	""""""
+		if the string list passed as a parameter has a size greater than 1, concatenate the strings via the join method, otherwise via a concatenation via +
+	""""""
+	if len(strings) > 1:
+		joined_string = self.string.join(strings)
+		return joined_string
+	else:
+		return self.string + strings[0]"
+clr,"def join(self, strings):
+	""""""
+		this function concatenates a list of strings to the global variable string, if the passed string list is empty it returns the string variable directly, if it has a size equal to 1 the strings are concatenated via the + operator, if it is greater than 1 via the join function
+	""""""
+	if len(strings) == 0: 
+		return self.string
+	elif len(strings) == 1:
+		return self.string + strings[0]
+	else:
+		joined_string = self.string.join(strings)
+		return joined_string"
+clr,"def truncate(self, length):
+	""""""
+		this function truncates the string to a specified length, if the string is empty it returns the empty string
+	""""""
+	if self.string != None:
+		truncated_string = self.string[:length]
+		return truncated_string
+	return """""
+clr,"def replace(self, old, new):
+	""""""
+		Replace a substring contained in the global variable with a new string.
+		This is if both data types passed as parameters are strings, otherwise throw an exception
+	""""""
+	if isinstance(old, str) and isinstance(new,str):
+		replaced_string = self.string.replace(old, new)
+		return replaced_string
+	else:
+		raise Exception(""not a string"")"
+clr,"def __init__(self, image_path):
+	""""""
+		this constructor stores in the global variable the image path that the class will have to manage if the path passed as a parameter points to a file that is an image, otherwise a different exception is thrown based on the error encountered
+	""""""
+	if os.path.isfile(image_path):
+		if filetype.is_image(image_path):
+			self.image_path = image_path
+			self.image = None
+		else:
+			raise Exception(""not an image"")
+	else:
+		raise Exception(""not a file"")"
+clr,"def open_image(self):
+	""""""
+		if the path passed as a parameter points to a file that is actually an image, this function opens the image and places it inside a variable, otherwise it raises an exception
+	""""""
+	if filetype.is_image(filename):
+		self.image = Image.open(self.image_path)
+	else:
+		raise Exception(""not an image"")"
+clr,"def resize_image(self, width, height):
+	""""""
+		this function returns the resized image if it exists and is open, otherwise it raises an exception
+		Args:
+			width: the new width of the image
+			height: the new height of the image
+		Returns:
+			the resized image
+	""""""
+	if self.image is not None:
+		resized_image = self.image.resize((width, height))
+		return resized_image
+	else:
+		raise ValueError(""No image opened."")"
+clr,"def crop_image(self, left, top, right, bottom):
+	""""""
+		this function returns the cropped image if the variable is not empty, otherwise an exception is thrown
+	""""""
+	if self.image is not None:
+		cropped_image = self.image.crop((left, top, right, bottom))	
+		return cropped_image
+	else:
+		raise ValueError(""No image opened."")"
+clr,"def save_image(self, output_path):
+	""""""
+		if there is an image already open, we are going to replace the previously stored one, however this is if the new path from which to open the image points to a file which is an image
+	""""""
+	if self.image is not None:
+		if os.path.isfile(output_path) and filetype.is_image(output_path):
+			self.image.save(output_path)
+		else:
+			raise Exception(""can't open the new image, check if the file exist and if it is an image"")
+	else:
+		raise ValueError(""No image opened."")"
+clr,"def save_img(self, out_path):
+	""""""
+		if there is an image already open, we are going to replace the previously stored one.
+	""""""
+	if self.image is not None:
+		self.image.save(out_path)
+	else:
+		raise ValueError(""No image opened."")"
+clr,"def median(arr):
+	""""""
+		function that finds the median of an array of numbers, if the array contains only one number it returns the element directly
+	""""""
 
-    return (list_str1 == list_str2)"
-clr,"# if the product passed as a parameter is not empty, it adds the product to the list of products found in the store, otherwise nothing
-def add_product(self, product):
-    if product:
-        self.products.append(product)"
-clr,"""""""
-    the function deletes the product passed as a parameter from the store products list if it is not empty and exists in the store products list, if it is not present in the list, the user is notified of this
-""""""
-def remove_product(self, product):
-    if product:
-        if product in self.products:
-            self.products.remove(product)
-        else:
-            print(""Product not found."")"
-clr,"""""""
-    the function deletes the product passed as a parameter from the store products list if it exists in the store products list, if it is not present in the list, the user is notified of this
-    Args:
-        product: the product to add
-""""""
-def remove_product(self, product):
-    if product in self.products:
-        self.products.remove(product)
-    else:
-        print(""Product not found."")"
-clr,"# the function deletes the product passed as a parameter from the store products list if it is not empty
-def remove_product(self, product):
-    if product:
-        self.products.remove(product)"
-clr,"""""""
-    the function returns the products in the list that belong to the specified category, if the category exists the search is performed, otherwise the user is warned of entering a wrong category
-""""""
-def search_product_by_category(self, category):
-    if category in self.categories:
-        found_products = []
-        for product in self.products:
-            if product.category.lower() == category.lower():
-                found_products.append(product)
-        return found_products
-    else:
-        print(""category does not exist"")"
-clr,"# the function returns all the products in the list if it is not empty, None otherwise
-def get_all_products(self):
-    if self.products:
-        return self.products
-    else:
-        return None"
+	if len(arr) == 1:
+		return arr[0]
+    
+	else:
+		arr = sorted(arr)
+		a = arr[0:round(len(arr)/2)]
+		b = arr[len(a):len(arr)]
+		if len(arr)%2 == 0:
+			return (a[len(a)-1]+b[0])/2
+		else:
+			return a[len(a)-1]"
+clr,"def three_Sum(num):
+	""""""
+		function to find three numbers from an array such that the sum of three numbers equals zero, if the size of the array is less than 3 returns an empty array
+	""""""
+	if len(num)<3: return []
+	num.sort()
+	result=[]
+	for i in range(len(num)-2):
+		left=i+1
+		right=len(num)-1
+		if i!=0 and num[i]==num[i-1]:continue
+		while left<right:
+			if num[left]+num[right]==-num[i]:
+				result.append([num[i],num[left],num[right]])
+				left=left+1
+				right=right-1
+				while num[left]==num[left-1] and left<right:left=left+1
+				while num[right]==num[right+1] and left<right: right=right-1
+			elif num[left]+num[right]<-num[i]:
+				left=left+1
+			else:
+				right=right-1
+	return result"
+clr,"def is_anagram(str1, str2):
+	""""""
+		check if a given string is an anagram of another given string, if the strings are equal return true, otherwise sort the strings and check
+		Args:
+			str1: the first string to compare
+			str2: the second string to compare
+		Return:
+		True if one string is an anagram of the other, false otherwise
+	""""""
+	if str1 == str2:
+		return True
+
+	list_str1 = list(str1)
+	list_str1.sort()
+	list_str2 = list(str2)
+	list_str2.sort()
+
+	return (list_str1 == list_str2)"
+clr,"def add_product(self, product):
+	""""""
+		if the product passed as a parameter is not empty, it adds the product to the list of products found in the store, otherwise nothing
+	""""""
+	if product:
+		self.products.append(product)"
+clr,"def remove_product(self, product):
+	""""""
+		the function deletes the product passed as a parameter from the store products list if it is not empty and exists in the store products list, if it is not present in the list, the user is notified of this
+	""""""
+	if product:
+		if product in self.products:
+			self.products.remove(product)
+		else:
+			print(""Product not found."")"
+clr,"def remove_product(self, product):
+	""""""
+		the function deletes the product passed as a parameter from the store products list if it exists in the store products list, if it is not present in the list, the user is notified of this
+		Args:
+			product: the product to add
+	""""""
+	if product in self.products:
+		self.products.remove(product)
+	else:
+		print(""Product not found."")"
+clr,"def remove_product(self, product):
+	""""""
+		the function deletes the product passed as a parameter from the store products list if it is not empty
+	""""""
+	if product:
+		self.products.remove(product)"
+clr,"def search_product_by_category(self, category):
+	""""""
+		the function returns the products in the list that belong to the specified category, if the category exists the search is performed, otherwise the user is warned of entering a wrong category
+	""""""
+	if category in self.categories:
+		found_products = []
+		for product in self.products:
+			if product.category.lower() == category.lower():
+				found_products.append(product)
+		return found_products
+	else:
+		print(""category does not exist"")"
+clr,"def get_all_products(self):
+	""""""
+		the function returns all the products in the list if it is not empty, None otherwise
+	""""""
+	if self.products:
+		return self.products
+	else:
+		return None"
 clr,"def smallest_multiple(n):
-    if (n<=2):
-      return n
-    i = n * 2
-    factors = [number  for number in range(n, 1, -1) if number * 2 > n]
-    print(factors)
-
-    while True:
-        for a in factors:
-            if i % a != 0:
-                i += n
-                break
-            if (a == factors[-1] and i % a == 0):
-                return i"
-clr,"def concat_two_numbers(num1, num2):
-    combined_num = str(num1) + str(num2)
-    return int(combined_num)"
-clr,"def test_distinct(data):
-  if len(data) == len(set(data)):
-    return True
-  else:
-    return False"
-clr,"def binary_search(l, num_find):
-    start = 0
-    end = len(l) - 1
-    mid = (start + end) // 2
-    found = False
-    position = -1
-    while start <= end:
-        if l[mid] == num_find:
-            found = True
-            position = mid
-            break
-        if num_find > l[mid]:
-            start = mid + 1
-            mid = (start + end) // 2
-        else:
-            end = mid - 1
-            mid = (start + end) // 2
-    return (found, position)"
-clr,"def int_to_bin(a):
-  return bin(a)"
-clr,"def simple_interest(p,r,t):
-    si = (p*r*t)/100
-    return si"
-clr,"def compound_interest(p,r,t):
-    ci = p * (pow((1 + r / 100), t)) 
-    return ci"
-clr,"def perfect_number_checker(num):
-    i = 2
-    sum = 1
-    while(i <= num//2 ) :
-        if (num % i == 0) :
-            sum += i
-        i += 1
-    if sum == num :
-        return f'{num} is a perfect number'
-
-    else :
-        return f'{num} is not a perfect number'"
-clr,"def odd_max_checker(list1):
-	maxnum = 0
-	for num in list1:
-	    if num%2 != 0:
-	        if num > maxnum:
-	            maxnum = num
+	if (n<=2): 
+		return n 
+	i = n * 2 
+	factors = [number for number in range(n, 1, -1) if number * 2 > n] 
+	print(factors) 
+	while True: 
+		for a in factors: 
+			if i % a != 0: 
+				i += n 
+				break 
+			if (a == factors[-1] and i % a == 0): 
+				return i"
+clr,"def concat_two_numbers(num1, num2): 
+	combined_num = str(num1) + str(num2) 
+	return int(combined_num)"
+clr,"def test_distinct(data): 
+	if len(data) == len(set(data)): 
+		return True 
+	else: return False"
+clr,"def binary_search(l, num_find): 
+	start = 0 
+	end = len(l) - 1 
+	mid = (start + end) / 2 
+	found = False 
+	position = -1 
+	while start <= end: 
+		if l[mid] == num_find: 
+			found = True 
+			position = mid 
+			break 
+		if num_find > l[mid]: 
+			start = mid + 1 
+			mid = (start + end) / 2 
+		else: 
+			end = mid - 1 
+			mid = (start + end) / 2 
+		return (found, position)"
+clr,"def int_to_bin(a): 
+	return bin(a)"
+clr,"def simple_interest(p,r,t): 
+	si = (p*r*t)/100 
+	return si"
+clr,"def compound_interest(p,r,t): 
+	ci = p * (pow((1 + r / 100), t)) 
+	return ci"
+clr,"def perfect_number_checker(num): 
+	i = 2 
+	sum = 1 
+	while(i <= num//2 ) : 
+		if (num % i == 0) : 
+			sum += i 
+			i += 1 
+			if sum == num : 
+				return f'{num} is a perfect number' 
+			else : 
+				return f'{num} is not a perfect number'"
+clr,"def odd_max_checker(list1): 
+	maxnum = 0 
+	for num in list1: 
+		if num%2 != 0: 
+			if num > maxnum: 
+				maxnum = num 
 	return maxnum"
-clr,"def even_max_checker(list1):
-	maxnum = 0
-	for num in list1:
-	    if num%2 == 0:
-	        if num > maxnum:
-	            maxnum = num
+clr,"def even_max_checker(list1): 
+	maxnum = 0 
+	for num in list1: 
+		if num%2 == 0: 
+			if num > maxnum: 
+				maxnum = num 
 	return maxnum"
-clr,"def quadratic_root(A,B,C):
-        d=((B**2)-4*A*C)
-
-        if d>=0:
-            s=(-B+(d)**0.5)/(2*A)
-            p=(-B-(d)**0.5)/(2*A)
-            print(math.floor(s),math.floor(p))
-        else:
-            print('The roots are imaginary')"
-clr,"def nth_sq_and_cube(N):
-	R = N**6
+clr,"def quadratic_root(A,B,C): 
+	d=((B**2)-4*A*C) 
+	if d>=0: 
+		s=(-B+(d)**0.5)/(2*A) 
+		p=(-B-(d)**0.5)/(2*A) 
+		print(math.floor(s),math.floor(p)) 
+	else: 
+		print('The roots are imaginary')"
+clr,"def nth_sq_and_cube(N): 
+	R = N**6 
 	return R"
-clr,"def array_intersection(A,B):
-	inter=list(set(A)&set(B))
+clr,"def array_intersection(A,B): 
+	inter=list(set(A)&set(B)) 
 	return inter"
-clr,"def array_union(A,B):
-	union=list(set(A)|set(B))
+clr,"def array_union(A,B): 
+	union=list(set(A)|set(B)) 
 	return union"
