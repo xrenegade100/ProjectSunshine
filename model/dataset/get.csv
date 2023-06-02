@@ -1,0 +1,1097 @@
+label,code
+get,"self.clouds
+
+def get_clouds(self):
+    if self.clouds == null: 
+        h = Jenkins.get()
+        for c in h.clouds:
+            if c.canProvision(this):
+                r.add(c)
+    return self.clouds"
+get,"self.nodes
+
+def getNodes(self):
+    nodes = self.nodes
+    if nodes: return nodes
+
+    set = HashSet()
+    h = Jenkins.get()
+    if self.matches(h):
+        set.add(h)
+    for n in h.getNodes()):
+        if self.matches(n):
+            set.add(n)
+    }
+    return self.nodes = Collections.unmodifiableSet(set)"
+get,"self.executors
+
+def get_total_executors(self) {
+    self.executors = 0
+    for n in getNodes():
+        c = n.toComputer()
+        if c and c.isOnline():
+            self.executors += c.countExecutors()
+    return self.executors"
+get,"self.descriptions
+
+def get_description(self):
+    nodes = self.getNodes()
+    if nodes.isEmpty():
+        clouds = getClouds()
+        if clouds.isEmpty():
+            return None
+
+        return self.descriptions"
+get,"self.merged_list
+
+def get_merged_list(self):
+    self.merged_list = self.l1 + self.l2
+    return self.merged_list"
+get,"self.natural_sum
+
+def sum_natural(self):
+    if self.num < 0:
+       print(""Please enter a positive number!"")
+    else:
+       self.natural_sum = 0
+       while(self.num > 0):
+           self.natural_sum += num
+           num -= 1
+       return self.natural_sum
+"
+get,"self.area
+
+def get_area(self): 
+    PI = 3.142
+    self.area = PI * (self.r*self.r)
+    return self.area"
+get,"self.square_perimeter
+
+def get_square_perimeter(self):
+    if self.side > 0.
+        self.square_perimeter = 4 * self.side
+    return self.square_perimeter"
+get,"self.rect_area
+
+def get_rectangle_area(self):
+    self.rect_area = self.height * self.base
+    return self.rect_area"
+get,"self.bill
+
+def get_elect_bill(self):
+    self.bill = -1
+    if self.units > 0:
+        if self.units <= 750:
+            self.bill = 5*self.units
+        else:
+            self.bill = 5*(750) + 7*(self.units-750)
+
+    return self.bill"
+get,"self.day_dict
+
+def get_day(self, n):
+    self.day_dict = {
+        1: 'Sunday',
+        2: 'Monday',
+        3: 'Tuesday',
+        4: 'Wednesday',
+        5: 'Thursday',
+        6: 'Friday',
+        7: 'Saturday'
+    }
+    return self.day_dict[n]"
+get,"self.average
+
+def get_average(self):
+    if len(self.args) > 0:
+        self.avg = sum(self.args)/len(self.args)
+    return self.avg"
+get,"self.average
+    
+def get_average(self):
+    if len(self.args) > 0:
+        return sum(self.args)/len(self.args)
+    return None"
+get,"self.compound_interest
+
+def get_compound_interest(self):
+    amount = self.price * (1 + (self.rate/100))**self.time
+    self.compound_interest = amount - self.price
+    return self.compound_interest"
+get,"self.simple_interest
+
+def get_simple_interest(self):
+    if self.p > 0:
+        self.simple_interest = (self.p*self.r*self.t)/100
+        return self.simple_interest
+    else:
+        return 0"
+get,"self.acceleration
+
+def get_acceleration(self):
+    if self.time != 0 and self.end_speed != 0:
+        self.acceleration = (self.start_speed - self.end_speed)/self.time
+    return self.acceleration"
+get,"self.weight_category
+
+def get_weight_category(self):
+    bmi = self.weight/(self.height**2) 
+    if (bmi < 16):
+       self.weight_category = ""severely underweight""
+    elif (bmi >= 16 and bmi < 18.5):
+       self.weight_category = ""underweight""
+    elif (bmi >= 18.5 and bmi < 25):
+       self.weight_category = ""healthy""
+    elif (bmi >= 25 and bmi < 30):
+       self.weight_category = ""overweight""
+    elif (bmi >= 30):
+       self.weight_category =""severely overweight""
+    return self.weight_category"
+get,"self.mean
+
+def get_mean(self):
+    if self.num_list:
+        self.mean = sum(self.num_list)/len(self.num_list)
+    else:
+        self.mean = None
+    return self.mean"
+get,"self.median    
+
+def get_median(self):
+    if self.list_number:
+        if len(self.list_number)%2 != 0:
+            self.median = sorted(self.list_number)[(len(self.list_number)/2 - 1]
+        else:
+            self.median = (sorted(self.list_number)[(len(self.list_number)/2) - 1] + sorted(self.list_number)[(len(self.list_numer)/2)])/2
+    else:
+        return None
+    return self.median"
+get,"self.tirangle_area
+
+def get_triangle_area(self):
+    a = self.first_side
+    b = self.second_side
+    c = self.third_side
+    if a or b or c:
+        s = (a+b+c)/2
+        if s>a and s>b and s>c:
+            self.triangle_area = (s*(s-a)*(s-b)*(s-c))**(1/2)
+            return round(self.triangle_area,2)
+        else:
+            return None
+    return None"
+get,"self.dist_from_origin
+    
+def get_dist_from_orign(self):
+    self.dist_from_origin = (self.x**2+self.y**2)**(1/2)
+    return self.dist_from_origin"
+get,"self.root_type
+    
+def get_root_type(self, a, b, c):
+    if b**2-4*a*c >= 0:
+        self.root_type = 'real'
+    else:
+        self.root_type = 'imaginary'
+    return self.root_type"
+get,"self.profit_or_loss
+    
+def get_profit_or_loss(self):
+    if self.cp > self.sp:
+        self.profit_or_loss = ['loss', self.cp-self.sp]
+    elif cp < sp:
+        self.profit_or_loss = ['profit', self.sp-self.cp]
+    else:
+        self.profit_or_loss = ['no profit or loss', 0]
+    return self.profit_or_loss"
+get,"self.profit_or_loss
+    
+def get_profit_or_loss(self):
+    if self.cp > self.sp:
+        self.profit_or_loss = {
+            'type': 'loss', 
+            'amunt': self.cp-self.sp
+        }
+    elif cp < sp:
+        self.profit_or_loss = {
+            'type': 'profit',
+            'amount': self.sp-self.cp
+        }
+    else:
+        self.profit_or_loss = {
+            'type': 'no profit or loss', 
+            'ampount': 0
+        }
+    return self.profit_or_loss"
+get,"self.hemisphere_volume
+    
+def cal_hemisphere_volume(self):
+    pi=3.14
+    if self.radius > 0:
+        self.hemisphere_volume = (2/3)*pi*(self.radius**3)
+    return self.hemisphere_volume"
+get,"self.sin
+
+def get_sin(self):
+    import math
+    self.sin = math.sin(self.x)
+    return self.sin"
+get,"self.derivativeSin
+
+def getDerivativeSin(self):
+    import math
+    if isinstance(self.x, float)
+        self.derivativeSin = math.cos(self.x)
+        return self.derivativeSin
+    return None"
+get,"self.tan
+
+def getTan(self):
+    import math
+    if self.tan > 0:
+        self.tan = math.tan(x)
+    return self.tan"
+get,"self.derivative_tan
+
+def get_derivative_tan(self):
+    import math
+    self.derivative_tan = (1/math.cos(self.x))**2
+    return self.derivative_tan"
+get,"self.speed
+
+def get_speed(self):
+    self.speed = self.distance/self.time
+    return self.speed"
+get,"self.angle
+    
+def getAngle(self):
+    hour_angle = 0.5 * (self.hh * 60 + self.mm)
+    minute_angle = 6 * self.mm
+    self.angle = abs(hour_angle - minute_angle)
+    self.angle = min(360 - angle, angle)
+    return self.angle"
+get,"self.even_numbers
+    
+def get_even_numbers(self):
+  self.even_numbers = [var for var in self.list if var % 2 == 0] 
+  return self.even_numbers"
+get,"self.unique
+  
+def get_unique(self):
+    from itertools import filterfalse
+    # self.iterable = 'AAAABBBCCDAABBB'
+    # get_unique() --> A B C D
+    self.unique = set()
+    unique_add = self.unique.add
+    if self.key is None:
+        for element in filterfalse(seen.__contains__, self.iterable):
+            unique_add(element)
+    else:
+        for element in self.iterable:
+            k = self.key(element)
+            if k not in seen:
+                unique_add(k)
+    
+    return self.unique"
+get,"self.sin
+
+def get_sin(self):
+    import math
+    self.sin = math.sin(self.x)
+    return self.sin"
+get,"self.derivativeSin
+
+def getDerivativeSin(self):
+    import math
+    if isinstance(self.x, float)
+        self.derivativeSin = math.cos(self.x)
+        return self.derivativeSin
+    return None"
+get,"self.tan
+
+def getTan(self):
+    import math
+    if self.tan > 0:
+        self.tan = math.tan(x)
+    return self.tan"
+get,"self.derivative_tan
+
+def get_derivative_tan(self):
+    import math
+    self.derivative_tan = (1/math.cos(self.x))**2
+    return self.derivative_tan"
+get,"self.words
+
+def getWords(self): 
+    self.sentence = s.split(' ')  
+    for word in self.sentence:  
+        self.words.append(word)
+    return self.words"
+get,"self.duplicates
+
+def get_duplicates(self):
+    t="""" 
+    for i in self.str: 
+        if(i in t): 
+            pass
+        else: 
+            t=t+i 
+        self.duplicates.append(t)
+    return self.duplicates"
+get,"self.duplicates
+    
+def get_duplicates(self):
+    s=set(str) 
+    self.duplicates="""".join(s) 
+    return self.duplicates"
+get,"self.least_frequency
+    
+def get_least_frequency(self):
+    occ = []
+    for element in self.test_list:
+        count = 0
+        for duplicate in self.test_list:
+            if element == duplicate:
+                count += 1
+        occ.append({
+            ""elem"": element,
+            ""number"": count
+        })
+        
+    self.least_frequency = min(occ[""number""])
+    return self.leatest_frequency"
+get,"self.__latest_news
+
+def get_latest_news(self):
+    """"""
+    Fetches the latest news articles from the API and returns them.
+    """"""
+    NewsAPI.fetch_latest_articles()
+    return self.__latest_news"
+get,"self.lcm
+
+def get_lcm(self):  
+    greater = 0
+   if self.num1 > self.num2:  
+       greater = self.num1  
+   else:  
+       greater = self.num2  
+  while(True):  
+       if((greater % self.num1 == 0) and (greater % self.num2 == 0)):  
+           self.lcm = greater  
+           break  
+       greater += 1  
+   return self.lcm"
+get,"self.hcf
+   
+def hcf(self):  
+   if self.z > self.j:  
+       smaller = self.j  
+   else:  
+       smaller = self.z
+   for i in range(1,smaller + 1):  
+       if((self.z % i == 0) and (self.j % i == 0)):  
+           self.hcf = i  
+   return self.hcf "
+get,"self.sum_result
+   
+def get_sum_result(self):  
+   """"""return the result of the sum""""""
+   self.sum_result = self.addend1 + self.addend2 
+   return self.sum_result"
+get,"self.subtraction_result
+   
+def get_subtraction_result(self): 
+    """"""
+        return the result of the subtraction
+    """""" 
+    self.subtraction_result = self.minuend - self.to_subtract
+    return self.subtraction_result"
+get,"self.multiplicationResult
+
+def getMultiplicationResult(self): 
+    """"""get the result of the moltiplication"""""" 
+    if self.multiplicator != 0:
+        self.multiplicationResult = self.multiplicand * self.multiplicator
+    else:
+        self.multiplicationRersult = 0
+        
+    return self.multiplicationResult "
+get,"self.divisionResult
+
+def getDivisionResult(self): 
+    """"""
+        get division result
+    """"""
+    self.divisionResult = 0
+    if self.divisor != 0:
+        self.divisionResult = self.dividend / self.divisor
+    else:
+        raise Error(""by zero division"")
+        
+    return self.divisionResult"
+get,"self.length
+
+def get_length(self):
+    self.length = 0
+    while(self.number != 0):    
+        self.length = self.length + 1    
+        self.number = self.number//10    
+    return self.length"
+get,"self.absolute_value
+
+def get_absolute_value(self):
+	if self.n >= 0:
+		self.absolute_value = self.n
+	else:
+		self.absolute_value = -self.n
+    
+    return = self.absolute_value"
+get,"self.name
+
+def get_name(self):
+    return self.name.upper()"
+get,"self.price_with_tax
+
+def get_price_with_tax(self):
+    self.price_with_tax = self.price * 1.1  # Assuming a 10% tax
+    self.price_with_tax = round(self.price_with_tax, 2)
+    return self.price_with_tax"
+get,"self.total_stock_quantity
+
+def get_total_stock_quantity(self):
+    self.total_stock_quantity = sum(prod[""quantity""] for prod in self.products)
+    return self.total_stock_quantity"
+get,"self.discounted_price
+
+def get_discounted_price(self):
+    discount_percentage = random.randint(10, 30)
+    self.discounted_price = self.price * (1 - discount_percentage / 100)
+    self.discounted_price = round(self.discounted_price, 2)
+    return self.discounted_price"
+get,"self.info
+
+def get_info(self):
+    self.info = f""Product: {self.name}, Price: ${self.price:.2f}, Quantity: {self.quantity}""
+    return self.info.upper()"
+get,"self.rating
+
+def get_rating(self):
+    self.rating = random.uniform(1, 5)  # Simulating a rating between 1 and 5
+    self.rating = round(rating, 2)
+    return self.rating"
+get,"self.age_category
+
+def get_age_category(self):
+    if self.name.lower().startswith('baby'):
+        self.age_category = ""Baby""
+    elif self.name.lower().startswith('kids'):
+        self.age_category = ""Kids""
+    else:
+        self.age_category = ""Adult""
+        
+    return self.age_category "
+get,"self.recommendation
+
+def get_recommendation(self):
+    if self.quantity > 0 and self.price < 100:
+        self.recommendation = ""Highly recommended""
+    elif self.quantity > 0:
+        self.recommendation = ""Recommended""
+    else:
+        self.recommendation = ""Not available""
+    return self.recommendation"
+get,"self.is_on_sale
+
+def get_is_on_sale(self):
+    return self.price < 50"
+get,"self.stock_value
+
+def get_stock_value(self):
+    self.stock_value = self.price * self.quantity
+    return round(stock_value, 2)"
+get,"self.full_name
+
+def get_full_name(self):
+    self.full_name = f""{self.brand} {self.model}""
+    return self.full_name"
+get,"self.age
+
+def get_age(self):
+    current_year = 2023
+    self.age = current_year - self.year
+    return self.age"
+get,"self.mileage_def
+
+def get_mileage_def(self):
+    if self.mileage < 10000:
+        self.mileage_def = ""Low mileage""
+    elif self.mileage < 50000:
+        self.mileage_def = ""Moderate mileage""
+    else:
+        self.mileage_def = ""High mileage""
+    
+    return self.mileage_def"
+get,"self.formatted_price
+
+def get_formatted_price(self):
+    self.formatted_price = f""${self.price:,}""
+    return self.formatted_price"
+get,"self.fuel_efficiency
+
+def get_fuel_efficiency(self):
+    if self.mileage > 0:
+        self.fuel_efficiency = self.year / self.mileage
+        return round(fuel_efficiency, 2)
+    else:
+        return ""N/A"""
+get,"self.__available_seats
+
+def get_available_seats(self, showtime_id):
+    showtime = Showtime.objects.get(id=showtime_id)
+    return self.__available_seats"
+get,"self.is_luxury
+
+def get_is_luxury(self):
+    luxury_brands = [""Mercedes-Benz"", ""BMW"", ""Audi"", ""Lexus"", ""Jaguar""]
+    self.is_luxury = self.brand in luxury_brands
+    return self.is_luxury"
+get,"self.is_used
+
+def get_is_used(self):
+    return self.mileage > 0"
+get,"self.discounted_price
+
+def get_discounted_price(self):
+    discount_percentage = random.randint(5, 20)
+    self.discounted_price = round(self.price * (1 - discount_percentage / 100), 2)
+    return self.discounted_price"
+get,"self.temperature
+
+def get_temperature(self):
+    self.temperature = f""{self.temperature}°C""
+    return self.temperature"
+get,"self.common_elements
+
+def get_common_elements(self, list1, list2):
+    self.common_elements = []
+    for item in list1:
+        if item in list2:
+            common_elements.append(item)
+    return self.common_elements
+"
+get,"self.wind_speed_category
+
+def get_wind_speed_category(self):
+    if self.wind_speed < 10:
+        self.wind_speed_category = ""Calm""
+    elif self.wind_speed >= 10 and self.wind_speed < 30:
+        self.wind_speed_category = ""Moderate""
+    else:
+        self.wind_speed_category = ""Windy""
+    
+    return self.wind_speed_category"
+get,"self.current_time
+
+def get_current_time(self):
+    self.current_time = datetime.datetime.now()
+    return self.current_time.strftime(""%H:%M:%S"")"
+get,"self.temperature_fahrenheit
+
+def get_temperature_fahrenheit(self):
+    self.temperature_fahrenheit = (self.temperature * 9/5) + 32
+    return f""{self.temperature_fahrenheit}°F"""
+get,"self.heat_index
+
+def get_heat_index(self):
+    self.heat_index = -42.379 + (2.04901523 * self.temperature) + (10.14333127 * self.humidity) - (0.22475541 * self.temperature * self.humidity) - (6.83783e-3 * self.temperature**2) - (5.481717e-2 * self.humidity**2) + (1.22874e-3 * self.temperature**2 * self.humidity) + (8.5282e-4 * self.temperature * self.humidity**2) - (1.99e-6 * self.temperature**2 * self.humidity**2)
+    
+    self.heat_index = round(heat_index, 2)
+    
+    return self.heat_index"
+get,"self.weather_condition
+
+def get_weather_condition(self):
+    if self.temperature < 0:
+        self.weather_condition = ""Freezing""
+    elif self.temperature >= 0 and self.temperature < 10:
+        self.weather_condition = ""Cold""
+    elif self.temperature >= 10 and self.temperature < 25:
+        self.weather_condition = ""Mild""
+    else:
+        self.weather_condition = ""Hot""
+        
+    return self.weather_condition"
+get,"self.rainfall_probability
+
+def get_rainfall_probability(self):
+    if self.rainfall > 0:
+        self.rainfall_probability = ""High""
+    else:
+        self.rainfall_probability = ""Low""
+    return self.rainfall_probability"
+get,"self.wind_direction
+
+def get_wind_direction(self):
+    directions = [""North"", ""Northeast"", ""East"", ""Southeast"", ""South"", ""Southwest"", ""West"", ""Northwest""]
+    self.wind_direction = random.choice(directions)
+    return self.wind_direction"
+get,"self.username
+
+def get_username(self):
+    lowercase_username = self.username.lower()
+    self.username = lowercase_username.replace("" "", ""_"")
+    return self.username"
+get,"self.email_domain
+
+def get_email_domain(self):
+    email_parts = self.email.split('@')
+    if len(email_parts) > 1:
+        self.email_domain = email_parts[1]
+        return self.email_domain
+    else:
+        return """""
+get,"self.fibonacci_sequence
+
+def get_fibonacci_sequence(self, n):
+    self.fibonacci_sequence = [0, 1]
+    for i in range(2, n):
+        self.fibonacci_sequence.append(self.fibonacci_sequence[i-1] + self.fibonacci_sequence[i-2])
+    return self.fibonacci_sequence"
+get,"self.word_frequencies
+
+def get_word_frequencies(self, text):
+    word_frequencies = {}
+    words = text.split()
+    for word in words:
+        if word in word_frequencies:
+            word_frequencies[word] += 1
+        else:
+            word_frequencies[word] = 1
+    return self.word_frequencies"
+get,"self.password_length
+
+def get_password_length(self):
+    self.password_length = len(self.password)
+    return self.password_length"
+get,"self.username_length
+
+def get_username_length(self):
+    self.username_length = len(self.username)
+    return self.username_length"
+get,"self.is_password_strong
+
+def get_is_password_strong(self):
+    has_special_chars = any(c for c in self.password if not c.isalnum())
+    is_long_enough = len(self.password) >= 8
+    self.is_password_strong = has_special_chars and is_long_enough
+    return self.is_password_strong"
+get,"self.is_email_valid
+
+def get_is_email_valid(self):
+    self.is_email_valid = ""@"" in self.email and ""."" in self.email
+    return self.is_email_valid"
+get,"self.username_with_tag
+
+def get_username_with_tag(self):
+    self.username_with_tag = f""{self.tag}_{self.username}""
+    return self.username_with_tag"
+get,"self.prime_numbers
+
+def get_prime_numbers(self):
+    prime_numbers = []
+    num = 2
+    while len(prime_numbers) < n:
+        is_prime = True
+        for i in range(2, int(num ** 0.5) + 1):
+            if num % i == 0:
+                is_prime = False
+                break
+        if is_prime:
+            prime_numbers.append(num)
+        num += 1
+    return self.prime_numbers"
+get,"self.display_name
+
+def get_display_name(self):
+    name_parts = self.username.split()
+    capitalized_name = [name.capitalize() for name in name_parts]
+    self.display_name = "" "".join(capitalized_name)
+    return self.display_name"
+get,"self.total_sales
+
+def get_total_sales(self):
+    """"""
+    Calculates the total sales made by the company and returns the amount.
+    """"""
+    sales = Sale.objects.all()
+    self.total_sales = sum(sale.amount for sale in sales)
+    return self.total_sales"
+get,"self.obfuscated_email
+
+def get_obfuscated_email(self):
+    self.obfuscated_email = """"
+    for i, char in enumerate(self.email):
+	if i < 3 or char == ""@"" or char == ""."":
+            self.obfuscated_email += char
+        else:
+            self.obfuscated_email += ""*""
+    return self.obfuscated_email"
+clr,"self.nodes
+
+def getNodes(self):
+    return self.nodes"
+clr,"self.sorted_nodes
+
+def getSortedNodes(self):
+    return self.sorted_nodes"
+clr,"self.executors
+
+def get_total_executors(self):
+    return self.executors"
+clr,"self.clouds
+
+def get_clouds(self):
+    return self.clouds"
+clr,"self.descriptions
+
+def get_description(self):
+        return self.descriptions"
+clr,"self.merged_list
+
+def get_merged_list(self):
+    return self.merged_list"
+clr,"self.natural_num  
+     
+def sum_natural(self):
+    return self.natural_sum"
+clr,"self.area
+
+def get_area(self): 
+    return self.area"
+clr,"self.square_perimeter
+
+def get_square_perimeter(self):
+    return self.square_perimeter"
+clr,"self.rect_area
+
+def get_rectangle_area(self):
+    return self.rect_area"
+clr,"self.bill
+
+def get_elect_bill(self):
+
+    return self.bill"
+clr,"self.day_dict
+    
+def get_day(self):
+    return self.day_dict[self.day_no]
+"
+clr,"self.average
+
+def get_average(self):
+    return self.average"
+clr,"self.compound_interest
+
+def get_compound_interest(self):
+    return self.compound_interest"
+clr,"self.simple_interest
+
+def get_simple_interest(self):
+        return self.simple_interest"
+clr,"self.acceleration
+
+def get_acceleration(self):
+    return self.acceleration"
+clr,"self.weight_category
+
+def get_weight_category(self):
+    return self.weight_category"
+clr,"self.mean
+
+def get_mean(self):
+    
+    return self.mean"
+clr,"self.median    
+
+def get_median(self):
+    return self.median"
+clr,"self.tirangle_area
+
+def get_triangle_area(self):
+    return self.triangle_area"
+clr,"self.dist_from_origin
+    
+def get_dist_from_orign(self):
+    return self.dist_from_origin"
+clr,"self.root_type
+    
+def get_root_type(self):
+    return self.root_type"
+clr,"self.profit_or_loss
+    
+def get_profit_or_loss(self):
+    return self.profit_or_loss"
+clr,"self.hemisphere_volume
+    
+def cal_hemisphere_volume(self):
+    return self.hemisphere_volume"
+clr,"self.speed
+
+def get_speed(self):
+    return self.speed"
+clr,"self.angle
+    
+def getAngle(self):
+    return self.angle"
+clr,"self.even_numbers
+    
+def get_even_numbers(self): 
+  return self.even_numbers"
+clr,"self.unique
+  
+def get_unique(self):
+    
+    return self.unique"
+clr,"self.sin
+
+def get_sin(self):
+    
+    return self.sin"
+clr,"self.derivativeSin
+
+def getDerivativeSin(self):
+    return self.derivativeSin"
+clr,"self.tan
+
+def getTan(self):
+    return self.tan"
+clr,"self.derivative_tan
+
+def get_derivative_tan(self):
+    return self.derivative_tan"
+clr,"self.words
+
+def getWords(self):
+    return self.words"
+clr,"self.duplicates
+    
+def get_duplicates(self): 
+    return self.duplicates"
+clr,"self.least_frequency
+    
+def get_least_frequency(self):
+    return self.leatest_frequency"
+clr,"self.lcm
+
+def get_lcm(self):   
+   return self.lcm"
+clr,"self.hcf
+   
+def hcf(self):  
+   return self.hcf "
+clr,"self.sum_result
+   
+def get_sum_result(self):  
+   """"""return the result of the sum""""""
+   return self.sum_result"
+clr,"self.subtraction_result
+   
+def get_subtraction_result(self): 
+    """"""
+        return the result of the subtraction
+    """"""
+    return self.subtraction_result"
+clr,"self.multiplicationResult
+
+def getMultiplicationResult(self): 
+    """"""get the result of the moltiplication"""""" 
+    return self.multiplicationResult "
+clr,"self.divisionResult
+
+def getDivisionResult(self): 
+    """"""
+        get division result
+    """"""
+    
+    return self.divisionResult"
+clr,"self.length
+
+def get_length(self):    
+    return self.length"
+clr,"self.absolute_value
+
+def get_absolute_value(self):
+    return = self.absolute_value"
+clr,"self.name
+
+def get_name(self):
+    return self.name.upper()"
+clr,"self.price_with_tax
+
+def get_price_with_tax(self):
+    return self.price_with_tax"
+clr,"self.total_stock_quantity
+
+def get_total_stock_quantity(self):
+    return self.total_stock_quantity"
+clr,"self.discounted_price
+
+def get_discounted_price(self):
+    return self.discounted_price"
+clr,"self.info
+
+def get_info(self):
+    return self.info"
+clr,"self.rating
+
+def get_rating(self):
+    return self.rating"
+clr,"self.age_category
+
+def get_age_category(self):
+        
+    return self.age_category"
+clr,"self.recommendation
+
+def get_recommendation(self):
+    return self.recommendation"
+clr,"self.is_on_sale
+
+def get_is_on_sale(self):
+    return self.is_on_sale"
+clr,"self.stock_value
+
+def get_stock_value(self):
+    return self.stock_value"
+clr,"self.full_name
+
+def get_full_name(self):
+    return self.full_name"
+clr,"self.age
+
+def get_age(self):
+    return self.age"
+clr,"self.mileage_def
+
+def get_mileage_def(self):
+    
+    return self.mileage_def"
+clr,"self.formatted_price
+
+def get_formatted_price(self):
+    return self.formatted_price"
+clr,"self.fuel_efficiency
+
+def get_fuel_efficiency(self):
+    return self.fuel_efficiency"
+clr,"self.is_luxury
+
+def get_is_luxury(self):
+    return self.is_luxury"
+clr,"self.is_used
+
+def get_is_used(self):
+    return self.is_used"
+clr,"self.discounted_price
+
+def get_discounted_price(self):
+    return self.discounted_price"
+clr,"self.temperature
+
+def get_temperature(self):
+    return self.temperature"
+clr,"self.wind_speed_category
+
+def get_wind_speed_category(self):
+    return self.wind_speed_category"
+clr,"self.current_time
+
+def get_current_time(self):
+    return self.current_time."
+clr,"self.temperature_fahrenheit
+
+def get_temperature_fahrenheit(self):
+    return f""{self.temperature_fahrenheit}°F"""
+clr,"self.heat_index
+
+def get_heat_index(self):
+    return self.heat_index"
+clr,"self.weather_condition
+
+def get_weather_condition(self):
+        
+    return self.weather_condition"
+clr,"self.rainfall_probability
+
+def get_rainfall_probability(self):
+    return self.rainfall_probability"
+clr,"self.wind_direction
+
+def get_wind_direction(self):
+    
+    return self.wind_direction"
+clr,"self.username
+
+def get_username(self):
+    return self.username"
+clr,"self.email_domain
+
+def get_email_domain(self):
+        return self.email_domain"
+clr,"self.password_length
+
+def get_password_length(self):
+    return self.password_length"
+clr,"self.username_length
+
+def get_username_length(self):
+    return self.username_length"
+clr,"self.is_password_strong
+
+def get_is_password_strong(self):
+    return self.is_password_strong"
+clr,"self.is_email_valid
+
+def get_is_email_valid(self):
+    return self.is_email_valid"
+clr,"self.username_with_tag
+
+def get_username_with_tag(self):
+    return self.username_with_tag"
+clr,"self.display_name
+
+def get_display_name(self):
+    return self.display_name"
+clr,"self.obfuscated_email
+
+def get_obfuscated_email(self):
+    return self.obfuscated_email"
+clr,"self.__latest_news
+
+def get_latest_news(self):
+    return self.__latest_news"
+clr,"self.total_sales
+
+def get_total_sales(self):
+    return self.total_sales"
+clr,"self.__available_seats
+
+def get_available_seats(self):
+    return self.__available_seats"
+clr,"self.common_elements
+
+def get_common_elements(self):
+    return self.common_elements
+"
+clr,"self.fibonacci_sequence
+
+def get_fibonacci_sequence(self):
+    return self.fibonacci_sequence"
+clr,"self.prime_numbers
+
+def get_prime_numbers(self):
+    return self.prime_numbers"
+clr,"self.word_frequencies
+
+def get_word_frequencies(self):
+    return self.word_frequencies"
