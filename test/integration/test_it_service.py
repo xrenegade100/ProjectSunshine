@@ -60,7 +60,7 @@ class TestItService:
     @pytest.mark.xfail(reason="broken production code")
     def test_run_srcml(self, parser: Parser):
         """
-            ID: TC-SRV-3.2
+            ID: TC-SRV-4.1
 
             Not really sure what is going on in this method.
             The static method __run_srcml must be called with that syntax
@@ -77,8 +77,7 @@ class TestItService:
     @pytest.mark.xfail(reason="broken production code")
     def test_parse_file(self, parser: Parser):
         """
-            ID: TC-SRV-4.1
-        """
+            ID: TC-SRV-3.2        """
         result = parser.parse_file(
             f"{PATH}/code/project/Main.java"
         )
