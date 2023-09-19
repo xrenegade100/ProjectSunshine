@@ -1,0 +1,30 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches:
+      - master
+      - 'test/**'
+      - 'feat/**'
+      - 'fix/**'
+      - 'perf/**'
+      - 'refactor/**'
+  pull_request:
+    branches:
+      - master
+      - 'test/**'
+      - 'feat/**'
+      - 'fix/**'
+      - 'perf/**'
+      - 'refactor/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          verbose: true
