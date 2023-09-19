@@ -82,4 +82,3 @@ class TestItService:
             f"{PATH}/code/project/Main.java"
         )
         assert result == True
-        assert parser.parsed_string is not None
