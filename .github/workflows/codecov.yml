@@ -34,7 +34,13 @@ jobs:
     - name: Generate coverage report
       run: |
         pip --no-cache-dir install install -r requirements.txt
-        pip python -m nltk.downloader wordnet punkt stopwords
+        pip echo "import nltk" >> download_nltk.py \
+          && echo "nltk.download('wordnet')" >> download_nltk.py \
+          && echo "nltk.download('punkt')" >> download_nltk.py \
+          && echo "nltk.download('stopwords')" >> download_nltk.py \
+          && echo "quit()" >> download_nltk.py \
+          && python3 download_nltk.py \ 
+          && rm download_nltk.py
         pytest --cov=./ --cov-report=xml
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
