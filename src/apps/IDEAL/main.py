@@ -2,7 +2,6 @@
 from src.nlp.splitter import Splitter
 from src.nlp.pos_tagger_stanford import POSTaggerStanford
 from src.model.project import Project
-from src.model.input import Input
 from src.common.util import read_input
 from src.common.testing_list import TestingPackage
 from src.common.logger import setup_logger
@@ -15,6 +14,8 @@ import time
 import os
 
 import collections
+
+# The following is needed to run in the Docker
 collections.Iterable = collections.abc.Iterable  # type: ignore
 
 
